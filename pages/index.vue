@@ -8,7 +8,7 @@
       <div class="w-1/6"></div>
       <div class="w-4/6">
         <navbar />
-        <news />
+        <promote />
       </div>
     </div>
   </div>
@@ -16,11 +16,11 @@
 
 <script>
 import navbar from "~/components/navbar";
-import news from "~/components/news";
+import promote from "~/components/promote";
 export default {
   components: {
     navbar,
-    news
+    promote
   }
 };
 </script>
