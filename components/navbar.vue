@@ -13,27 +13,35 @@
           <a
             href="#"
             class="block mt-4 lg:inline-block lg:mt-0 hover-underline-animation"
-          >Sport</a>
+          >Home</a>
           <a
             href="#"
             class="block mt-4 lg:inline-block lg:mt-0 hover-underline-animation "
-          >Nav1</a>
+          >Sport</a>
           <a
             href="#"
             class="block mt-4 lg:inline-block lg:mt-0 hover-underline-animation"
-          >Nav2</a>
+          >Mr. $ Miss</a>
           <a
             href="#"
             class="block mt-4 lg:inline-block lg:mt-0 hover-underline-animation"
-          >Nav3</a>
+          >News</a>
           <a
             href="#"
             class="block mt-4 lg:inline-block lg:mt-0 hover-underline-animation"
-          >Nav4</a>
+          >Sponcer</a>
           <a
             href="#"
             class="block mt-4 lg:inline-block lg:mt-0 hover-underline-animation"
-          >Nav5</a>
+          >Schedule</a>
+          <a
+            href="#"
+            class="block mt-4 lg:inline-block lg:mt-0 hover-underline-animation"
+          >About</a>
+          <a
+            href="#"
+            class="block mt-4 lg:inline-block lg:mt-0 hover-underline-animation"
+          >Contact</a>
         </div>
       </div>
     </nav>

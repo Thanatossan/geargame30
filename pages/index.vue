@@ -9,6 +9,13 @@
       <div class="w-4/6">
         <navbar />
         <promote />
+        <br>
+        <border />
+        <sponcer />
+        <br>
+        <border />
+        <br>
+        <Sport />
       </div>
     </div>
   </div>
@@ -17,10 +24,16 @@
 <script>
 import navbar from "~/components/navbar";
 import promote from "~/components/promote";
+import sponcer from "~/components/sponcer";
+import border from "~/components/border";
+import Sport from "~/components/Sport";
 export default {
   components: {
     navbar,
-    promote
+    promote,
+    sponcer,
+    border,
+    Sport
   }
 };
 </script>
