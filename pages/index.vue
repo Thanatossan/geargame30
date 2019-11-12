@@ -1,18 +1,64 @@
 <template>
   <div>
-    <img
-      src="~/assets/image/JhangLekGames-Logo.png"
-      width="300px"
+    <link
+      href="https://fonts.googleapis.com/css?family=Rubik&display=swap"
+      rel="stylesheet"
+    />
+    <div
+      class="container min-h-screen flex justify-center items-center text-center mx-auto"
     >
-    <nuxt-link to="/home"><button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-        Button
-      </button></nuxt-link>
+      <div class="w-4/6">
+        <navbar />
+        <promote />
+        <br />
+        <border />
+        <sponcer />
+        <br />
+        <border />
+        <br />
+        <Sport />
+        <br />
+        <border />
+        <br />
+        <News />
+        <br />
+        <border />
+        <br />
+        <SponcerCon />
+        <br />
+        <footer />
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
-export default {};
+import navbar from "~/components/navbar";
+import promote from "~/components/promote";
+import sponcer from "~/components/sponcer";
+import border from "~/components/border";
+import Sport from "~/components/Sport";
+import News from "~/components/News";
+import SponcerCon from "~/components/SponcerCon";
+import Footer from "~/components/Footer";
+export default {
+  components: {
+    navbar,
+    promote,
+    sponcer,
+    border,
+    Sport,
+    News,
+    SponcerCon,
+    Footer
+  }
+};
 </script>
 
 <style>
+/* Sample `apply` at-rules with Tailwind CSS */
+
+html {
+  font-family: Rubik;
+}
 </style>

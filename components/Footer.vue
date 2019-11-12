@@ -11,6 +11,7 @@
 <script>
 import NewCard from "~/components/Sport/NewCard";
 export default {
+  name: "Footer",
   components: {
     NewCard
   }

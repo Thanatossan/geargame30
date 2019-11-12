@@ -1,7 +1,7 @@
 <template>
   <div class="container flex flex-col">
     <div class="w1/2">
-      <h2 id="News">News</h2>
+      <h2 id="Sponcer">Sponcer Content</h2>
     </div>
     <NewCard />
     <a class="text-right" href="#"> See more ></a>
@@ -9,7 +9,7 @@
 </template>
 
 <script>
-import NewCard from "~/components/Sport/NewCard";
+import NewCard from "~/components/Sport/SponCard";
 export default {
   components: {
     NewCard
@@ -18,7 +18,7 @@ export default {
 </script>
 
 <style>
-#News {
+#Sponcer {
   overflow: visible;
   width: 103px;
   white-space: nowrap;
