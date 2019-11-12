@@ -7,27 +7,34 @@
     </div>
     <div class="w-5/6">
       <br>
-      <div class="border-b-2 mt-3 mb-8 "></div>
-      <!-- V for -->
-      <div class="md:flex bg-gray-100 rounded-lg p-1 m-3">
-        <img
-          src="~/assets/image/JhangLekGames-Logo.png"
-          width="100"
-        >
-      </div>
-      <div class="md:flex bg-gray-100 rounded-lg p-1 m-3">
-        <img
-          src="~/assets/image/JhangLekGames-Logo.png"
-          width="100"
-        >
-      </div>
-      <div class="md:flex bg-gray-100 rounded-lg p-1 m-3">
-        <img
-          src="~/assets/image/JhangLekGames-Logo.png"
-          width="100"
-        >
-      </div>
+      <div id="Live_Score_table">
+        <div class="border-b-2 mt-3 mb-8 "></div>
+        <!-- V for -->
+        <div class="md:flex bg-gray-100 rounded-lg p-1 m-3 ">
+          <img
+            src="~/assets/image/JhangLekGames-Logo.png"
+            width="100"
+          >
+          <h2 class="ml-16 mt-8"> xxxx - xxxx</h2>
+        </div>
+        <div class="md:flex bg-gray-100 rounded-lg p-1 m-3">
+          <img
+            src="~/assets/image/JhangLekGames-Logo.png"
+            width="100"
+          >
+          <h2 class="ml-16 mt-8"> xxxx - xxxx</h2>
+        </div>
+        <div class="md:flex bg-gray-100 rounded-lg p-1 m-3">
+          <img
+            src="~/assets/image/JhangLekGames-Logo.png"
+            width="100"
+            class="md:flex"
+          >
+          <h2 class="ml-16 mt-8"> xxxx - xxxx</h2>
+        </div>
+        <!-- loop end-->
 
+      </div>
     </div>
   </div>
 </template>
@@ -37,6 +44,9 @@ export default {};
 </script>
 
 <style>
+#Live_Score_table {
+  font-size: 20px;
+}
 #Live_Score {
   position: absolute;
   overflow: hidden;
