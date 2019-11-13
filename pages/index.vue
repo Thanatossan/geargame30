@@ -31,9 +31,11 @@
       <div class="w-4/6">
         <div class="my-5 mx-auto text-right">
           <Footer />
+
         </div>
       </div>
     </div>
+
   </div>
 </template>
 
