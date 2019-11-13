@@ -8,7 +8,7 @@
 
       <div class="w-5/6">
         <navbar />
-
+        <chaingmai />
       </div>
     </div>
     <border />
@@ -28,10 +28,12 @@
 import navbar from "~/components/navbar";
 import border from "~/components/border";
 import Footer from "~/components/Footer";
+import chaingmai from "~/components/about/chaingmai_history";
 export default {
   components: {
     navbar,
     border,
+    chaingmai,
     Footer
   }
 };

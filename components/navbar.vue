@@ -18,7 +18,7 @@
           <nuxt-link to="/">
             <a
               href="#"
-              class="block mt-4 lg:inline-block lg:mt-0 hover-underline-animation "
+              class="block mt-4 lg:inline-block lg:mt-0 hover-underline-animation"
             >Sport</a>
           </nuxt-link>
           <nuxt-link to="/">
@@ -39,7 +39,7 @@
               class="block mt-4 lg:inline-block lg:mt-0 hover-underline-animation"
             >Sponcer</a>
           </nuxt-link>
-          <nuxt-link to="/">
+          <nuxt-link to="/schedule">
             <a
               href="#"
               class="block mt-4 lg:inline-block lg:mt-0 hover-underline-animation"
