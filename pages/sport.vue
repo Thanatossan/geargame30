@@ -9,14 +9,12 @@
     <br />
 
     <!-- title section -->
-    <div class="flex flex-col justify-center mb-4 bg-red-800 text-center lg:h-48">
-      <div class="w-full">
+    <div class="flex flex-col justify-center mb-4 bg-red-800 text-center lg:h-48 w-full">
         <label class="default-text" style="font-size:55px; color:white;">SPORTS</label>
-      </div>
     </div>
  
     <!-- content section -->
-    <div class="container flex justify-center items-center text-center">
+    <div class="container text-center">
         <sportCon />
     </div>
     <!-- footer -->
