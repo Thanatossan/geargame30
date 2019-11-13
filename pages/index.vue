@@ -4,9 +4,7 @@
       href="https://fonts.googleapis.com/css?family=Rubik&display=swap"
       rel="stylesheet"
     />
-    <div
-      class="container min-h-screen flex justify-center items-center text-center mx-auto"
-    >
+    <div class="container min-h-screen flex justify-center items-center text-center mx-auto">
       <div class="w-4/6">
         <navbar />
         <promote />
@@ -26,7 +24,14 @@
         <br />
         <SponcerCon />
         <br />
-        <footer />
+      </div>
+    </div>
+    <border />
+    <div class="container flex justify-center items-center text-center mx-auto">
+      <div class="w-4/6">
+        <div class="my-5 mx-auto text-right">
+          <Footer />
+        </div>
       </div>
     </div>
   </div>
