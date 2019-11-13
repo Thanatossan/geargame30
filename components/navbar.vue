@@ -1,6 +1,6 @@
 <template>
   <div>
-    <nav class="flex items-center justify-between flex-wrap p-6">
+    <nav class="flex items-center justify-between flex-wrap p-2">
       <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
         <div class="text-sm lg:flex-grow">
           <img
@@ -9,43 +9,60 @@
           />
         </div>
         <div class="text-gray-700 pt-3">
-          <a
-            href="#"
-            class="block mt-4 lg:inline-block lg:mt-0 hover-underline-animation"
-          >Home</a>
-          <a
-            href="#"
-            class="block mt-4 lg:inline-block lg:mt-0 hover-underline-animation "
-          >Sport</a>
-          <a
-            href="#"
-            class="block mt-4 lg:inline-block lg:mt-0 hover-underline-animation"
-          >Mr. & Miss</a>
-          <a
-            href="#"
-            class="block mt-4 lg:inline-block lg:mt-0 hover-underline-animation"
-          >News</a>
-          <a
-            href="#"
-            class="block mt-4 lg:inline-block lg:mt-0 hover-underline-animation"
-          >Sponcer</a>
-          <a
-            href="#"
-            class="block mt-4 lg:inline-block lg:mt-0 hover-underline-animation"
-          >Schedule</a>
-          <a
-            href="#"
-            class="block mt-4 lg:inline-block lg:mt-0 hover-underline-animation"
-          >Map</a>
-          <a
-            href="#"
-            class="block mt-4 lg:inline-block lg:mt-0 hover-underline-animation"
-          >Score</a>
-          <a
-            href="#"
-            class="block mt-4 lg:inline-block lg:mt-0 hover-underline-animation"
-          >About</a>
-
+          <nuxt-link to="/">
+            <a
+              href="#"
+              class="block mt-4 lg:inline-block lg:mt-0 hover-underline-animation"
+            >Home</a>
+          </nuxt-link>
+          <nuxt-link to="/">
+            <a
+              href="#"
+              class="block mt-4 lg:inline-block lg:mt-0 hover-underline-animation "
+            >Sport</a>
+          </nuxt-link>
+          <nuxt-link to="/">
+            <a
+              href="#"
+              class="block mt-4 lg:inline-block lg:mt-0 hover-underline-animation"
+            >Mr. & Miss</a>
+          </nuxt-link>
+          <nuxt-link to="/">
+            <a
+              href="#"
+              class="block mt-4 lg:inline-block lg:mt-0 hover-underline-animation"
+            >News</a>
+          </nuxt-link>
+          <nuxt-link to="/">
+            <a
+              href="#"
+              class="block mt-4 lg:inline-block lg:mt-0 hover-underline-animation"
+            >Sponcer</a>
+          </nuxt-link>
+          <nuxt-link to="/">
+            <a
+              href="#"
+              class="block mt-4 lg:inline-block lg:mt-0 hover-underline-animation"
+            >Schedule</a>
+          </nuxt-link>
+          <nuxt-link to="/">
+            <a
+              href="#"
+              class="block mt-4 lg:inline-block lg:mt-0 hover-underline-animation"
+            >Map</a>
+          </nuxt-link>
+          <nuxt-link to="/">
+            <a
+              href="#"
+              class="block mt-4 lg:inline-block lg:mt-0 hover-underline-animation"
+            >Score</a>
+          </nuxt-link>
+          <nuxt-link to="/about">
+            <a
+              href="#"
+              class="block mt-4 lg:inline-block lg:mt-0 hover-underline-animation"
+            >About</a>
+          </nuxt-link>
         </div>
       </div>
     </nav>
@@ -58,7 +75,7 @@ export default {};
 
 <style>
 a {
-  margin: 10px;
+  margin: 0.5rem;
 }
 .hover-underline-animation {
   display: inline-block;
