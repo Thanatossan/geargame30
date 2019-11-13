@@ -6,16 +6,20 @@
           <img src="~/assets/image/JhangLekGames-Logo.png" width="141" />
         </div>
         <div class="text-gray-700">
-          <a
+          <nuxt-link to="/">
+            <a
             href="#"
             class="block mt-4 lg:inline-block lg:mt-0 hover-underline-animation"
             >Home</a
           >
+          </nuxt-link>
+          <nuxt-link to="sport">
           <a
             href="#"
             class="block mt-4 lg:inline-block lg:mt-0 hover-underline-animation "
             >Sport</a
           >
+          </nuxt-link>
           <a
             href="#"
             class="block mt-4 lg:inline-block lg:mt-0 hover-underline-animation"

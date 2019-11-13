@@ -38,7 +38,10 @@ module.exports = {
   /*
    ** Nuxt.js modules
    */
-  modules: ["nuxt-buefy"],
+  modules: [
+    "nuxt-buefy",
+    "@nuxtjs/bootstrap-vue"
+  ],
   /*
    ** Build configuration
    */
