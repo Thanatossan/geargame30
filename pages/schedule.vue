@@ -8,8 +8,11 @@
       <div class="w-5/6">
         <navbar />
         <schedule />
+        <h1 class="text-right text-red-500">หมายเหตุ: กำหนดการอาจมีการเปลี่ยนแปลงเพื่อความเหมาะสม</h1>
       </div>
+
     </div>
+    <br>
     <border />
     <div class="container flex justify-center items-center text-center mx-auto">
       <div class="w-5/6">
