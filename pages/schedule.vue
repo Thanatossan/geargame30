@@ -5,10 +5,9 @@
       rel="stylesheet"
     />
     <div class="container min-h-screen flex justify-center  text-center mx-auto">
-
       <div class="w-5/6">
         <navbar />
-
+        <schedule />
       </div>
     </div>
     <border />
@@ -16,11 +15,9 @@
       <div class="w-5/6">
         <div class="my-5 mx-auto text-right">
           <Footer />
-
         </div>
       </div>
     </div>
-
   </div>
 </template>
 
@@ -28,12 +25,14 @@
 import navbar from "~/components/navbar";
 import border from "~/components/border";
 import Footer from "~/components/Footer";
+import schedule from "~/components/schedule/schedule";
 import chaingmai from "~/components/about/chaingmai_history";
 export default {
   components: {
     navbar,
     border,
     chaingmai,
+    schedule,
     Footer
   }
 };
