@@ -9,6 +9,19 @@
       <div class="w-5/6">
         <navbar />
         <chaingmai />
+        <br>
+        <border />
+        <br>
+        <engineer />
+        <br>
+        <border />
+        <br>
+        <geargame />
+        <br>
+        <border />
+        <br>
+        <univer />
+        <br>
       </div>
     </div>
     <border />
@@ -29,11 +42,17 @@ import navbar from "~/components/navbar";
 import border from "~/components/border";
 import Footer from "~/components/Footer";
 import chaingmai from "~/components/about/chaingmai_history";
+import engineer from "~/components/about/eng_history";
+import geargame from "~/components/about/geargame_history";
+import univer from "~/components/about/univer_list";
 export default {
   components: {
     navbar,
     border,
     chaingmai,
+    engineer,
+    geargame,
+    univer,
     Footer
   }
 };
