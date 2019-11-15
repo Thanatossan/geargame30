@@ -1,13 +1,24 @@
 <template>
   <div class="flex flex-row-reverse">
     <div>
+      <br><br><br><br>
       <img
         src="~/assets/image/logoComclub.png"
         width="45rem"
       ></div>
-    <div class="mx-2">
+    <div class="mx-2 w-1/3">
+      <br><br><br><br>
       <p> Powered by : ชมรมคอมพิวเตอร์</p>
       <p>คณะวิศวกรรมศาสตร์ มหาวิทยาลัยเชียงใหม่</p>
+    </div>
+    <div class="w-2/3 mx-2 text-left">
+
+      <p> Contact :</p>
+      <div class="px-3">
+        <p>คณะวิศวกรรมศาสตร์ มหาวิทยาลัยเชียงใหม่ </p>
+        <p> 239 ถ.ห้วยแก้ว ต.สุเทพ อ.เมือง จ.เชียงใหม่ 50200</p>
+        <p> 0xx-xxxxxxx , 0xx-xxxxxxx</p>
+      </div>
     </div>
   </div>
 </template>

@@ -15,29 +15,36 @@
               class="block mt-4 lg:inline-block lg:mt-0 hover-underline-animation"
             >Home</a>
           </nuxt-link>
-          <nuxt-link to="/">
-            <a
+          <nuxt-link to="#">
+            <!--<a
               href="#"
               class="block mt-4 lg:inline-block lg:mt-0 hover-underline-animation"
-            >Sport</a>
+            >Sport</a> -->
+            <h1 class="block mt-4 lg:inline-block lg:mt-0 text-gray-400">Sport</h1>
           </nuxt-link>
-          <nuxt-link to="/">
+          <nuxt-link to="#">
+            <!--
             <a
               href="#"
               class="block mt-4 lg:inline-block lg:mt-0 hover-underline-animation"
             >Mr. & Miss</a>
+            -->
+            <h1 class="block mt-4 lg:inline-block lg:mt-0 text-gray-400">Mr. & Miss</h1>
           </nuxt-link>
-          <nuxt-link to="/">
+          <nuxt-link to="#">
+            <!--<a
+              href="#"
+              class="block mt-4 lg:inline-block lg:mt-0 hover-underline-animation"
+            >News</a> -->
+            <h1 class="block mt-4 lg:inline-block lg:mt-0 text-gray-400">News</h1>
+          </nuxt-link>
+          <nuxt-link to="#">
+            <!--
             <a
               href="#"
               class="block mt-4 lg:inline-block lg:mt-0 hover-underline-animation"
-            >News</a>
-          </nuxt-link>
-          <nuxt-link to="/">
-            <a
-              href="#"
-              class="block mt-4 lg:inline-block lg:mt-0 hover-underline-animation"
-            >Sponcer</a>
+            >Sponcer</a> -->
+            <h1 class="block mt-4 lg:inline-block lg:mt-0 text-gray-400">Sponcer</h1>
           </nuxt-link>
           <nuxt-link to="/schedule">
             <a
@@ -45,17 +52,18 @@
               class="block mt-4 lg:inline-block lg:mt-0 hover-underline-animation"
             >Schedule</a>
           </nuxt-link>
-          <nuxt-link to="/">
+          <nuxt-link to="/Map">
             <a
               href="#"
               class="block mt-4 lg:inline-block lg:mt-0 hover-underline-animation"
             >Map</a>
           </nuxt-link>
-          <nuxt-link to="/">
-            <a
+          <nuxt-link to="#">
+            <!--  <a
               href="#"
               class="block mt-4 lg:inline-block lg:mt-0 hover-underline-animation"
-            >Score</a>
+            >Score</a> -->
+            <h1 class="block mt-4 lg:inline-block lg:mt-0 text-gray-400">Score</h1>
           </nuxt-link>
           <nuxt-link to="/about">
             <a

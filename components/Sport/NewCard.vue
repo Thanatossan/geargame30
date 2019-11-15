@@ -7,7 +7,7 @@
       />
       <div class="px-6 ">
         <p class="text-gray-700 text-base">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus
+          Coming soon
         </p>
       </div>
     </div>
@@ -18,7 +18,7 @@
       />
       <div class="px-6 ">
         <p class="text-gray-700 text-base">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus
+          Coming soon
         </p>
       </div>
     </div>
@@ -29,7 +29,7 @@
       />
       <div class="px-6">
         <p class="text-gray-700 text-base">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus
+          Coming soon
         </p>
       </div>
     </div>
@@ -40,7 +40,7 @@
       />
       <div class="px-6">
         <p class="text-gray-700 text-base">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus
+          Coming soon
         </p>
       </div>
     </div>
