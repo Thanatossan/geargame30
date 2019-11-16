@@ -4,11 +4,14 @@
       href="https://fonts.googleapis.com/css?family=Rubik&display=swap"
       rel="stylesheet"
     />
-    <div class="container min-h-screen flex justify-center  text-center mx-auto">
+    <div class="container min-h-screen flex justify-center text-center mx-auto">
 
       <div class="w-5/6">
+
         <navbar />
         <chaingmai />
+        <engineer />
+        <geargame />
       </div>
     </div>
     <border />
@@ -29,11 +32,15 @@ import navbar from "~/components/navbar";
 import border from "~/components/border";
 import Footer from "~/components/Footer";
 import chaingmai from "~/components/about/chaingmai_history";
+import geargame from "~/components/about/geargame_history";
+import engineer from "~/components/about/eng_history";
 export default {
   components: {
     navbar,
     border,
     chaingmai,
+    engineer,
+    geargame,
     Footer
   }
 };

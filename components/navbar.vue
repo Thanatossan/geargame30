@@ -44,7 +44,7 @@
               href="#"
               class="block mt-4 lg:inline-block lg:mt-0 hover-underline-animation"
             >Sponcer</a> -->
-            <h1 class="block mt-4 lg:inline-block lg:mt-0 text-gray-400">Sponcer</h1>
+            <h1 class="block mt-4 lg:inline-block lg:mt-0 text-gray-400">Sponser</h1>
           </nuxt-link>
           <nuxt-link to="/schedule">
             <a

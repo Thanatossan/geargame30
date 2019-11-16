@@ -11,9 +11,11 @@
         <promote />
         <br />
         <border />
+        <!-- 
         <sponcer />
         <br />
         <border />
+        -->
         <br />
         <Sport />
         <br />

@@ -3,7 +3,7 @@
     <div class="flex-1 max-w-sm rounded overflow-hidden w-auto h-auto border-solid border-2 border-gray-600">
       <img
         class="w-full"
-        src="~/assets/image/JhangLekGames-Logo.png"
+        src="~/assets/image/JhangLekGames-Logo_wb.png"
       />
       <div class="px-6 ">
         <p class="text-gray-700 text-base">
@@ -14,7 +14,7 @@
     <div class="flex-1 max-w-sm rounded overflow-hidden  w-auto h-auto border-solid border-2 border-gray-600">
       <img
         class="w-full"
-        src="~/assets/image/JhangLekGames-Logo.png"
+        src="~/assets/image/JhangLekGames-Logo_wb.png"
       />
       <div class="px-6 ">
         <p class="text-gray-700 text-base">
@@ -25,7 +25,7 @@
     <div class="flex-1 max-w-sm rounded overflow-hidden w-auto h-auto border-solid border-2 border-gray-600">
       <img
         class="w-full"
-        src="~/assets/image/JhangLekGames-Logo.png"
+        src="~/assets/image/JhangLekGames-Logo_wb.png"
       />
       <div class="px-6">
         <p class="text-gray-700 text-base">
@@ -36,7 +36,7 @@
     <div class="flex-1 max-w-sm rounded overflow-hidden w-auto h-auto border-solid border-2 border-gray-600">
       <img
         class="w-full"
-        src="~/assets/image/JhangLekGames-Logo.png"
+        src="~/assets/image/JhangLekGames-Logo_wb.png"
       />
       <div class="px-6">
         <p class="text-gray-700 text-base">
