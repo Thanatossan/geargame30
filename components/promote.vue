@@ -13,7 +13,11 @@
         egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend
         leo.
       </p>
-      <a href="https://geargames30.eng.cmu.ac.th/login"> เข้าสู่ระบบลงทะเบียน </a>
+      <br>
+      <button
+        class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded-full"
+        onclick="window.location = 'https://geargames30.eng.cmu.ac.th/login'"
+      >เข้าสู่ระบบกรอกข้อมูส่วนตัว </button>
     </div>
   </div>
 </template>
