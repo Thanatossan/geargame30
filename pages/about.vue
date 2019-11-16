@@ -12,6 +12,7 @@
         <chaingmai />
         <engineer />
         <geargame />
+        <univer />
       </div>
     </div>
     <border />
@@ -34,6 +35,7 @@ import Footer from "~/components/Footer";
 import chaingmai from "~/components/about/chaingmai_history";
 import geargame from "~/components/about/geargame_history";
 import engineer from "~/components/about/eng_history";
+import univer from "~/components/about/univer_list";
 export default {
   components: {
     navbar,
@@ -41,6 +43,7 @@ export default {
     chaingmai,
     engineer,
     geargame,
+    univer,
     Footer
   }
 };
