@@ -17,10 +17,19 @@
       <div class="px-3">
         <p>คณะวิศวกรรมศาสตร์ มหาวิทยาลัยเชียงใหม่ </p>
         <p> 239 ถ.ห้วยแก้ว ต.สุเทพ อ.เมือง จ.เชียงใหม่ 50200</p>
-        <p> 0xx-xxxxxxx , 0xx-xxxxxxx</p>
+        <p> 095-134-6488 , 088-225-7959</p>
+        <a href="https://www.facebook.com/Jhanglekgames/">
+          <img
+            src="~/assets/image/facebook.png"
+            width="20rem"
+            class="ml-2"
+          >
+        </a>
       </div>
+
     </div>
   </div>
+
 </template>
 
 <script>
