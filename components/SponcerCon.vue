@@ -1,7 +1,7 @@
 <template>
   <div class="container flex flex-col">
     <div class="w1/2">
-      <h2 id="Sponcer">Sponcer Content</h2>
+      <h2 id="Sponcer">Sponsor Contents</h2>
     </div>
     <NewCard />
     <a class="text-right" href="#"> See more ></a>
