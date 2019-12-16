@@ -1,20 +1,20 @@
 <template>
   <div class=" md:flex flex m-6 container">
     <div class="w-1/2 ">
-      <div
-        class="border-solid border-2 border-gray-600 justify-center items-center mx-auto px-auto"
-      >
-        <img id="logo-figure" src="~/assets/image/JhangLekGames-Logo.png" />
+      <div class="justify-center items-center mx-auto px-auto">
+        <img src="~/assets/image/information.jpg" />
       </div>
     </div>
-    <div class="w-1/2 pl-6">
-      <p>
-        Pellentesque habitant morbi tristique senectus et netus et malesuada
-        fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae,
-        ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam
-        egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend
-        leo.
-      </p>
+    <div class="w-1/2 pl-6 ">
+      <p class="text-left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ยินดีต้อนรับ นักกีฬา คณาจารย์และบุคคลากรทุกท่าน สู่ระบบลงทะเบียน
+        จ๊างเหล็กเกมส์ กีฬาเกียร์ครั้งที่ 30 ทุกท่านสามารถลงทะเบียน เพื่อ
+        กรอกข้อมูลส่วนตัว สำหรับผู้เข้าร่วมกิจกรรม
+        ได้ที่เว็บลงทะเบียน โดยผ่านลิ้งค์ด้านล่าง </p>
+      <br>
+      <button
+        class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded-full "
+        onclick="window.location = 'https://geargames30.eng.cmu.ac.th/login'"
+      >เข้าสู่ระบบกรอกข้อมูลส่วนตัว </button>
     </div>
   </div>
 </template>

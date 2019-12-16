@@ -1,32 +1,46 @@
 <template>
   <div class="container flex">
-    <div
-      class="flex-1 max-w-sm rounded overflow-hidden w-auto h-auto border-solid border-2 border-gray-600"
-    >
-      <img class="w-full" src="~/assets/image/JhangLekGames-Logo.png" />
+    <div class="flex-1 max-w-sm rounded overflow-hidden w-auto h-auto border-solid border-2 border-gray-600">
+      <img
+        class="w-full"
+        src="~/assets/image/JhangLekGames-Logo_wb.png"
+      />
       <div class="px-6 ">
         <p class="text-gray-700 text-base">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus
+          Coming soon
         </p>
       </div>
     </div>
-    <div
-      class="flex-1 max-w-sm rounded overflow-hidden  w-auto h-auto border-solid border-2 border-gray-600"
-    >
-      <img class="w-full" src="~/assets/image/JhangLekGames-Logo.png" />
+    <div class="flex-1 max-w-sm rounded overflow-hidden  w-auto h-auto border-solid border-2 border-gray-600">
+      <img
+        class="w-full"
+        src="~/assets/image/JhangLekGames-Logo_wb.png"
+      />
       <div class="px-6 ">
         <p class="text-gray-700 text-base">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus
+          Coming soon
         </p>
       </div>
     </div>
-    <div
-      class="flex-1 max-w-sm rounded overflow-hidden w-auto h-auto border-solid border-2 border-gray-600"
-    >
-      <img class="w-full" src="~/assets/image/JhangLekGames-Logo.png" />
+    <div class="flex-1 max-w-sm rounded overflow-hidden w-auto h-auto border-solid border-2 border-gray-600">
+      <img
+        class="w-full"
+        src="~/assets/image/JhangLekGames-Logo_wb.png"
+      />
       <div class="px-6">
         <p class="text-gray-700 text-base">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus
+          Coming soon
+        </p>
+      </div>
+    </div>
+    <div class="flex-1 max-w-sm rounded overflow-hidden w-auto h-auto border-solid border-2 border-gray-600">
+      <img
+        class="w-full"
+        src="~/assets/image/JhangLekGames-Logo_wb.png"
+      />
+      <div class="px-6">
+        <p class="text-gray-700 text-base">
+          Coming soon
         </p>
       </div>
     </div>

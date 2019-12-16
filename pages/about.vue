@@ -7,26 +7,12 @@
     <div class="container min-h-screen flex justify-center text-center mx-auto">
 
       <div class="w-5/6">
+
         <navbar />
-        <promote />
-        <br />
-        <border />
-        <!-- 
-        <sponcer />
-        <br />
-        <border />
-        -->
-        <br />
-        <Sport />
-        <br />
-        <border />
-        <br />
-        <News />
-        <br />
-        <border />
-        <br />
-        <SponcerCon />
-        <br />
+        <chaingmai />
+        <engineer />
+        <geargame />
+        <univer />
       </div>
     </div>
     <border />
@@ -44,22 +30,20 @@
 
 <script>
 import navbar from "~/components/navbar";
-import promote from "~/components/promote";
-import sponcer from "~/components/sponcer";
 import border from "~/components/border";
-import Sport from "~/components/Sport";
-import News from "~/components/News";
-import SponcerCon from "~/components/SponcerCon";
 import Footer from "~/components/Footer";
+import chaingmai from "~/components/about/chaingmai_history";
+import geargame from "~/components/about/geargame_history";
+import engineer from "~/components/about/eng_history";
+import univer from "~/components/about/univer_list";
 export default {
   components: {
     navbar,
-    promote,
-    sponcer,
     border,
-    Sport,
-    News,
-    SponcerCon,
+    chaingmai,
+    engineer,
+    geargame,
+    univer,
     Footer
   }
 };

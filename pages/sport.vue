@@ -1,22 +1,20 @@
 <template>
   <div>
     <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet" />
-    <div class="container flex justify-center items-center text-center mx-auto">
-      <div class="w-4/6">
+    <div class="container min-h-screen flex justify-center text-center mx-auto">
+      <div class="w-5/6">
         <navbar />
+        <!-- title section -->
+        <div class="flex flex-col justify-center mb-4 bg-red-800 text-center lg:h-48 w-full">
+          <label class="default-text" style="font-size:55px; color:white;">SPORTS</label>
+        </div>
+        <!-- content section -->
+        <sportCon />
       </div>
     </div>
+
     <br />
 
-    <!-- title section -->
-    <div class="flex flex-col justify-center mb-4 bg-red-800 text-center lg:h-48 w-full">
-        <label class="default-text" style="font-size:55px; color:white;">SPORTS</label>
-    </div>
- 
-    <!-- content section -->
-    <div class="container text-center">
-        <sportCon />
-    </div>
     <!-- footer -->
     <br />
     <border />
@@ -33,7 +31,7 @@
 <script>
 import navbar from "~/components/navbar";
 import border from "~/components/border";
-import sportCon from "~/components/Sport/sportType";
+import sportCon from "~/components/Sport/sportCard";
 import Footer from "~/components/Footer";
 export default {
   components: {

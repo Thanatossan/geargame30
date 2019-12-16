@@ -7,26 +7,12 @@
     <div class="container min-h-screen flex justify-center text-center mx-auto">
 
       <div class="w-5/6">
+
         <navbar />
-        <promote />
-        <br />
+        <Map />
+
         <border />
-        <!-- 
-        <sponcer />
-        <br />
-        <border />
-        -->
-        <br />
-        <Sport />
-        <br />
-        <border />
-        <br />
-        <News />
-        <br />
-        <border />
-        <br />
-        <SponcerCon />
-        <br />
+        <img src="~/assets/Map/cmu_map.png" />
       </div>
     </div>
     <border />
@@ -41,25 +27,16 @@
 
   </div>
 </template>
-
 <script>
 import navbar from "~/components/navbar";
-import promote from "~/components/promote";
-import sponcer from "~/components/sponcer";
 import border from "~/components/border";
-import Sport from "~/components/Sport";
-import News from "~/components/News";
-import SponcerCon from "~/components/SponcerCon";
+import Map from "~/components/Map/Map";
 import Footer from "~/components/Footer";
 export default {
   components: {
     navbar,
-    promote,
-    sponcer,
     border,
-    Sport,
-    News,
-    SponcerCon,
+    Map,
     Footer
   }
 };

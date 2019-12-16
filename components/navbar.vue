@@ -1,55 +1,76 @@
 <template>
   <div>
-    <nav class="flex items-center justify-between flex-wrap p-6">
+    <nav class="flex items-center justify-between flex-wrap p-2">
       <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
         <div class="text-sm lg:flex-grow">
-          <img src="~/assets/image/JhangLekGames-Logo.png" width="141" />
+          <img
+            src="~/assets/image/JhangLekGames-Logo.png"
+            width="141"
+          />
         </div>
-        <div class="text-gray-700">
+        <div class="text-gray-700 pt-3">
           <nuxt-link to="/">
             <a
-            href="#"
-            class="block mt-4 lg:inline-block lg:mt-0 hover-underline-animation"
-            >Home</a
-          >
+              href="#"
+              class="block mt-4 lg:inline-block lg:mt-0 hover-underline-animation"
+            >Home</a>
           </nuxt-link>
-          <nuxt-link to="sport">
-          <a
-            href="#"
-            class="block mt-4 lg:inline-block lg:mt-0 hover-underline-animation "
-            >Sport</a
-          >
+          <nuxt-link to="/sport">
+            <a
+              href="#"
+              class="block mt-4 lg:inline-block lg:mt-0 hover-underline-animation"
+            >Sport</a>
+            <!-- <h1 class="block mt-4 lg:inline-block lg:mt-0 text-gray-400">Sport</h1> -->
           </nuxt-link>
-          <a
-            href="#"
-            class="block mt-4 lg:inline-block lg:mt-0 hover-underline-animation"
-            >Mr. & Miss</a
-          >
-          <a
-            href="#"
-            class="block mt-4 lg:inline-block lg:mt-0 hover-underline-animation"
-            >News</a
-          >
-          <a
-            href="#"
-            class="block mt-4 lg:inline-block lg:mt-0 hover-underline-animation"
-            >Sponcer</a
-          >
-          <a
-            href="#"
-            class="block mt-4 lg:inline-block lg:mt-0 hover-underline-animation"
-            >Schedule</a
-          >
-          <a
-            href="#"
-            class="block mt-4 lg:inline-block lg:mt-0 hover-underline-animation"
-            >About</a
-          >
-          <a
-            href="#"
-            class="block mt-4 lg:inline-block lg:mt-0 hover-underline-animation"
-            >Contact</a
-          >
+          <nuxt-link to="#">
+            <!--
+            <a
+              href="#"
+              class="block mt-4 lg:inline-block lg:mt-0 hover-underline-animation"
+            >Mr. & Miss</a>
+            -->
+            <h1 class="block mt-4 lg:inline-block lg:mt-0 text-gray-400">Mr. & Miss</h1>
+          </nuxt-link>
+          <nuxt-link to="#">
+            <!--<a
+              href="#"
+              class="block mt-4 lg:inline-block lg:mt-0 hover-underline-animation"
+            >News</a> -->
+            <h1 class="block mt-4 lg:inline-block lg:mt-0 text-gray-400">News</h1>
+          </nuxt-link>
+          <nuxt-link to="#">
+            <!--
+            <a
+              href="#"
+              class="block mt-4 lg:inline-block lg:mt-0 hover-underline-animation"
+            >Sponcer</a> -->
+            <h1 class="block mt-4 lg:inline-block lg:mt-0 text-gray-400">Sponsor</h1>
+          </nuxt-link>
+          <nuxt-link to="/schedule">
+            <a
+              href="#"
+              class="block mt-4 lg:inline-block lg:mt-0 hover-underline-animation"
+            >Schedule</a>
+          </nuxt-link>
+          <nuxt-link to="/Map">
+            <a
+              href="#"
+              class="block mt-4 lg:inline-block lg:mt-0 hover-underline-animation"
+            >Map</a>
+          </nuxt-link>
+          <nuxt-link to="#">
+            <!--  <a
+              href="#"
+              class="block mt-4 lg:inline-block lg:mt-0 hover-underline-animation"
+            >Score</a> -->
+            <h1 class="block mt-4 lg:inline-block lg:mt-0 text-gray-400">Score</h1>
+          </nuxt-link>
+          <nuxt-link to="/about">
+            <a
+              href="#"
+              class="block mt-4 lg:inline-block lg:mt-0 hover-underline-animation"
+            >About</a>
+          </nuxt-link>
         </div>
       </div>
     </nav>
@@ -62,7 +83,7 @@ export default {};
 
 <style>
 a {
-  margin: 10px;
+  margin: 0.5rem;
 }
 .hover-underline-animation {
   display: inline-block;
