@@ -3,7 +3,7 @@
     <div class="container">
       <h2 class="text-3xl">มหาลัยที่เข้าร่วม</h2>
       <border />
-      <div class="flex flex-row flex-wrap m-2 ">
+      <div class="flex flex-row flex-wrap m-4 justify-center">
 
         <img
           src="~/assets/uni_logo/1.png"

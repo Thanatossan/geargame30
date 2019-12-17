@@ -12,7 +12,9 @@
         <Map />
 
         <border />
-        <img src="~/assets/Map/cmu_map.png" />
+        <div class="">
+          <img src="~/assets/Map/cmu_map.png"/>
+        </div>
       </div>
     </div>
     <border />

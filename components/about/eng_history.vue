@@ -3,13 +3,13 @@
     <div class="container">
       <h2 class="text-3xl">ประวัติ คณะวิศวกรรมศาสตร์ มหาวิทยาลัยเชียงใหม่</h2>
       <border />
-      <div class="flex ">
-        <div class="m-4 w-1/3 ">
+      <div class="flex flex-col lg:flex-row">
+        <div class="m-auto lg:m-4 w-1/2 lg:w-1/3">
           <img src="~/assets/uni_logo/eng_logo.png">
           <br>
           <img src="~/assets/uni_logo/smo_logo.png">
         </div>
-        <div class="m-10 text-left w-2/3">
+        <div class="m-auto lg:m-10 text-left w-11/12 lg:w-2/3">
           <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; คณะวิศวกรรมศาสตร์ถือกำเนิดอย่างเป็นทางการ ในวันที่ 3 มิถุนายน พ.ศ. 2513
             โดยมหาวิทยาลัยเชียงใหม่ได้ดำเนินการจัดตั้งคณะวิศวกรรมศาสตร์ เป็นการภายในตั้งแต่สมัยที่ศาสตราจารย์ ดร.บัวเรศ คำทอง เป็นอธิการบดีมหาวิทยาลัยเชียงใหม่
             ซึ่งได้รับความร่วมมือและประสานงานอย่างใกล้ชิดกับ ศาสตราจารย์ ดร.อรุณ สรเทศน์ (คณบดีคณะวิศวกรรมศาสตร์ จุฬาลงกรณ์มหาวิทยาลัย

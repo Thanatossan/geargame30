@@ -1,11 +1,11 @@
 <template>
-  <div class=" md:flex flex m-6 container">
-    <div class="w-1/2 ">
+  <div class="flex flex-col lg:flex-row m-6 container">
+    <div class="w-auto lg:w-1/2 ">
       <div class="justify-center items-center mx-auto px-auto">
         <img src="~/assets/image/information.jpg" />
       </div>
     </div>
-    <div class="w-1/2 pl-6 ">
+    <div class="w-auto lg:w-1/2 pl-6 ">
       <p class="text-left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ยินดีต้อนรับ นักกีฬา คณาจารย์และบุคคลากรทุกท่าน สู่ระบบลงทะเบียน
         จ๊างเหล็กเกมส์ กีฬาเกียร์ครั้งที่ 30 ทุกท่านสามารถลงทะเบียน เพื่อ
         กรอกข้อมูลส่วนตัว สำหรับผู้เข้าร่วมกิจกรรม
