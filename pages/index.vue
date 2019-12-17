@@ -5,17 +5,14 @@
       rel="stylesheet"
     />
     <div class="container min-h-screen flex justify-center text-center mx-auto">
-
       <div class="w-5/6">
         <navbar />
         <promote />
         <br />
         <border />
-        <!-- 
         <sponcer />
         <br />
         <border />
-        -->
         <br />
         <Sport />
         <br />
@@ -34,11 +31,9 @@
       <div class="w-5/6">
         <div class="my-5 mx-auto text-right">
           <Footer />
-
         </div>
       </div>
     </div>
-
   </div>
 </template>
 
