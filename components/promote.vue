@@ -1,8 +1,11 @@
 <template>
   <div class="flex flex-col lg:flex-row m-6 container">
     <div class="w-auto lg:w-1/2 ">
-      <div class="justify-center items-center mx-auto px-auto">
-        <img src="~/assets/image/information.jpg" />
+      <div class="justify-center items-center mx-auto px-auto justify-center text-center">
+        <img
+          src="~/assets/image/information.jpg"
+          class="sm:object-scale-down"
+        />
       </div>
     </div>
     <div class="w-auto lg:w-1/2 pl-6 ">
