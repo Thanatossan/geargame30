@@ -3,14 +3,14 @@
     <div class="container">
       <h2 class="text-3xl">ประวัติความเป็นมา มหาวิทยาลัยเชียงใหม่</h2>
       <border />
-      <div class="flex ">
-        <div class="m-4 w-1/3 ">
+      <div class="flex flex-col lg:flex-row">
+        <div class="m-auto lg:m-4 w-1/2 lg:w-1/3"> 
           <img
             src="~/assets/uni_logo/chaingmai_logo.png"
             width="1200"
           >
         </div>
-        <div class="m-10 text-left w-2/3">
+        <div class="m-auto lg:m-10 text-left w-11/12 lg:w-2/3">
           <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; มหาวิทยาลัยเชียงใหม่ (Chiang Mai University; อักษรย่อ: มช.) เป็นมหาวิทยาลัย
             ที่ตั้งขึ้นในส่วนภูมิภาคเป็นแห่งแรกของประเทศไทย
             และเป็นมหาวิทยาลัยแห่งแรกที่เรียกชื่อตามชื่อเมือง ปัจจุบันมหาวิทยาลัยตั้งอยู่เชิงดอยสุเทพ

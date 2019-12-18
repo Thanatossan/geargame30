@@ -3,11 +3,11 @@
     <div class="container">
       <h2 class="text-3xl">ประวัติและความเป็นมาของกีฬาเกียร์สัมพันธ์ครั้งที่ 30 "จ้างเหล็กเกมส์" </h2>
       <border />
-      <div class="flex ">
-        <div class="m-4 w-1/3 ">
+      <div class="flex flex-col lg:flex-row">
+        <div class="m-auto lg:m-4 w-1/2 lg:w-1/3">
           <img src="~/assets/image/JhangLekGames-Logo.png">
         </div>
-        <div class="m-10 text-left w-2/3">
+        <div class="m-auto lg:m-10 text-left w-11/12 lg:w-2/3">
           <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; กีฬาวิศวกรรมศาสตร์แห่งประเทศไทย ครั้งที่ 30 จัดขึ้นที่มหาวิทยาลัยเชียงใหม่ โดยมีชื่อว่า
             <b>“จ๊างเหล็กเกมส์”</b> คำว่า <b>“จ๊าง”</b> ที่หมายถึง <b>“ช้าง”</b> ในภาษาเหนือ และเป็นสัญลักษณ์ของมหาวิทยาลัยเชียงใหม่ และคำว่า
             “เหล็ก” ที่แสดงถึงนิสิตนักศึกษาคณะวิศวกรรมศาสตร์ทุกสถาบันได้มาร่วมแข่งขันกีฬา และแลกเปลี่ยนเรียนรู้ประสบการณ์ วัฒนธรรม

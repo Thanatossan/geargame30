@@ -4,15 +4,17 @@
       href="https://fonts.googleapis.com/css?family=Rubik&display=swap"
       rel="stylesheet"
     />
-    <div class="container min-h-screen flex justify-center text-center mx-auto">
+    <div class="container max-w-screen-xl lg:mx-auto px-6">
 
-      <div class="w-5/6">
+      <div>
 
         <navbar />
         <Map />
 
         <border />
-        <img src="~/assets/Map/cmu_map.png" />
+        <div class="">
+          <img src="~/assets/Map/cmu_map.png" />
+        </div>
       </div>
     </div>
     <border />

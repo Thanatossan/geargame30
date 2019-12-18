@@ -4,9 +4,9 @@
       href="https://fonts.googleapis.com/css?family=Rubik&display=swap"
       rel="stylesheet"
     />
-    <div class="container min-h-screen flex justify-center text-center mx-auto">
+    <div class="container max-w-screen-xl lg:mx-auto px-6">
 
-      <div class="w-5/6">
+      <div>
         <navbar />
         <promote />
         <br />
@@ -30,8 +30,8 @@
       </div>
     </div>
     <border />
-    <div class="container flex justify-center items-center text-center mx-auto">
-      <div class="w-5/6">
+    <div class="container max-w-screen-xl lg:mx-auto px-6">
+      <div>
         <div class="my-5 mx-auto text-right">
           <Footer />
 
