@@ -9,7 +9,7 @@
       <br />
       <div id="match_table">
         <div class="border-b-2 mt-3 mb-8"></div>
-        <div class="md:flex bg-gray-100 rounded-lg p-1 m-3">
+        <div class="flex bg-gray-100 rounded-lg p-1 m-3">
           <img
             src="~/assets/image/JhangLekGames-Logo_wb.png"
             width="100"
@@ -17,14 +17,14 @@
           <h2 class="m-auto">Coming soon</h2>
         </div>
 
-        <div class="md:flex bg-gray-100 rounded-lg p-1 m-3">
+        <div class="flex bg-gray-100 rounded-lg p-1 m-3">
           <img
             src="~/assets/image/JhangLekGames-Logo_wb.png"
             width="100"
           />
           <h2 class="m-auto">Coming soon</h2>
         </div>
-        <div class="md:flex bg-gray-100 rounded-lg p-1 m-3">
+        <div class="flex bg-gray-100 rounded-lg p-1 m-3">
           <img
             src="~/assets/image/JhangLekGames-Logo_wb.png"
             width="100"
