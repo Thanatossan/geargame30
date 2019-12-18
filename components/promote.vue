@@ -1,10 +1,10 @@
 <template>
-  <div class="flex flex-col lg:flex-row m-6 container">
+  <div class="flex flex-col lg:flex-row container">
     <div class="w-auto lg:w-1/2 ">
-      <div class="justify-center items-center mx-auto px-auto justify-center text-center">
+      <div class="container max-w-screen-xl lg:mx-auto px-6">
         <img
           src="~/assets/image/information.jpg"
-          class="sm:object-scale-down"
+          class="lg:object-scale-down"
         />
       </div>
     </div>

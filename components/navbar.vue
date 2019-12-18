@@ -5,7 +5,7 @@
         <div class="text-sm lg:flex-grow">
           <img
             src="~/assets/image/JhangLekGames-Logo.png"
-            width="141"
+            class="sm:w-auto md:w-1/2 lg:w-1/4"
           />
         </div>
 
@@ -36,51 +36,36 @@
             id="menu"
           >
             <nav class="flex flex-col lg:flex-row">
-              <nuxt-link
-                to="/"
-                class="hover:bg-gray-200"
-              >
+              <nuxt-link to="/">
                 <a
                   href="#"
                   class="block my-2 lg:inline-block lg:my-0 hover-underline-animation "
                 >Home</a>
               </nuxt-link>
-              <nuxt-link
-                to="#"
-                class="hover:bg-gray-200"
-              >
+              <nuxt-link to="#">
                 <!--<a
               href="#"
               class="block mt-4 lg:inline-block lg:mt-0 hover-underline-animation"
             >Sport</a> -->
                 <h1 class="block my-2 lg:inline-block lg:my-0 text-gray-400">Sport</h1>
               </nuxt-link>
-              <nuxt-link
-                to="#"
-                class="hover:bg-gray-200"
-              >
+              <nuxt-link to="#">
                 <!--
             <a
               href="#"
               class="block mt-4 lg:inline-block lg:mt-0 hover-underline-animation"
             >Mr. & Miss</a>
             -->
-                <h1 class="block my-2 lg:inline-block lg:my-0 text-gray-400">Mr. & Miss</h1>
+                <h1 class="block my-2 lg:inline-block lg:my-0 text-gray-400">Ambassador</h1>
               </nuxt-link>
-              <nuxt-link
-                to="#"
-                class="hover:bg-gray-200"
-              >
+              <nuxt-link to="#">
                 <!--<a
               href="#"
               class="block mt-4 lg:inline-block lg:mt-0 hover-underline-animation"
             >News</a> -->
                 <h1 class="block my-2 lg:inline-block lg:my-0 text-gray-400">News</h1>
               </nuxt-link>
-              <nuxt-link
-                to="#"
-                class="hover:bg-gray-200"
-              >
+              <nuxt-link to="#">
                 <!--
             <a
               href="#"
@@ -88,38 +73,26 @@
             >Sponcer</a> -->
                 <h1 class="block my-2 lg:inline-block lg:my-0 text-gray-400">Sponsor</h1>
               </nuxt-link>
-              <nuxt-link
-                to="/schedule"
-                class="hover:bg-gray-200"
-              >
+              <nuxt-link to="/schedule">
                 <a
                   href="#"
                   class="block my-2 lg:inline-block lg:my-0 hover-underline-animation"
                 >Schedule</a>
               </nuxt-link>
-              <nuxt-link
-                to="/Map"
-                class="hover:bg-gray-200"
-              >
+              <nuxt-link to="/Map">
                 <a
                   href="#"
                   class="block my-2 lg:inline-block lg:my-0 hover-underline-animation"
                 >Map</a>
               </nuxt-link>
-              <nuxt-link
-                to="#"
-                class="hover:bg-gray-200"
-              >
+              <nuxt-link to="#">
                 <!--  <a
               href="#"
               class="block mt-4 lg:inline-block lg:mt-0 hover-underline-animation"
             >Score</a> -->
                 <h1 class="block my-2 lg:inline-block lg:my-0 text-gray-400">Score</h1>
               </nuxt-link>
-              <nuxt-link
-                to="/about"
-                class="hover:bg-gray-200"
-              >
+              <nuxt-link to="/about">
                 <a
                   href="#"
                   class="block my-2 lg:inline-block lg:my-0 hover-underline-animation"
