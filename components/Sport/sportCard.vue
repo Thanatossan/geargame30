@@ -20,7 +20,7 @@
         <nuxt-link to="sportDetails">
           <div class="card-body card-border m-3 btn btn-outline-danger">
             <img
-              src="~/assets/sport_img/batmintion.PNG"
+              src="~/assets/sport_img/badminton.PNG"
               class="object-fill h-auto w-auto"
             />
             <br />
@@ -48,7 +48,7 @@
         <nuxt-link to="sportDetails">
           <div class="card-body card-border m-3 btn btn-outline-danger">
             <img
-              src="~/assets/image/JhangLekGames-Logo.png"
+              src="~/assets/sport_img/basketball.PNG"
               class="object-fill h-auto w-auto"
             />
             <br />
@@ -63,7 +63,7 @@
       <div class="flex-col">
         <nuxt-link to="sportDetails">
           <div class="card-body card-border m-3 btn btn-outline-danger">
-            <img src="~/assets/image/JhangLekGames-Logo.png" />
+            <img src="~/assets/sport_img/e-sport.PNG" />
             <br />
             <border />
             <br />
@@ -74,7 +74,7 @@
       <div class="flex-col">
         <nuxt-link to="sportDetails">
           <div class="card-body card-border m-3 btn btn-outline-danger">
-            <img src="~/assets/image/JhangLekGames-Logo.png" />
+            <img src="~/assets/sport_img/swim.PNG" />
             <br />
             <border />
             <br />
@@ -85,7 +85,7 @@
       <div class="flex-col">
         <nuxt-link to="sportDetails">
           <div class="card-body card-border m-3 btn btn-outline-danger">
-            <img src="~/assets/image/JhangLekGames-Logo.png" />
+            <img src="~/assets/sport_img/pingpong.PNG" />
             <br />
             <border />
             <br />
@@ -96,7 +96,7 @@
       <div class="flex-col">
         <nuxt-link to="sportDetails">
           <div class="card-body card-border m-3 btn btn-outline-danger">
-            <img src="~/assets/image/JhangLekGames-Logo.png" />
+            <img src="~/assets/sport_img/boardgame.PNG" />
             <br />
             <border />
             <br />
@@ -109,7 +109,7 @@
       <div class="flex-col">
         <nuxt-link to="sportDetails">
           <div class="card-body card-border m-3 btn btn-outline-danger">
-            <img src="~/assets/image/JhangLekGames-Logo.png" />
+            <img src="~/assets/sport_img/volleyball.PNG" />
             <br />
             <border />
             <br />
@@ -120,7 +120,7 @@
       <div class="flex-col">
         <nuxt-link to="sportDetails">
           <div class="card-body card-border m-3 btn btn-outline-danger">
-            <img src="~/assets/image/JhangLekGames-Logo.png" />
+            <img src="~/assets/sport_img/football.PNG" />
             <br />
             <border />
             <br />
@@ -131,22 +131,22 @@
       <div class="flex-col">
         <nuxt-link to="sportDetails">
           <div class="card-body card-border m-3 btn btn-outline-danger">
-            <img src="~/assets/image/JhangLekGames-Logo.png" />
+            <img src="~/assets/sport_img/sapak.PNG" />
             <br />
             <border />
             <br />
-            <label class="default-text">ตะกร้อ</label>
+            <label class="default-text">เซปักตะกร้อ</label>
           </div>
         </nuxt-link>
       </div>
       <div class="flex-col">
         <nuxt-link to="sportDetails">
           <div class="card-body card-border m-3 btn btn-outline-danger">
-            <img src="~/assets/image/JhangLekGames-Logo.png" />
+            <img src="~/assets/sport_img/softball.PNG" />
             <br />
             <border />
             <br />
-            <label class="default-text">ซอฟบอล</label>
+            <label class="default-text">ซอร์ฟบอล</label>
           </div>
         </nuxt-link>
       </div>
@@ -155,7 +155,7 @@
       <div class="flex-col">
         <nuxt-link to="sportDetails">
           <div class="card-body card-border m-3 btn btn-outline-danger">
-            <img src="~/assets/image/JhangLekGames-Logo.png" />
+            <img src="~/assets/sport_img/tennis.PNG" />
             <br />
             <border />
             <br />
@@ -166,7 +166,7 @@
       <div class="flex-col">
         <nuxt-link to="sportDetails">
           <div class="card-body card-border m-3 btn btn-outline-danger">
-            <img src="~/assets/image/JhangLekGames-Logo.png" />
+            <img src="~/assets/sport_img/petong.PNG" />
             <br />
             <border />
             <br />
@@ -177,7 +177,7 @@
       <div class="flex-col">
         <nuxt-link to="sportDetails">
           <div class="card-body card-border m-3 btn btn-outline-danger">
-            <img src="~/assets/image/JhangLekGames-Logo.png" />
+            <img src="~/assets/sport_img/rugby.PNG" />
             <br />
             <border />
             <br />
@@ -188,11 +188,11 @@
       <div class="flex-col">
         <nuxt-link to="sportDetails">
           <div class="card-body card-border m-3 btn btn-outline-danger">
-            <img src="~/assets/image/JhangLekGames-Logo.png" />
+            <img src="~/assets/sport_img/san.PNG" />
             <br />
             <border />
             <br />
-            <label class="default-text">sport</label>
+            <label class="default-text">สันทนาการ</label>
           </div>
         </nuxt-link>
       </div>

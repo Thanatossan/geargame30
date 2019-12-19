@@ -5,7 +5,7 @@
         <div class="text-sm lg:flex-grow">
           <img
             src="~/assets/image/JhangLekGames-Logo.png"
-            class="sm:w-auto md:w-1/2 lg:w-1/4"
+            class="sm:w-1/2 md:w-1/2 lg:w-1/4 object-fill"
           />
         </div>
 
@@ -32,7 +32,7 @@
           />
 
           <div
-            class="hidden lg:flex lg:items-center lg:w-auto w-full"
+            class="hidden lg:flex lg:items-center lg:w-1/2 w-full"
             id="menu"
           >
             <nav class="flex flex-col lg:flex-row">

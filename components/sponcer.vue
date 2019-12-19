@@ -6,33 +6,26 @@
     <div class="flex justify-center mt-4 rounded-full overflow-x-auto">
 
       <img
-        src="~/assets/image/JhangLekGames-Logo.png"
-        width="100"
+        src="~/assets/sponcer/grandsport2.png"
+        width="150"
       >
       <img
-        src="~/assets/image/JhangLekGames-Logo.png"
-        width="100"
+        src="~/assets/sponcer/sfx.png"
+        width="150"
       >
       <img
-        src="~/assets/image/JhangLekGames-Logo.png"
-        width="100"
+        src="~/assets/sponcer/step2.png"
+        width="150"
       >
       <img
-        src="~/assets/image/JhangLekGames-Logo.png"
-        width="100"
+        src="~/assets/sponcer/true.png"
+        width="150"
       >
       <img
-        src="~/assets/image/JhangLekGames-Logo.png"
-        width="100"
+        src="~/assets/sponcer/ufare.png"
+        width="150"
       >
-      <img
-        src="~/assets/image/JhangLekGames-Logo.png"
-        width="100"
-      >
-      <img
-        src="~/assets/image/JhangLekGames-Logo.png"
-        width="100"
-      >
+
     </div>
   </div>
 </template>
