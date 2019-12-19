@@ -5,19 +5,15 @@
       rel="stylesheet"
     />
     <div class="container max-w-screen-xl lg:mx-auto px-6">
-
       <div>
         <navbar />
-        <h2 class="text-center text-5xl"> Sports</h2>
-        <div class="flex flex-col lg:flex-row container xl:m-5">
-          <div class=" lg:pl-2 w-auto lg:w-1/2 overflow-y-auto">
-            <h2> sssss</h2>
-          </div>
-          <div class=" lg:pl-2 w-auto lg:w-1/2 overflow-y-auto">
-            <h2> sssss</h2>
-          </div>
+        <div class="flex flex-col justify-center mb-4 bg-red-800 text-center lg:h-48 w-full">
+          <label
+            class="default-text"
+            style="font-size:55px; color:white;"
+          >SPORTS</label>
         </div>
-
+        <sportCard />
       </div>
     </div>
     <border />
@@ -25,20 +21,20 @@
       <div>
         <div class="my-5 mx-auto text-right">
           <Footer />
-
         </div>
       </div>
     </div>
-
   </div>
 </template>
 
 <script>
 import navbar from "~/components/navbar";
+import sportCard from "~/components/Sport/sportCard";
 import Footer from "~/components/Footer";
 export default {
   components: {
     navbar,
+    sportCard,
     Footer
   }
 };
