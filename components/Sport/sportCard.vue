@@ -2,7 +2,7 @@
   <section>
     <div class="flex">
       <div class="flex-col">
-        <nuxt-link to="sportDetails">
+        <nuxt-link to="sportDetails/fotsal">
           <div class="card-body card-border m-3">
             <img
               src="~/assets/sport_img/fotsal.PNG"
@@ -10,10 +10,8 @@
               height="1000"
             />
             <br />
-            <border />
-            <br />
-            <label class="default-text">ฟุตซอล</label>
           </div>
+          <h1>FOOTSAL</h1>
         </nuxt-link>
       </div>
       <div class="flex-col">
@@ -24,10 +22,8 @@
               class="object-fill h-auto w-auto"
             />
             <br />
-            <border />
-            <br />
-            <label class="default-text">แบตมินตัน</label>
           </div>
+          <H1> BADMINTON</H1>
         </nuxt-link>
       </div>
       <div class="flex-col">
@@ -38,10 +34,10 @@
               class="object-fill h-auto w-auto"
             />
             <br />
-            <border />
-            <br />
-            <label class="default-text">กรีฑา</label>
           </div>
+          <h1>
+            ATHLETICS
+          </h1>
         </nuxt-link>
       </div>
       <div class="flex-col">
@@ -52,10 +48,10 @@
               class="object-fill h-auto w-auto"
             />
             <br />
-            <border />
-            <br />
-            <label class="default-text">บาสเก็ตบอล</label>
           </div>
+          <h1>
+            BASKETBALL
+          </h1>
         </nuxt-link>
       </div>
     </div>
@@ -65,10 +61,10 @@
           <div class="card-body card-border m-3 btn btn-outline-danger">
             <img src="~/assets/sport_img/e-sport.PNG" />
             <br />
-            <border />
-            <br />
-            <label class="default-text">E-sport</label>
           </div>
+          <h1>
+            E-SPORT
+          </h1>
         </nuxt-link>
       </div>
       <div class="flex-col">
@@ -76,10 +72,10 @@
           <div class="card-body card-border m-3 btn btn-outline-danger">
             <img src="~/assets/sport_img/swim.PNG" />
             <br />
-            <border />
-            <br />
-            <label class="default-text">กีฬาทางน้ำ</label>
           </div>
+          <h1>
+            SWIMMING
+          </h1>
         </nuxt-link>
       </div>
       <div class="flex-col">
@@ -87,10 +83,10 @@
           <div class="card-body card-border m-3 btn btn-outline-danger">
             <img src="~/assets/sport_img/pingpong.PNG" />
             <br />
-            <border />
-            <br />
-            <label class="default-text">ปิงปอง</label>
           </div>
+          <h1>
+            TABLE-TENNIS
+          </h1>
         </nuxt-link>
       </div>
       <div class="flex-col">
@@ -98,10 +94,10 @@
           <div class="card-body card-border m-3 btn btn-outline-danger">
             <img src="~/assets/sport_img/boardgame.PNG" />
             <br />
-            <border />
-            <br />
-            <label class="default-text">หมากกระดาน</label>
           </div>
+          <h1>
+            BOARDGAMES
+          </h1>
         </nuxt-link>
       </div>
     </div>
@@ -111,10 +107,10 @@
           <div class="card-body card-border m-3 btn btn-outline-danger">
             <img src="~/assets/sport_img/volleyball.PNG" />
             <br />
-            <border />
-            <br />
-            <label class="default-text">วอลเล่ย์บอล</label>
           </div>
+          <h1>
+            VOLLEYBALL
+          </h1>
         </nuxt-link>
       </div>
       <div class="flex-col">
@@ -122,10 +118,10 @@
           <div class="card-body card-border m-3 btn btn-outline-danger">
             <img src="~/assets/sport_img/football.PNG" />
             <br />
-            <border />
-            <br />
-            <label class="default-text">ฟุตบอล</label>
           </div>
+          <h1>
+            FOOTBALL
+          </h1>
         </nuxt-link>
       </div>
       <div class="flex-col">
@@ -133,10 +129,10 @@
           <div class="card-body card-border m-3 btn btn-outline-danger">
             <img src="~/assets/sport_img/sapak.PNG" />
             <br />
-            <border />
-            <br />
-            <label class="default-text">เซปักตะกร้อ</label>
           </div>
+          <h1>
+            SEPAKTAKRAW
+          </h1>
         </nuxt-link>
       </div>
       <div class="flex-col">
@@ -144,10 +140,10 @@
           <div class="card-body card-border m-3 btn btn-outline-danger">
             <img src="~/assets/sport_img/softball.PNG" />
             <br />
-            <border />
-            <br />
-            <label class="default-text">ซอร์ฟบอล</label>
           </div>
+          <h1>
+            SOFTBALL
+          </h1>
         </nuxt-link>
       </div>
     </div>
@@ -157,10 +153,10 @@
           <div class="card-body card-border m-3 btn btn-outline-danger">
             <img src="~/assets/sport_img/tennis.PNG" />
             <br />
-            <border />
-            <br />
-            <label class="default-text">เทนนิส</label>
           </div>
+          <h1>
+            TENNIS
+          </h1>
         </nuxt-link>
       </div>
       <div class="flex-col">
@@ -168,10 +164,10 @@
           <div class="card-body card-border m-3 btn btn-outline-danger">
             <img src="~/assets/sport_img/petong.PNG" />
             <br />
-            <border />
-            <br />
-            <label class="default-text">เปตอง</label>
           </div>
+          <h1>
+            PETONG
+          </h1>
         </nuxt-link>
       </div>
       <div class="flex-col">
@@ -179,10 +175,10 @@
           <div class="card-body card-border m-3 btn btn-outline-danger">
             <img src="~/assets/sport_img/rugby.PNG" />
             <br />
-            <border />
-            <br />
-            <label class="default-text">รักบี้</label>
           </div>
+          <h1>
+            RUGBY
+          </h1>
         </nuxt-link>
       </div>
       <div class="flex-col">
@@ -190,10 +186,10 @@
           <div class="card-body card-border m-3 btn btn-outline-danger">
             <img src="~/assets/sport_img/san.PNG" />
             <br />
-            <border />
-            <br />
-            <label class="default-text">สันทนาการ</label>
           </div>
+          <h1>
+            สันทนาการ
+          </h1>
         </nuxt-link>
       </div>
     </div>
