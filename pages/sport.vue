@@ -5,7 +5,7 @@
       rel="stylesheet"
     />
     <div class="container min-h-screen flex justify-center text-center mx-auto">
-      <div class="w-5/6">
+      <div>
         <navbar />
         <!-- title section -->
         <div
