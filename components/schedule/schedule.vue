@@ -3,17 +3,27 @@
     <h2 class="text-left text-5xl"> Schedule</h2>
     <border />
     <br>
+
     <h2 class="bg-gray-300 text-left text-2xl p-2"> Monday 23 December</h2>
     <div class="flex text-xl">
-      <div class="w-1/3">
-        <h2 class="mt-3"> 8:00 น. </h2>
-        <h2 class="mt-3"> 20:00 น.</h2>
-
-      </div>
-      <div class="w-2/3 text-left">
-        <h2 class="mt-3"> ลงทะเบียนนักกีฬา ณ ศาลาอ่างแก้ว </h2>
-        <h2 class="mt-3"> ปิดรับการลงทะเบียน </h2>
-      </div>
+      <table class="table-fixed">
+        <tr>
+          <td>
+            <h2 class="mt-3 px-4"> 8:00 น. </h2>
+          </td>
+          <td>
+            <h2 class="mt-3"> ลงทะเบียนนักกีฬา ณ ศาลาอ่างแก้ว</h2>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <h2 class="mt-3"> 20.00 น. </h2>
+          </td>
+          <td>
+            <h2 class="mt-3"> ปิดรับการลงทะเบียน </h2>
+          </td>
+        </tr>
+      </table>
     </div>
     <br>
     <h2 class="bg-gray-300 text-left text-2xl p-2"> Tuesday 24 December</h2>

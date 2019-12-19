@@ -3,8 +3,16 @@
     <div class="flex justify-center mt-4">
       <h2> Sponser</h2>
     </div>
-    <div class="flex justify-center mt-4 rounded-full">
+    <div class="flex justify-center mt-4 rounded-full overflow-x-auto">
 
+      <img
+        src="~/assets/image/JhangLekGames-Logo.png"
+        width="100"
+      >
+      <img
+        src="~/assets/image/JhangLekGames-Logo.png"
+        width="100"
+      >
       <img
         src="~/assets/image/JhangLekGames-Logo.png"
         width="100"

@@ -8,25 +8,16 @@
 
       <div>
         <navbar />
-        <promote />
-        <br />
-        <border />
+        <h2 class="text-center text-5xl"> Sports</h2>
+        <div class="flex flex-col lg:flex-row container xl:m-5">
+          <div class=" lg:pl-2 w-auto lg:w-1/2 overflow-y-auto">
+            <h2> sssss</h2>
+          </div>
+          <div class=" lg:pl-2 w-auto lg:w-1/2 overflow-y-auto">
+            <h2> sssss</h2>
+          </div>
+        </div>
 
-        <sponcer />
-        <br />
-        <border />
-
-        <br />
-        <Sport />
-        <br />
-        <border />
-        <br />
-        <News />
-        <br />
-        <border />
-        <br />
-        <SponcerCon />
-        <br />
       </div>
     </div>
     <border />
@@ -44,22 +35,10 @@
 
 <script>
 import navbar from "~/components/navbar";
-import promote from "~/components/promote";
-import sponcer from "~/components/sponcer";
-import border from "~/components/border";
-import Sport from "~/components/Sport";
-import News from "~/components/News";
-import SponcerCon from "~/components/SponcerCon";
 import Footer from "~/components/Footer";
 export default {
   components: {
     navbar,
-    promote,
-    sponcer,
-    border,
-    Sport,
-    News,
-    SponcerCon,
     Footer
   }
 };

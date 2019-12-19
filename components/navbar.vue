@@ -42,12 +42,11 @@
                   class="block my-2 lg:inline-block lg:my-0 hover-underline-animation "
                 >Home</a>
               </nuxt-link>
-              <nuxt-link to="#">
-                <!--<a
-              href="#"
-              class="block mt-4 lg:inline-block lg:mt-0 hover-underline-animation"
-            >Sport</a> -->
-                <h1 class="block my-2 lg:inline-block lg:my-0 text-gray-400">Sport</h1>
+              <nuxt-link to="/sport">
+                <a
+                  href="#"
+                  class="block mt-4 lg:inline-block lg:mt-0 hover-underline-animation"
+                >Sports</a>
               </nuxt-link>
               <nuxt-link to="#">
                 <!--
