@@ -4,6 +4,7 @@
         src="~/assets/image/JhangLekGames-Logo.png"
         class="w-auto h-auto"
     >
+    <h1 class="block font-bold text-center text-lg" style="font-size:35px">Judge Login</h1>
   <form class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 ">
     <div class="mb-4">
       <label class="block text-gray-700 text-sm font-bold mb-2" for="username" >
@@ -18,7 +19,7 @@
       <input v-model="password" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline" id="password" type="password" placeholder="password" />
     </div>
     <div class="flex items-center justify-between">
-      <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button">
+      <button v-on:click="login" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button">
         Log in
       </button>
     </div>
@@ -43,7 +44,11 @@ export default {
         }
     },
     methods : {
-       
+       async login(){
+           const user = {username : this.username , password : this.password}
+           const response = await api.post('/api/auth',{user})
+           console.log(response.data);
+       }
     }
 }
 </script>
