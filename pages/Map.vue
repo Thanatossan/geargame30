@@ -23,20 +23,71 @@
 
         </div>
 
-        <h1 class="text-center text-2xl"> แผนที่ สนามแข่งกีฬา </h1>\
+        <h1 class="text-center text-2xl"> แผนที่ สนามแข่งกีฬา </h1>
         <br>
         <border />
 
         <div class="flex">
           <div class="w-3/4">
-            <img src="~/assets/Map/athletic & recreation map.png">
+            <a href="https://goo.gl/maps/2Z74oAbXGAj8gAqw7">
+              <img src="~/assets/Map/athletic & recreation map.png">
+            </a>
           </div>
           <div class="w-1/4">
-            <h1 class=" text-center flex-col"> แผนที่ สนามแข่งกีฬา กรีฑา และ กีฬาสันทนาการ</h1>
+            <br><br><br>
+            <h1 class="text-center flex-col lg:text-lg sm:text-sm"> สนามแข่ง กีฬากรีฑา</h1>
+            <border />
+            <br><br>
+            <p class="text-right"> CMU Main Stadium
+              Suthep, Mueang Chiang Mai District, Chiang Mai 50200</p>
+            <br>
+            <a
+              href="https://goo.gl/maps/2Z74oAbXGAj8gAqw7"
+              class="text-right"
+            > https://goo.gl/maps/2Z74oAbXGAj8gAqw7</a>
           </div>
-
         </div>
-
+        <br><br>
+        <div class="flex">
+          <div class="w-3/4">
+            <a href="https://goo.gl/maps/2Z74oAbXGAj8gAqw7">
+              <img src="~/assets/Map/badminton map.png">
+            </a>
+          </div>
+          <div class="w-1/4">
+            <br><br><br>
+            <h1 class="text-center flex-col lg:text-lg sm:text-sm"> สนามแข่ง กีฬาแบดมินตัน</h1>
+            <border />
+            <br><br>
+            <p class="text-right">Main Gymnasium Chiangmai University
+              Suthep, Mueang Chiang Mai District, Chiang Mai 50200</p>
+            <br>
+            <a
+              href="https://goo.gl/maps/p7tegmkVN88vv24x8"
+              class="text-right"
+            > https://goo.gl/maps/p7tegmkVN88vv24x8</a>
+          </div>
+        </div>
+        <div class="flex">
+          <div class="w-3/4">
+            <a href="https://goo.gl/maps/2Z74oAbXGAj8gAqw7">
+              <img src="~/assets/Map/basketball map.png">
+            </a>
+          </div>
+          <div class="w-1/4">
+            <br><br><br>
+            <h1 class="text-center flex-col lg:text-lg sm:text-sm"> สนามแข่ง กีฬาบาสเก็ตบอล</h1>
+            <border />
+            <br><br>
+            <p class="text-right">Main Gymnasium Chiangmai University
+              Suthep, Mueang Chiang Mai District, Chiang Mai 50200</p>
+            <br>
+            <a
+              href="https://goo.gl/maps/p7tegmkVN88vv24x8"
+              class="text-right"
+            > https://goo.gl/maps/p7tegmkVN88vv24x8</a>
+          </div>
+        </div>
       </div>
     </div>
     <border />
