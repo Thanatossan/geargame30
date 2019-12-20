@@ -8,7 +8,7 @@
     <div class="container">
       <br />
       <div id="Live_Score_table">
-        <div class="border-b-2 mt-3 mb-8 ">Coming Soon</div>
+        <div class="border-b-2 mt-3 mb-8 "></div>
         <!-- V for -->
         <div class="flex bg-gray-100 rounded-lg p-1 m-3">
           <img
