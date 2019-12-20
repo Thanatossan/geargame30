@@ -10,11 +10,33 @@
 
         <navbar />
         <Map />
-
         <border />
-        <div class="">
-          <img src="~/assets/Map/cmu_map.png" />
+        <br>
+        <h1 class="text-2xl text-center"> แผนที่หอพักนักศึกษา </h1>
+        <div class="flex">
+          <div>
+            <img
+              src="~/assets/Map/cmu_map.png"
+              class=" object-center lg:w-3/4 lg:ml-40"
+            />
+          </div>
+
         </div>
+
+        <h1 class="text-center text-2xl"> แผนที่ สนามแข่งกีฬา </h1>\
+        <br>
+        <border />
+
+        <div class="flex">
+          <div class="w-3/4">
+            <img src="~/assets/Map/athletic & recreation map.png">
+          </div>
+          <div class="w-1/4">
+            <h1 class=" text-center flex-col"> แผนที่ สนามแข่งกีฬา กรีฑา และ กีฬาสันทนาการ</h1>
+          </div>
+
+        </div>
+
       </div>
     </div>
     <border />

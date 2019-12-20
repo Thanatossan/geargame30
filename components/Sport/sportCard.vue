@@ -11,23 +11,23 @@
             />
             <br />
           </div>
-          <h1>FOOTSAL</h1>
+          <h1>FUTSAL</h1>
         </nuxt-link>
       </div>
       <div class="flex-col">
-        <nuxt-link to="sportDetails">
-          <div class="card-body card-border m-3 btn btn-outline-danger">
+        <nuxt-link to="sportDetails/badminton">
+          <div class="card-body card-border m-3">
             <img
               src="~/assets/sport_img/badminton.PNG"
-              class="object-fill h-auto w-auto"
+              class="object-fill "
             />
             <br />
           </div>
-          <H1> BADMINTON</H1>
+          <p class="sm:text-sm">BADMINTON</p>
         </nuxt-link>
       </div>
       <div class="flex-col">
-        <nuxt-link to="sportDetails">
+        <nuxt-link to="sportDetails/athletics">
           <div class="card-body card-border m-3 btn btn-outline-danger">
             <img
               src="~/assets/sport_img/running.PNG"
@@ -41,7 +41,7 @@
         </nuxt-link>
       </div>
       <div class="flex-col">
-        <nuxt-link to="sportDetails">
+        <nuxt-link to="sportDetails/basketball">
           <div class="card-body card-border m-3 btn btn-outline-danger">
             <img
               src="~/assets/sport_img/basketball.PNG"
@@ -57,18 +57,18 @@
     </div>
     <div class="flex">
       <div class="flex-col">
-        <nuxt-link to="sportDetails">
+        <nuxt-link to="sportDetails/e-sport">
           <div class="card-body card-border m-3 btn btn-outline-danger">
             <img src="~/assets/sport_img/e-sport.PNG" />
             <br />
           </div>
           <h1>
-            E-SPORT
+            E-SPORTS (ROV)
           </h1>
         </nuxt-link>
       </div>
       <div class="flex-col">
-        <nuxt-link to="sportDetails">
+        <nuxt-link to="sportDetails/swimming">
           <div class="card-body card-border m-3 btn btn-outline-danger">
             <img src="~/assets/sport_img/swim.PNG" />
             <br />
@@ -79,31 +79,31 @@
         </nuxt-link>
       </div>
       <div class="flex-col">
-        <nuxt-link to="sportDetails">
+        <nuxt-link to="sportDetails/table-tennis">
           <div class="card-body card-border m-3 btn btn-outline-danger">
             <img src="~/assets/sport_img/pingpong.PNG" />
             <br />
           </div>
           <h1>
-            TABLE-TENNIS
+            TABLE TENNIS
           </h1>
         </nuxt-link>
       </div>
       <div class="flex-col">
-        <nuxt-link to="sportDetails">
+        <nuxt-link to="sportDetails/boardgames">
           <div class="card-body card-border m-3 btn btn-outline-danger">
             <img src="~/assets/sport_img/boardgame.PNG" />
             <br />
           </div>
           <h1>
-            BOARDGAMES
+            BOARD GAMES
           </h1>
         </nuxt-link>
       </div>
     </div>
     <div class="flex">
       <div class="flex-col">
-        <nuxt-link to="sportDetails">
+        <nuxt-link to="sportDetails/volleyball">
           <div class="card-body card-border m-3 btn btn-outline-danger">
             <img src="~/assets/sport_img/volleyball.PNG" />
             <br />
@@ -114,7 +114,7 @@
         </nuxt-link>
       </div>
       <div class="flex-col">
-        <nuxt-link to="sportDetails">
+        <nuxt-link to="sportDetails/football">
           <div class="card-body card-border m-3 btn btn-outline-danger">
             <img src="~/assets/sport_img/football.PNG" />
             <br />
@@ -125,18 +125,18 @@
         </nuxt-link>
       </div>
       <div class="flex-col">
-        <nuxt-link to="sportDetails">
+        <nuxt-link to="sportDetails/sepak">
           <div class="card-body card-border m-3 btn btn-outline-danger">
             <img src="~/assets/sport_img/sapak.PNG" />
             <br />
           </div>
           <h1>
-            SEPAKTAKRAW
+            SEPAK TAKRAW
           </h1>
         </nuxt-link>
       </div>
       <div class="flex-col">
-        <nuxt-link to="sportDetails">
+        <nuxt-link to="sportDetails/softball">
           <div class="card-body card-border m-3 btn btn-outline-danger">
             <img src="~/assets/sport_img/softball.PNG" />
             <br />
@@ -149,7 +149,7 @@
     </div>
     <div class="flex">
       <div class="flex-col">
-        <nuxt-link to="sportDetails">
+        <nuxt-link to="sportDetails/tennis">
           <div class="card-body card-border m-3 btn btn-outline-danger">
             <img src="~/assets/sport_img/tennis.PNG" />
             <br />
@@ -160,35 +160,35 @@
         </nuxt-link>
       </div>
       <div class="flex-col">
-        <nuxt-link to="sportDetails">
+        <nuxt-link to="sportDetails/petong">
           <div class="card-body card-border m-3 btn btn-outline-danger">
             <img src="~/assets/sport_img/petong.PNG" />
             <br />
           </div>
           <h1>
-            PETONG
+            PETANQUE
           </h1>
         </nuxt-link>
       </div>
       <div class="flex-col">
-        <nuxt-link to="sportDetails">
+        <nuxt-link to="sportDetails/rugby">
           <div class="card-body card-border m-3 btn btn-outline-danger">
             <img src="~/assets/sport_img/rugby.PNG" />
             <br />
           </div>
           <h1>
-            RUGBY
+            RUGBY FOOTBALL
           </h1>
         </nuxt-link>
       </div>
       <div class="flex-col">
-        <nuxt-link to="sportDetails">
+        <nuxt-link to="sportDetails/san">
           <div class="card-body card-border m-3 btn btn-outline-danger">
             <img src="~/assets/sport_img/san.PNG" />
             <br />
           </div>
           <h1>
-            สันทนาการ
+            RECREATION GAMES
           </h1>
         </nuxt-link>
       </div>

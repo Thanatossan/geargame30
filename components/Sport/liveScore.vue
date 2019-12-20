@@ -8,14 +8,14 @@
     <div class="container">
       <br />
       <div id="Live_Score_table">
-        <div class="border-b-2 mt-3 mb-8 "></div>
+        <div class="border-b-2 mt-3 mb-8 ">Coming Soon</div>
         <!-- V for -->
         <div class="flex bg-gray-100 rounded-lg p-1 m-3">
           <img
             src="~/assets/image/JhangLekGames-Logo_wb.png"
             width="100"
           />
-          <h2 class="m-auto">{{testAPI}}</h2>
+          <h2 class="m-auto">Coming soon</h2>
         </div>
         <div class="flex bg-gray-100 rounded-lg p-1 m-3">
           <img
@@ -38,23 +38,19 @@
 </template>
 
 <script>
-import {api} from '../../api/api'
+import { api } from "../../api/api";
 export default {
-
-  data (){
-    return{
-      testAPI : ''
-    }
-  },
-  methods : {
-    
-  },
-  async mounted(){
-      const test =  await api.get('/api');
-      this.testAPI = test.data
-      console.log(test);
-      
-  }
+  // data() {
+  //   return {
+  //     testAPI: ""
+  //   };
+  // },
+  // methods: {},
+  // async mounted() {
+  //   const test = await api.get("/api");
+  //   this.testAPI = test.data;
+  //   console.log(test);
+  // }
 };
 </script>
 
