@@ -8,15 +8,18 @@
       <div class="justify-center text-center">
         <navbar />
         <!-- title section -->
-        <div
-          class="flex flex-col justify-center mb-4 bg-red-800 text-center lg:h-48 w-full"
-        >
-          <label class="default-text" style="font-size:55px; color:white;"
-            >SPORTS</label
-          >
+        <div class="flex flex-col justify-center mb-4 bg-red-800 text-center lg:h-48 w-full">
+          <label
+            class="default-text"
+            style="font-size:55px; color:white;"
+          >SPORTS</label>
         </div>
+
         <!-- content section -->
-        <sportCon />
+        <div>
+          <sportCon />
+        </div>
+
       </div>
     </div>
 

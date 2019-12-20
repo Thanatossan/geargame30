@@ -3,29 +3,39 @@
     <div class="flex justify-center mt-4">
       <h2> Sponsored by </h2>
     </div>
-    <div class="flex justify-center mt-4 rounded-full overflow-x-auto">
+    <div class="flex justify-center mt-4 overflow-x-auto">
 
       <img
-        src="~/assets/sponcer/grandsport2.png"
-        width="150"
+        src="~/assets/sponcer/big/grandsport-800x400.png"
+        width="200"
       >
       <img
-        src="~/assets/sponcer/sfx.png"
-        width="150"
+        src="~/assets/sponcer/big/sfx-800x400.png"
+        width="200"
       >
       <img
-        src="~/assets/sponcer/step2.png"
-        width="150"
+        src="~/assets/sponcer/big/SPNactive-800x400.png"
+        width="200"
       >
       <img
-        src="~/assets/sponcer/true.png"
-        width="150"
+        src="~/assets/sponcer/big/true-800x400.png"
+        width="200"
       >
       <img
-        src="~/assets/sponcer/ufare.png"
-        width="150"
+        src="~/assets/sponcer/big/ufare-800x400.png"
+        width="200"
       >
+    </div>
+    <div class="flex justify-center mt-4 overflow-x-auto">
 
+      <img
+        src="~/assets/sponcer/small/step-600x300.png"
+        width="100"
+      >
+      <img
+        src="~/assets/sponcer/small/pre-built-600x300.png"
+        width="100"
+      >
     </div>
   </div>
 </template>

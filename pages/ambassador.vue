@@ -8,11 +8,8 @@
       <div class="justify-center text-center">
         <navbar />
         <!-- title section -->
-        <div class="flex flex-col justify-center mb-4 bg-red-800 text-center lg:h-48 w-full">
-          <label
-            class="default-text"
-            style="font-size:55px; color:white;"
-          >Ambassadors</label>
+        <div class="flex flex-col justify-center mb-4 bg-red-800 text-center lg:h-48 w-full sm:text-4xl text-white">
+          <label class="default-text text-6xl">Ambassadors</label>
         </div>
         <!-- content section -->
       </div>

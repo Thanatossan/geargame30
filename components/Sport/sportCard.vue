@@ -7,7 +7,6 @@
             <img
               src="~/assets/sport_img/fotsal.PNG"
               class="object-fill"
-              height="1000"
             />
             <br />
           </div>

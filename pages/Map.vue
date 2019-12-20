@@ -27,18 +27,18 @@
         <br>
         <border />
 
-        <div class="flex">
-          <div class="w-3/4">
+        <div class="flex ">
+          <div class="w-3/4 ">
             <a href="https://goo.gl/maps/2Z74oAbXGAj8gAqw7">
               <img src="~/assets/Map/athletic & recreation map.png">
             </a>
           </div>
-          <div class="w-1/4">
+          <div class="w-1/4 ">
             <br><br><br>
             <h1 class="text-center flex-col lg:text-lg sm:text-sm"> สนามแข่ง กีฬากรีฑา</h1>
             <border />
             <br><br>
-            <p class="text-right"> CMU Main Stadium
+            <p class="text-right lg:text-center"> CMU Main Stadium
               Suthep, Mueang Chiang Mai District, Chiang Mai 50200</p>
             <br>
             <a
@@ -100,7 +100,7 @@
             <h1 class="text-center flex-col lg:text-lg sm:text-sm"> สนามแข่ง กีฬาฟุตบอล (สนามในมช.)</h1>
             <border />
             <br><br>
-            <p class="text-right">CMU Main Stadium 
+            <p class="text-right">CMU Main Stadium
               Suthep, Mueang Chiang Mai District, Chiang Mai 50200</p>
             <br>
             <a
@@ -333,7 +333,6 @@
             > https://goo.gl/maps/D1eCdANNU99VnRp89</a>
           </div>
         </div>
-
 
       </div>
     </div>
