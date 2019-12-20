@@ -15,7 +15,7 @@
             src="~/assets/image/JhangLekGames-Logo_wb.png"
             width="100"
           />
-          <h2 class="m-auto">Coming soon</h2>
+          <h2 class="m-auto">{{testAPI}}</h2>
         </div>
         <div class="flex bg-gray-100 rounded-lg p-1 m-3">
           <img
@@ -38,7 +38,24 @@
 </template>
 
 <script>
-export default {};
+import {api} from '../../api/api'
+export default {
+
+  data (){
+    return{
+      testAPI : ''
+    }
+  },
+  methods : {
+    
+  },
+  async mounted(){
+      const test =  await api.get('/api');
+      this.testAPI = test.data
+      console.log(test);
+      
+  }
+};
 </script>
 
 <style>
