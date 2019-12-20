@@ -24,7 +24,7 @@
               <label
                 class="default-text"
                 style="font-size:55px;"
-              >E-SPORT</label>
+              >E-SPORT (ROV)</label>
               <br /><br />
               <button
                 class="bg-red-700 hover:bg-red-800 text-white font-bold py-2 px-4 "

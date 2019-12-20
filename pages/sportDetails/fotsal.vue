@@ -23,11 +23,11 @@
             <div
               class="flex flex-col justify-center mb-4 text-center lg:h-48 w-full"
             >
-              <label class="default-text" style="font-size:55px;">FOTSAL</label>
+              <label class="default-text" style="font-size:55px;">FUTSAL</label>
               <br /><br />
               <button
                 class="bg-red-700 hover:bg-red-800 text-white font-bold py-2 px-4 "
-                onclick="window.location = 'https://drive.google.com/file/d/1x0LzNiK5k2kqungn3Je1Ki4plV0ayKhU/view?usp=sharing'"
+                onclick="window.location = 'https://drive.google.com/open?id=1x0LzNiK5k2kqungn3Je1Ki4plV0ayKhU'"
               >
                 กำหนดการแข่งขัน
               </button>
