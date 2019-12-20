@@ -28,7 +28,7 @@
               <br /><br />
               <button
                 class="bg-red-700 hover:bg-red-800 text-white font-bold py-2 px-4 "
-                onclick="window.location = 'https://drive.google.com/open?id=1PSWPRHIUlaUUFb-H5OSoFpZqFmXgK9zY'"
+                onclick="window.location = 'https://drive.google.com/open?id=12JkrFuDSQelLPQmHINcv3ceFaL2iLw-N'"
               >
                 กำหนดการแข่งขัน
               </button>
