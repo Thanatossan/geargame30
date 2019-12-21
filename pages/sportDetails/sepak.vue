@@ -1,3 +1,4 @@
+  
 <template>
   <div>
     <link
@@ -11,7 +12,7 @@
           <div class="w-1/2 flex-col">
             <div class="card-body card-border m-3">
               <img
-                src="~/assets/sport_img/fotsal.PNG"
+                src="~/assets/sport_img/sapak.PNG"
                 class="object-fill"
                 height="1000"
               />
@@ -24,11 +25,11 @@
               <label
                 class="default-text"
                 style="font-size:55px;"
-              >FUTSAL</label>
+              >SEPAK TAKRAW</label>
               <br /><br />
               <button
                 class="bg-red-700 hover:bg-red-800 text-white font-bold py-2 px-4 "
-                onclick="window.location = 'https://drive.google.com/open?id=1x0LzNiK5k2kqungn3Je1Ki4plV0ayKhU'"
+                onclick="window.location = 'https://drive.google.com/open?id=1HApISSH0HRmuPmWn0VIp95d7LAce-aJe'"
               >
                 กำหนดการแข่งขัน
               </button>

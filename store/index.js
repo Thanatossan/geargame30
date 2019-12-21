@@ -18,26 +18,39 @@ export const actions = {
     }
   },
   async login ({ commit }, { username, password }) {
+      var permission = false
       const user = {username,password}
-      var stateUser = null;
-      const res = await api.post('/api/auth', { user})
-      console.log(res.data)
-      if(res.data === true){
-        alert('login successful')
-        await axios.post('/service/login',{username,password})
-        stateUser = username;
-      }else{
+      const res = await api.post('/api/auth', {user}) 
+      permission = res.data
+      const callback = await axios.post('/service/login',{username,password,permission})
+      console.log(callback.data);
+      commit('SET_USER', {username : callback.data})
+      if(permission){
+        alert('login sucessful')
+        setTimeout('location.href="/judge"',0)
+      } 
+      else {
         alert('login failed')
-        stateUser = null
+        setTimeout('location.href="/login"',0)
       }
-      commit('SET_USER', {username : stateUser})
-      setTimeout('location.href="/judge"',0)
+      
   },
 
 
   async logout ({ commit }) {
-    await axios.post('/api/logout')
+    await axios.post('/service/logout')
+    setTimeout('location.href="/login"',0)
     commit('SET_USER', null)
+    
+  },
+
+  async authenCheck(){
+    const res = await axios.get('/service/authCheck')
+    console.log(res);
+    
+    if(res.data.login) setTimeout('location.href="/judge"',0)
   }
+
+  
 
 }

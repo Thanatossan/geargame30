@@ -1,24 +1,24 @@
 <template>
 <div class="w-full max-w-xs log-in">
+    <h1 class="block font-bold text-center text-lg" style="font-size:35px">Judge Login</h1>
     <img
         src="~/assets/image/JhangLekGames-Logo.png"
     >
-    <h1 class="block font-bold text-center text-lg" style="font-size:35px">Judge Login</h1>
-  <form class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 ">
+  <form class="bg-white rounded px-8 pt-6 pb-8 mb-4 ">
     <div class="mb-4">
-      <label class="block text-gray-700 text-sm font-bold mb-2" for="username" >
+      <!-- <label class="block text-gray-700 text-sm font-bold mb-2 text-center" for="username" >
         Username
-      </label>
-      <input v-model="username" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="username" type="text" placeholder="Username">
+      </label> -->
+      <input v-model="username" class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none" id="username" type="text" placeholder="Username">
     </div>
     <div class="mb-6">
-      <label class="block text-gray-700 text-sm font-bold mb-2" for="password">
+      <!-- <label class="block text-gray-700 text-sm font-bold mb-2 text-center" for="password">
         Password
-      </label>
-      <input v-model="password" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline" id="password" type="password" placeholder="password" />
+      </label> -->
+      <input v-model="password" class="appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none" id="password" type="password" placeholder="password" />
     </div>
     <div class="flex items-center justify-between">
-      <button v-on:click="login" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button">
+      <button v-on:click="login" class="bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded" type="button">
         Log in
       </button>
     </div>
@@ -44,7 +44,7 @@ export default {
         }
     },
     methods : {
-       async login(){
+      async login(){
       try {
         await this.$store.dispatch('login', {
           username: this.username,
@@ -57,6 +57,9 @@ export default {
         this.err = e.message
       }  
     }
+  },
+  async mounted() {
+     await this.$store.dispatch('authenCheck')
   }
 }
 </script>

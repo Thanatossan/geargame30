@@ -8,6 +8,11 @@ module.exports = {
   theme: {
     container: {
       center: true
+    },
+    maxHeight: {
+      superSmall: "50px",
+      small: "100px",
+      logo: "200px"
     }
   },
   variants: {},

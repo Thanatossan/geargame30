@@ -19,14 +19,14 @@
         <br />
         <Sport />
         <br />
-        <border />
+        <!--<border />
         <br />
         <News />
-        <br />
-        <border />
+        <br /> -->
+        <!--<border />
         <br />
         <SponcerCon />
-        <br />
+        <br />-->
       </div>
     </div>
     <border />

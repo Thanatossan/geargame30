@@ -15,15 +15,12 @@ router.use((req, res, next) => {
 })
 
 router.post('/login',controller.judgeController.login)
+router.post('/logout',controller.judgeController.logout)
+router.get('/authCheck',controller.judgeController.authenCheck)
 
-function auth(req){
-  return api.post('/api/auth',req.body)
-}
 
-// router.post('/logout', (req, res) => {
-//   delete req.session.authUser
-//   res.json({ ok: true })
-// })
+
+
 
 // Export the server middleware
 export default {
