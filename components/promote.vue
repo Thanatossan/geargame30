@@ -8,7 +8,8 @@
         />
       </div>
     </div>
-    <div class="w-auto lg:w-1/2 pl-6 ">
+    <div class="flex flex-col w-auto lg:w-1/2 pl-6 container items-center">
+    <br>
       <p class="text-left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ยินดีต้อนรับ นักกีฬา คณาจารย์และบุคคลากรทุกท่าน สู่ระบบลงทะเบียน
         จ๊างเหล็กเกมส์ กีฬาเกียร์ครั้งที่ 30 ทุกท่านสามารถลงทะเบียน เพื่อ
         กรอกข้อมูลส่วนตัว สำหรับผู้เข้าร่วมกิจกรรม
