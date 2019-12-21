@@ -2,7 +2,6 @@
 <div class="w-full max-w-xs log-in">
     <img
         src="~/assets/image/JhangLekGames-Logo.png"
-        class="w-auto h-auto"
     >
     <h1 class="block font-bold text-center text-lg" style="font-size:35px">Judge Login</h1>
   <form class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 ">
@@ -40,16 +39,25 @@ export default {
     data(){
         return{
             username : '',
-            password : ''
+            password : '',
+            err : null
         }
     },
     methods : {
        async login(){
-           const user = {username : this.username , password : this.password}
-           const response = await api.post('/api/auth',{user})
-           console.log(response.data);
-       }
+      try {
+        await this.$store.dispatch('login', {
+          username: this.username,
+          password: this.password
+        })
+        this.username = ''
+        this.password = ''
+        this.err = null
+      } catch (e) {
+        this.err = e.message
+      }  
     }
+  }
 }
 </script>
 

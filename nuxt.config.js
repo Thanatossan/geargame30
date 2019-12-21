@@ -1,4 +1,7 @@
-module.exports = {
+const bodyParser = require('body-parser')
+const session = require('express-session')
+
+export default {
   mode: "universal",
   /*
    ** Headers of the page
@@ -48,8 +51,24 @@ module.exports = {
      */
     extend(config, ctx) {}
   },
-  server: {
-    port: 3000, // default: 3000
-    host: "0.0.0.0" // default: localhost
-  }
+  axios: {
+    // See https://github.com/nuxt-community/axios-module#options
+    baseURL: process.env.baseURL || 'http://localhost:3000'
+  },
+
+  serverMiddleware: [
+    // body-parser middleware
+    bodyParser.json(),
+    // session middleware
+    session({
+      secret: 'secret',
+      resave: false,
+      saveUninitialized: false,
+      cookie: { maxAge: 60000 }
+    }),
+    // Api middleware
+    // We add /api/login & /api/logout routes
+    '~/service'
+  ],
+ 
 };
