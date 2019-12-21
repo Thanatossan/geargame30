@@ -7,11 +7,7 @@
     <div class="container min-h-screen flex justify-center text-center mx-auto">
       <div>
         <navbar />
-<<<<<<< HEAD
         <div class="flex">
-=======
-        <div class="flex items-center flex-col lg:flex-row container">
->>>>>>> fdf4e3b73980625c1abde60a2c8c6ffc4bcdd64d
           <div class="w-1/2 flex-col">
             <div class="card-body card-border m-3">
               <img
@@ -62,6 +58,7 @@
       </div>
     </div>
   </div>
+
 </template>
 
 <script>
