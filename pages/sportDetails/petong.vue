@@ -11,7 +11,7 @@
           <div class="w-1/2 flex-col">
             <div class="card-body card-border m-3">
               <img
-                src="~/assets/sport_img/fotsal.PNG"
+                src="~/assets/sport_img/petong.PNG"
                 class="object-fill"
                 height="1000"
               />
@@ -20,14 +20,15 @@
           </div>
           <div class="w-1/2 flex-col">
             <br /><br /><br />
-            <div
-              class="flex flex-col justify-center mb-4 text-center lg:h-48 w-full"
-            >
-              <label class="default-text" style="font-size:55px;">FUTSAL</label>
+            <div class="flex flex-col justify-center mb-4 text-center lg:h-48 w-full">
+              <label
+                class="default-text"
+                style="font-size:55px;"
+              >PETANQUE</label>
               <br /><br />
               <button
                 class="bg-red-700 hover:bg-red-800 text-white font-bold py-2 px-4 "
-                onclick="window.location = 'https://drive.google.com/open?id=1x0LzNiK5k2kqungn3Je1Ki4plV0ayKhU'"
+                onclick="window.location = 'https://drive.google.com/open?id=1XZ5PvUIgJXAfweZ6J7jQN-f_Y9HgQLyo'"
               >
                 กำหนดการแข่งขัน
               </button>
