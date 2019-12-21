@@ -1,19 +1,20 @@
 <template>
   <section>
-    <div class="flex">
-      <div class="flex-col">
+    <div class="flex items-center flex-col lg:flex-row w-1/2 lg:w-auto container">
+      <div class="flex-col rounded hover:shadow-lg hover:border-solid hover:border-4 hover:border-green-400">
         <nuxt-link to="sportDetails/fotsal">
           <div class="card-body card-border m-3">
             <img
               src="~/assets/sport_img/fotsal.PNG"
               class="object-fill"
+              height="1000"
             />
             <br />
           </div>
-          <h1>FUTSAL</h1>
+          <h1 class="font-bold">FUTSAL</h1>
         </nuxt-link>
       </div>
-      <div class="flex-col">
+      <div class="flex-col rounded hover:shadow-lg hover:border-solid hover:border-4 hover:border-green-400">
         <nuxt-link to="sportDetails/badminton">
           <div class="card-body card-border m-3">
             <img
@@ -25,7 +26,7 @@
           <p class="sm:text-sm">BADMINTON</p>
         </nuxt-link>
       </div>
-      <div class="flex-col">
+      <div class="flex-col rounded hover:shadow-lg hover:border-solid hover:border-4 hover:border-green-400">
         <nuxt-link to="sportDetails/athletics">
           <div class="card-body card-border m-3 btn btn-outline-danger">
             <img
@@ -39,7 +40,7 @@
           </h1>
         </nuxt-link>
       </div>
-      <div class="flex-col">
+      <div class="flex-col rounded hover:shadow-lg hover:border-solid hover:border-4 hover:border-green-400">
         <nuxt-link to="sportDetails/basketball">
           <div class="card-body card-border m-3 btn btn-outline-danger">
             <img
@@ -54,8 +55,8 @@
         </nuxt-link>
       </div>
     </div>
-    <div class="flex">
-      <div class="flex-col">
+    <div class="flex items-center flex-col lg:flex-row w-1/2 lg:w-auto container">
+      <div class="flex-col rounded hover:shadow-lg hover:border-solid hover:border-4 hover:border-green-400">
         <nuxt-link to="sportDetails/e-sport">
           <div class="card-body card-border m-3 btn btn-outline-danger">
             <img src="~/assets/sport_img/e-sport.PNG" />
@@ -66,7 +67,7 @@
           </h1>
         </nuxt-link>
       </div>
-      <div class="flex-col">
+      <div class="flex-col rounded hover:shadow-lg hover:border-solid hover:border-4 hover:border-green-400">
         <nuxt-link to="sportDetails/swimming">
           <div class="card-body card-border m-3 btn btn-outline-danger">
             <img src="~/assets/sport_img/swim.PNG" />
@@ -77,7 +78,7 @@
           </h1>
         </nuxt-link>
       </div>
-      <div class="flex-col">
+      <div class="flex-col rounded hover:shadow-lg hover:border-solid hover:border-4 hover:border-green-400">
         <nuxt-link to="sportDetails/table-tennis">
           <div class="card-body card-border m-3 btn btn-outline-danger">
             <img src="~/assets/sport_img/pingpong.PNG" />
@@ -88,7 +89,7 @@
           </h1>
         </nuxt-link>
       </div>
-      <div class="flex-col">
+      <div class="flex-col rounded hover:shadow-lg hover:border-solid hover:border-4 hover:border-green-400">
         <nuxt-link to="sportDetails/boardgames">
           <div class="card-body card-border m-3 btn btn-outline-danger">
             <img src="~/assets/sport_img/boardgame.PNG" />
@@ -100,8 +101,8 @@
         </nuxt-link>
       </div>
     </div>
-    <div class="flex">
-      <div class="flex-col">
+    <div class="flex items-center flex-col lg:flex-row w-1/2 lg:w-auto container">
+      <div class="flex-col rounded hover:shadow-lg hover:border-solid hover:border-4 hover:border-green-400">
         <nuxt-link to="sportDetails/volleyball">
           <div class="card-body card-border m-3 btn btn-outline-danger">
             <img src="~/assets/sport_img/volleyball.PNG" />
@@ -112,7 +113,7 @@
           </h1>
         </nuxt-link>
       </div>
-      <div class="flex-col">
+      <div class="flex-col rounded hover:shadow-lg hover:border-solid hover:border-4 hover:border-green-400">
         <nuxt-link to="sportDetails/football">
           <div class="card-body card-border m-3 btn btn-outline-danger">
             <img src="~/assets/sport_img/football.PNG" />
@@ -123,7 +124,7 @@
           </h1>
         </nuxt-link>
       </div>
-      <div class="flex-col">
+      <div class="flex-col rounded hover:shadow-lg hover:border-solid hover:border-4 hover:border-green-400">
         <nuxt-link to="sportDetails/sepak">
           <div class="card-body card-border m-3 btn btn-outline-danger">
             <img src="~/assets/sport_img/sapak.PNG" />
@@ -134,7 +135,7 @@
           </h1>
         </nuxt-link>
       </div>
-      <div class="flex-col">
+      <div class="flex-col rounded hover:shadow-lg hover:border-solid hover:border-4 hover:border-green-400">
         <nuxt-link to="sportDetails/softball">
           <div class="card-body card-border m-3 btn btn-outline-danger">
             <img src="~/assets/sport_img/softball.PNG" />
@@ -146,8 +147,8 @@
         </nuxt-link>
       </div>
     </div>
-    <div class="flex">
-      <div class="flex-col">
+    <div class="flex items-center flex-col lg:flex-row w-1/2 lg:w-auto container">
+      <div class="flex-col rounded hover:shadow-lg hover:border-solid hover:border-4 hover:border-green-400">
         <nuxt-link to="sportDetails/tennis">
           <div class="card-body card-border m-3 btn btn-outline-danger">
             <img src="~/assets/sport_img/tennis.PNG" />
@@ -158,7 +159,7 @@
           </h1>
         </nuxt-link>
       </div>
-      <div class="flex-col">
+      <div class="flex-col rounded hover:shadow-lg hover:border-solid hover:border-4 hover:border-green-400">
         <nuxt-link to="sportDetails/petong">
           <div class="card-body card-border m-3 btn btn-outline-danger">
             <img src="~/assets/sport_img/petong.PNG" />
@@ -169,7 +170,7 @@
           </h1>
         </nuxt-link>
       </div>
-      <div class="flex-col">
+      <div class="flex-col rounded hover:shadow-lg hover:border-solid hover:border-4 hover:border-green-400">
         <nuxt-link to="sportDetails/rugby">
           <div class="card-body card-border m-3 btn btn-outline-danger">
             <img src="~/assets/sport_img/rugby.PNG" />
@@ -180,7 +181,7 @@
           </h1>
         </nuxt-link>
       </div>
-      <div class="flex-col">
+      <div class="flex-col rounded hover:shadow-lg hover:border-solid hover:border-4 hover:border-green-400">
         <nuxt-link to="sportDetails/san">
           <div class="card-body card-border m-3 btn btn-outline-danger">
             <img src="~/assets/sport_img/san.PNG" />
@@ -207,6 +208,9 @@ export default {
   border: 2px solid rgb(214, 212, 212);
   border-radius: 15px;
   display: block;
+}
+.card-border:hover {
+  border-color: #68d391;
 }
 .default-text {
   font-family: Rubik;
