@@ -12,7 +12,7 @@
         <div class="flex bg-gray-100 rounded-lg p-1 m-3">
           <img
             src="~/assets/image/JhangLekGames-Logo_wb.png"
-            width="100"
+            class="max-h-small"
           />
           <h2 class="m-auto">Coming soon</h2>
         </div>
@@ -20,14 +20,14 @@
         <div class="flex bg-gray-100 rounded-lg p-1 m-3">
           <img
             src="~/assets/image/JhangLekGames-Logo_wb.png"
-            width="100"
+            class="max-h-small"
           />
           <h2 class="m-auto">Coming soon</h2>
         </div>
         <div class="flex bg-gray-100 rounded-lg p-1 m-3">
           <img
             src="~/assets/image/JhangLekGames-Logo_wb.png"
-            width="100"
+            class="max-h-small"
           />
           <h2 class="m-auto">Coming soon</h2>
         </div>
