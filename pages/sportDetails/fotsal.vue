@@ -7,7 +7,7 @@
     <div class="container min-h-screen flex justify-center text-center mx-auto">
       <div>
         <navbar />
-        <div class="flex">
+        <div class="flex items-center flex-col lg:flex-row container">
           <div class="w-1/2 flex-col">
             <div class="card-body card-border m-3">
               <img
@@ -20,10 +20,11 @@
           </div>
           <div class="w-1/2 flex-col">
             <br /><br /><br />
-            <div
-              class="flex flex-col justify-center mb-4 text-center lg:h-48 w-full"
-            >
-              <label class="default-text" style="font-size:55px;">FUTSAL</label>
+            <div class="flex flex-col justify-center mb-4 text-center lg:h-48 w-full">
+              <label
+                class="default-text"
+                style="font-size:55px;"
+              >FUTSAL</label>
               <br /><br />
               <button
                 class="bg-red-700 hover:bg-red-800 text-white font-bold py-2 px-4 "
@@ -62,7 +63,6 @@
 <script>
 import navbar from "~/components/navbar";
 import border from "~/components/border";
-
 import Footer from "~/components/Footer";
 export default {
   components: {
