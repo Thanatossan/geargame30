@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="flex justify-center mt-4">
-      <h2> Sponser</h2>
+      <h2> Sponsored by </h2>
     </div>
     <div class="flex justify-center mt-4 rounded-full overflow-x-auto">
 
