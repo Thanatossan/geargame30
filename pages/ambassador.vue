@@ -9,7 +9,7 @@
         <navbar />
         <!-- title section -->
         <div class="flex flex-col justify-center mb-4 bg-red-800 text-center lg:h-48 w-full sm:text-4xl text-white">
-          <label class="default-text text-6xl">Ambassadors</label>
+          <label class="default-text">Ambassadors</label>
         </div>
         <!-- content section -->
       </div>

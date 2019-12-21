@@ -188,7 +188,7 @@
             <br />
           </div>
           <h1>
-            RECREATION GAMES
+            ENTERTAINMENT GAMES
           </h1>
         </nuxt-link>
       </div>

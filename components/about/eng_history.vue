@@ -7,7 +7,7 @@
         <div class="m-auto lg:m-4 w-1/2 lg:w-1/3">
           <img src="~/assets/uni_logo/eng_logo.png">
           <br>
-          <img src="~/assets/uni_logo/smo_logo.png">
+
         </div>
         <div class="m-auto lg:m-10 text-left w-11/12 lg:w-2/3">
           <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; คณะวิศวกรรมศาสตร์ถือกำเนิดอย่างเป็นทางการ ในวันที่ 3 มิถุนายน พ.ศ. 2513
