@@ -29,6 +29,7 @@
       ><font-awesome-icon :icon="['fas', 'plus']" style="size:9px"/></button>
 
       <!-- Body page -->
+      
       <div class="w-full text-center">
         <div>
           <table class="w-auto sm:bg-white rounded-lg overflow-hidden sm:shadow-lg my-5 mx-auto">
@@ -115,6 +116,8 @@
       </div>
     </div>
   </div>
+
+
 </template>
 
 <script>
