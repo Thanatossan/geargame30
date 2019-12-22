@@ -5,7 +5,6 @@
       rel="stylesheet"
     />
     <div class="container max-w-screen-xl lg:mx-auto px-6">
-
       <div>
         <navbar />
         <promote />
@@ -23,10 +22,10 @@
         <br />
         <News />
         <br /> -->
-        <!--<border />
+        <border />
         <br />
         <SponcerCon />
-        <br />-->
+        <br />
       </div>
     </div>
     <border />
@@ -34,11 +33,9 @@
       <div>
         <div class="my-5 mx-auto text-right">
           <Footer />
-
         </div>
       </div>
     </div>
-
   </div>
 </template>
 
