@@ -38,7 +38,7 @@ module.exports = {
   /*
    ** Nuxt.js modules
    */
-  modules: ["nuxt-buefy"],
+  modules: ["nuxt-buefy", "portal-vue/nuxt"],
   /*
    ** Build configuration
    */
@@ -46,7 +46,6 @@ module.exports = {
     /*
      ** You can extend webpack config here
      */
-
     extend(config, ctx) {}
   },
   server: {

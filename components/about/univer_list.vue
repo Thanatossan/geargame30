@@ -127,8 +127,7 @@
           title="คณะวิศวกรรมศาสตร์และเทคโนโลยีอุตสาหกรรม มหาวิทยาลัยราชภัฏเพชรบุรี"
         >
         </div>
-        
-
+     
         <div class="container ressize">
           <img class="object-contain imagefit"
           src="~/assets/uni_logo/600x600_white-rmutl.png"
@@ -194,7 +193,7 @@
           title=""
         >
         </div>
-        
+
       </div>
     </div>
   </div>
