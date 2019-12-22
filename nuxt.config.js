@@ -38,7 +38,23 @@ module.exports = {
   /*
    ** Nuxt.js modules
    */
-  modules: ["nuxt-buefy"],
+  modules: [
+            "nuxt-buefy", 
+            [
+              'nuxt-fontawesome', {
+                imports: [
+                 {
+                   set: '@fortawesome/free-solid-svg-icons',
+                   icons: ['fas']
+                 },
+                 {
+                   set:'@fortawesome/free-brands-svg-icons',
+                   icons: ['fab']
+                 }
+               ]
+              }
+        ]],
+  
   /*
    ** Build configuration
    */
@@ -49,7 +65,7 @@ module.exports = {
     extend(config, ctx) {}
   },
   server: {
-    port: 8000, // default: 3000
+    port: 3000, // default: 3000
     host: "0.0.0.0" // default: localhost
   }
 };
