@@ -38,7 +38,7 @@ module.exports = {
   /*
    ** Nuxt.js modules
    */
-  modules: ["nuxt-buefy"],
+  modules: ["nuxt-buefy", "portal-vue/nuxt"],
   /*
    ** Build configuration
    */
