@@ -23,10 +23,10 @@
         <br />
         <News />
         <br /> -->
-        <!--<border />
+        <border />
         <br />
         <SponcerCon />
-        <br />-->
+        <br />
       </div>
     </div>
     <border />

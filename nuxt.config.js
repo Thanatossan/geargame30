@@ -46,7 +46,7 @@ module.exports = {
     /*
      ** You can extend webpack config here
      */
-    publicPath: "public/",
+
     extend(config, ctx) {}
   },
   server: {
