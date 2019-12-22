@@ -1,11 +1,11 @@
 {
-  "name": "Geargame_client",
+  "name": "geargame30",
   "version": "1.0.0",
   "description": "My world-class Nuxt.js project",
   "author": "Thanatossan",
   "private": true,
   "scripts": {
-    "dev": "cross-env NODE_ENV=development nodemon server/index.js --watch server",
+    "dev": "nuxt",
     "build": "nuxt build",
     "start": "cross-env NODE_ENV=production node server/index.js",
     "generate": "nuxt generate",
@@ -18,11 +18,15 @@
     "@fortawesome/vue-fontawesome": "^0.1.9",
     "@nuxtjs/font-awesome": "^1.0.4",
     "axios": "^0.19.0",
+    "body-parser": "^1.19.0",
     "bootstrap-vue": "^2.1.0",
-    "express": "^4.16.4",
+    "express": "^4.17.1",
+    "express-session": "^1.17.0",
+    "jquery": "^3.4.1",
     "nuxt": "^2.11.0",
     "nuxt-buefy": "^0.3.19",
-    "nuxt-fontawesome": "^0.4.0"
+    "nuxt-fontawesome": "^0.4.0",
+    "vue-sweetalert2": "^2.1.5"
   },
   "devDependencies": {
     "@nuxtjs/tailwindcss": "^1.2.0",

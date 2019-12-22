@@ -14,8 +14,8 @@
           </div>
           <div class="w-1/5 h-12"></div>
           <div class="w-1/5 h-12">
-            <span class="" style="color:white;">
-              <button
+            <span style="color:white;">
+              <button v-on:click="logout" 
                 class=" md:object-right bg-blue-500 hover:bg-red-400 mt-2 py-1 px-3 border-b-2 border-blue-700 hover:border-red-500 rounded"
               >
                 <font-awesome-icon :icon="['fas', 'sign-out-alt']" style="size:7px"/>
@@ -24,9 +24,10 @@
           </div>
         </div>
       </div>
+     <nuxt-link to="/judgedetail">
       <button
         class="custom-buttom bg-blue-500 hover:bg-red-400 mt-2 text-white font-bold py-1 px-3 border-b-4 border-blue-700 hover:border-red-500 rounded"
-      ><font-awesome-icon :icon="['fas', 'plus']" style="size:9px"/></button>
+      ><font-awesome-icon :icon="['fas', 'plus']" style="size:9px"/></button></nuxt-link>
 
       <!-- Body page -->
       
@@ -115,6 +116,7 @@
         </div>
       </div>
     </div>
+    
   </div>
 
 
@@ -131,6 +133,13 @@ export default {
     border,
     Footer,
     engineer
+  },
+   
+  // middleware : 'authen',
+  methods : {
+    async logout(){
+      await this.$store.dispatch('logout')
+    }
   }
 };
 </script>
