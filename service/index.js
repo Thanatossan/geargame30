@@ -2,7 +2,7 @@ import express from 'express'
 // Create express router
 const router = express.Router()
 import controller from '../controller'
-import {api} from '../api/api'
+
 // Transform req & res to have the same API as express
 // So we can use res.status() & res.json()
 const app = express()
