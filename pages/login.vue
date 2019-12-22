@@ -4,6 +4,7 @@
     <img
         src="~/assets/image/JhangLekGames-Logo.png"
     >
+     <div v-on:keyup.enter="login">
   <form class="bg-white rounded px-8 pt-6 pb-8 mb-4 ">
     <div class="mb-4">
       <!-- <label class="block text-gray-700 text-sm font-bold mb-2 text-center" for="username" >
@@ -18,11 +19,15 @@
       <input v-model="password" class="appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none" id="password" type="password" placeholder="password" />
     </div>
     <div class="flex items-center justify-between">
-      <button v-on:click="login" class="bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded" type="button">
+     
+        <button v-on:click="login" class="bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded" type="button">
         Log in
       </button>
+     
+      
     </div>
   </form>
+   </div>
   <p class="text-center text-gray-500 text-xs">
     Geargame30 Faculty of Engineering,
   </p >
