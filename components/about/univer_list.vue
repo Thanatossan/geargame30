@@ -4,119 +4,214 @@
       <h2 class="text-3xl">มหาลัยที่เข้าร่วม</h2>
       <border />
       <div class="flex flex-row flex-wrap m-4 justify-center">
+        <div class="container ressize">
+          <img
+            class="object-contain imagefit"
+            src="~/assets/uni_logo/600x600_white-cmu.png"
+            title="คณะวิศวกรรมศาสตร์ มหาวิทยาลัยเชียงใหม่"
+          >
+        </div>
 
-        <img
-          src="~/assets/uni_logo/1.png"
-          id="uniImage"
-          title="คณะวิศวกรรมศาสตร์ มหาวิทยาลัยเชียงใหม่"
-        >
-        <img
-          src="~/assets/uni_logo/2.png"
-          id="uniImage"
-          title="คณะวิศวกรรมศาสตร์ มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าธนบุรี"
-        >
-        <img
-          src="~/assets/uni_logo/3.png"
-          id="uniImage"
-          title="คณะวิศวกรรมศาสตร์ มหาวิทยาลัยนเรศวร"
-        >
-        <img
-          src="~/assets/uni_logo/4.png"
-          id="uniImage"
-          title="คณะวิศวกรรมศาสตร์และอุตสาหกรรมเกษตร มหาวิทยาลัยแม่โจ้"
-        >
-        <img
-          src="~/assets/uni_logo/5.png"
-          id="uniImage"
-          title="คณะวิศวกรรมศาสตร์ มหาวิทยาลัยศรีปทุม"
-        >
-        <img
-          src="~/assets/uni_logo/6.png"
-          id="uniImage"
-          title="คณะวิศวกรรมศาสตร์ มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ"
-        >
-        <img
-          src="~/assets/uni_logo/7.png"
-          id="uniImage"
-          title="คณะวิศวกรรมศาสตร์ มหาวิทยาลัยเทคโนโลยีมหานคร"
-        >
+        <div class="container ressize">
+          <img
+            class="object-contain imagefit"
+            src="~/assets/uni_logo/600x600_white-kmutt.png"
+            title="คณะวิศวกรรมศาสตร์ มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าธนบุรี"
+          >
+        </div>
 
-        <img
-          src="~/assets/uni_logo/10.png"
-          id="uniImage"
-          title="คณะวิศวกรรมศาสตร์ มหาวิทยาลัยขอนแก่น"
-        >
-        <img
-          src="~/assets/uni_logo/11.png"
-          id="uniImage"
-          title="คณะวิศวกรรมศาสตร์ สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง"
-        >
-        <img
-          src="~/assets/uni_logo/12.png"
-          id="uniImage"
-          title="คณะวิศวกรรมศาสตร์ มหาวิทยาลัยอุบลราชธานี"
-        >
-        <img
-          src="~/assets/uni_logo/13.png"
-          id="uniImage"
-          title="คณะวิศวกรรมศาสตร์ มหาวิทยาลัยมหาสารคาม"
-        >
-        <img
-          src="~/assets/uni_logo/14.png"
-          id="uniImage"
-          title="คณะวิศวกรรมศาสตร์ มหาวิทยาลัยบูรพา"
-        >
-        <img
-          src="~/assets/uni_logo/15.png"
-          id="uniImage"
-          title="คณะวิศวกรรมศาสตร์ มหาวิทยาลัยสงขลานครินทร์"
-        >
-        <img
-          src="~/assets/uni_logo/16.png"
-          id="uniImage"
-          title="คณะวิศวกรรมศาสตร์ มหาวิทยาลัยมหิดล"
-        >
-        <img
-          src="~/assets/uni_logo/17.png"
-          id="uniImage"
-          title="คณะวิศวกรรมศาสตร์และเทคโนโลยีอุตสาหกรรม มหาวิทยาลัยศิลปากร"
-        >
-        <img
-          src="~/assets/uni_logo/21.png"
-          id="uniImage"
-          title="คณะวิศวกรรมศาสตร์ มหาวิทยาลัยพะเยา"
-        >
-        <img
-          src="~/assets/uni_logo/22.png"
-          id="uniImage"
-          title="คณะวิศวกรรมศาสตร์และเทคโนโลยีอุตสาหกรรม มหาวิทยาลัยราชภัฏเพชรบุรี"
-        >
+        <div class="container ressize">
+          <img
+            class="object-contain imagefit"
+            src="~/assets/uni_logo/600x600_white-nu.png"
+            title="คณะวิศวกรรมศาสตร์ มหาวิทยาลัยนเรศวร"
+          >
+        </div>
 
-        <img
-          src="~/assets/uni_logo/19.png"
-          id="uniImage2"
-          title="คณะวิศวกรรมศาสตร์ มหาวิทยาลัยเทคโนโลยีราชมงคลล้านนา"
-        >
-        <img
-          src="~/assets/uni_logo/20.png"
-          id="uniImage2"
-          title=""
-        >
-        <img
-          src="~/assets/uni_logo/8.png"
-          id="uniImage2"
-          title="คณะวิศวกรรมศาสตร์ มหาวิทยาลัยเทคโนโลยีราชมงคลธัญบุรี"
-        >
-        <img
-          src="~/assets/uni_logo/9.png"
-          id="uniImage2"
-          title="คณะวิศวกรรมศาสตร์ มหาวิทยาลัยเทคโนโลยีราชมงคลพระนคร"
-        >
-        <img
-          src="~/assets/uni_logo/18.png"
-          id="uniImage2"
-          title="คณะวิศวกรรมศาสตร์มหาวิทยาลัยเทคโนโลยีราชมงคล รัตนโกสินทร์"
-        >
+        <div class="container ressize">
+          <img
+            class="object-contain imagefit"
+            src="~/assets/uni_logo/600x600_white-mju.png"
+            title="คณะวิศวกรรมศาสตร์และอุตสาหกรรมเกษตร มหาวิทยาลัยแม่โจ้"
+          >
+        </div>
+
+        <div class="container ressize">
+          <img
+            class="object-contain imagefit"
+            src="~/assets/uni_logo/600x600_white-spu.png"
+            title="คณะวิศวกรรมศาสตร์ มหาวิทยาลัยศรีปทุม"
+          >
+        </div>
+
+        <div class="container ressize">
+          <img
+            class="object-contain imagefit"
+            src="~/assets/uni_logo/600x600_white-kmutnb.png"
+            title="คณะวิศวกรรมศาสตร์ มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ"
+          >
+        </div>
+
+        <div class="container ressize">
+          <img
+            class="object-contain imagefit"
+            src="~/assets/uni_logo/600x600_white-mut.png"
+            title="คณะวิศวกรรมศาสตร์ มหาวิทยาลัยเทคโนโลยีมหานคร"
+          >
+        </div>
+
+        <div class="container ressize">
+          <img
+            class="object-contain imagefit"
+            src="~/assets/uni_logo/600x600_white-kku.png"
+            title="คณะวิศวกรรมศาสตร์ มหาวิทยาลัยขอนแก่น"
+          >
+        </div>
+
+        <div class="container ressize">
+          <img
+            class="object-contain imagefit"
+            src="~/assets/uni_logo/600x600_white-kmitl.png"
+            title="คณะวิศวกรรมศาสตร์ สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง"
+          >
+        </div>
+
+        <div class="container ressize">
+          <img
+            class="object-contain imagefit"
+            src="~/assets/uni_logo/600x600_white-ubu.png"
+            title="คณะวิศวกรรมศาสตร์ มหาวิทยาลัยอุบลราชธานี"
+          >
+        </div>
+
+        <div class="container ressize">
+          <img
+            class="object-contain imagefit"
+            src="~/assets/uni_logo/600x600_white-msu.png"
+            title="คณะวิศวกรรมศาสตร์ มหาวิทยาลัยมหาสารคาม"
+          >
+        </div>
+
+        <div class="container ressize">
+          <img
+            class="object-contain imagefit"
+            src="~/assets/uni_logo/600x600_white-buu.png"
+            title="คณะวิศวกรรมศาสตร์ มหาวิทยาลัยบูรพา"
+          >
+        </div>
+
+        <div class="container ressize">
+          <img
+            class="object-contain imagefit"
+            src="~/assets/uni_logo/600x600_white-psu.png"
+            title="คณะวิศวกรรมศาสตร์ มหาวิทยาลัยสงขลานครินทร์"
+          >
+        </div>
+
+        <div class="container ressize">
+          <img
+            class="object-contain imagefit"
+            src="~/assets/uni_logo/600x600_white-mu.png"
+            title="คณะวิศวกรรมศาสตร์ มหาวิทยาลัยมหิดล"
+          >
+        </div>
+
+        <div class="container ressize">
+          <img
+            class="object-contain imagefit"
+            src="~/assets/uni_logo/600x600_white-su.png"
+            title="คณะวิศวกรรมศาสตร์และเทคโนโลยีอุตสาหกรรม มหาวิทยาลัยศิลปากร"
+          >
+        </div>
+
+        <div class="container ressize">
+          <img
+            class="object-contain imagefit"
+            src="~/assets/uni_logo/600x600_white-up.png"
+            title="คณะวิศวกรรมศาสตร์ มหาวิทยาลัยพะเยา"
+          >
+        </div>
+
+        <div class="container ressize">
+          <img
+            class="object-contain imagefit"
+            src="~/assets/uni_logo/600x600_white-pbru.png"
+            title="คณะวิศวกรรมศาสตร์และเทคโนโลยีอุตสาหกรรม มหาวิทยาลัยราชภัฏเพชรบุรี"
+          >
+        </div>
+
+        <div class="container ressize">
+          <img
+            class="object-contain imagefit"
+            src="~/assets/uni_logo/600x600_white-rmutl.png"
+            title="คณะวิศวกรรมศาสตร์ มหาวิทยาลัยเทคโนโลยีราชมงคลล้านนา"
+          >
+        </div>
+
+        <div class="container ressize">
+          <img
+            class="object-contain imagefit"
+            src="~/assets/uni_logo/600x600_white-rmutsv.png"
+            title=""
+          >
+        </div>
+
+        <div class="container ressize">
+          <img
+            class="object-contain imagefit"
+            src="~/assets/uni_logo/600x600_white-rmutt.png"
+            title="คณะวิศวกรรมศาสตร์ มหาวิทยาลัยเทคโนโลยีราชมงคลธัญบุรี"
+          >
+        </div>
+
+        <div class="container ressize">
+          <img
+            class="object-contain imagefit"
+            src="~/assets/uni_logo/600x600_white-rmutp.png"
+            title="คณะวิศวกรรมศาสตร์ มหาวิทยาลัยเทคโนโลยีราชมงคลพระนคร"
+          >
+        </div>
+
+        <div class="container ressize">
+          <img
+            class="object-contain imagefit"
+            src="~/assets/uni_logo/600x600_white-rmutr.png"
+            title="คณะวิศวกรรมศาสตร์มหาวิทยาลัยเทคโนโลยีราชมงคล รัตนโกสินทร์"
+          >
+        </div>
+
+        <div class="container ressize">
+          <img
+            class="object-contain imagefit"
+            src="~/assets/uni_logo/600x600_white-pit.png"
+            title=""
+          >
+        </div>
+
+        <div class="container ressize">
+          <img
+            class="object-contain imagefit"
+            src="~/assets/uni_logo/600x600_white-rmuti.png"
+            title=""
+          >
+        </div>
+
+        <div class="container ressize">
+          <img
+            class="object-contain imagefit"
+            src="~/assets/uni_logo/600x600_white-ru.png"
+            title=""
+          >
+        </div>
+
+        <div class="container ressize">
+          <img
+            class="object-contain imagefit"
+            src="~/assets/uni_logo/600x600_white-tsu.png"
+            title=""
+          >
+        </div>
+
       </div>
     </div>
   </div>
@@ -132,13 +227,26 @@ export default {
 </script>
 
 <style>
+.ressize {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  max-width: 6rem;
+  max-height: 6rem;
+  margin-bottom: 2rem;
+}
+.imagefit {
+  max-width: 100%;
+  max-height: 100%;
+  align-self: center;
+}
 #uniImage {
-  width: 10rem;
-  height: 10rem;
+  max-width: 24rem;
+  max-height: 10rem;
   margin: 1rem;
 }
 #uniImage2 {
-  height: 10rem;
+  max-height: 10rem;
   margin-left: 3rem;
   margin-top: 1rem;
   margin-right: 3.5rem;

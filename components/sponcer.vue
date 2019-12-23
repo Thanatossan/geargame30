@@ -3,11 +3,11 @@
     <div class="flex justify-center mt-4">
       <h2> Sponsored by </h2>
     </div>
-    <div class="flex justify-center mt-4 overflow-x-auto">
+    <div class="flex md:justify-center mt-4 overflow-x-auto sm:justify-start">
 
       <img
         src="~/assets/sponcer/big/grandsport-800x400.png"
-        class="max-h-small"
+        class="max-h-small pl-5"
       >
       <img
         src="~/assets/sponcer/big/sfx-800x400.png"

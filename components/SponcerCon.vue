@@ -4,7 +4,7 @@
       <h2 id="Sponcer">Sponsor Contents</h2>
     </div>
     <NewCard />
-    <a class="text-right" href="#"> See more ></a>
+    <!--<a class="text-right" href="#"> See more ></a>-->
   </div>
 </template>
 
