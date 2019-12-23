@@ -302,7 +302,7 @@
         </div>
         <div class="flex items-center justify-between">
           <button
-            v-on:click="submitForm1"
+            v-on:click="insert"
             class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
             type="button"
           >
@@ -652,9 +652,9 @@ export default {
           sportField: this.field,
           judgeID: judgeID
         };
-
+        alert('inserted')
         await api.post("/api/addMatch", { data });
-        setTimeout('location.href="/judgedetail"', 0);
+        
       }
     },
 
