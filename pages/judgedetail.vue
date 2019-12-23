@@ -2,7 +2,7 @@
   <div class="container max-w-screen-xl lg:mx-auto px-6">
     <!-- Head -->
     <nuxt-link to="/judgetable"><button>Status</button></nuxt-link>
-    
+
     <div
       class="flex flex-col justify-center text-center border-b-8 border-red-700 mb-4 bg-red-800 sm:shadow-lg lg:h-24 w-full"
     >
@@ -10,17 +10,22 @@
         <div class="w-1/5 h-12"></div>
         <div class="w-1/5 h-12"></div>
         <div class="w-1/5 h-12">
-          <span class="default-text" style="font-size:36px; color:white;">Match</span>
+          <span class="default-text" style="font-size:36px; color:white;"
+            >Match</span
+          >
         </div>
         <div class="w-1/5 h-12"></div>
         <div class="w-1/5 h-12">
-        <span style="color:white;">{{user}}</span>
+          <span style="color:white;">{{ user }}</span>
           <span style="color:white;">
             <button
               v-on:click="logout"
               class="md:object-right bg-blue-500 hover:bg-red-400 mt-2 py-1 px-3 border-b-2 border-blue-700 hover:border-red-500 rounded"
             >
-              <font-awesome-icon :icon="['fas', 'sign-out-alt']" style="size:7px" />
+              <font-awesome-icon
+                :icon="['fas', 'sign-out-alt']"
+                style="size:7px"
+              />
             </button>
           </span>
         </div>
@@ -29,9 +34,15 @@
 
     <!-- Form 1 -->
     <div class="w-full rounded-lg">
-      <form class="shadow-md rounded px-8 pt-6 rounded-l-lg pb-8 mb-4 w-auto my-5 mx-auto">
+      <form
+        class="shadow-md rounded px-8 pt-6 rounded-l-lg pb-8 mb-4 w-auto my-5 mx-auto"
+      >
         <div class="mb-6">
-          <label class="block text-gray-700 text-sm font-bold mb-2" for="selected">เลือกประเภทกีฬา</label>
+          <label
+            class="block text-gray-700 text-sm font-bold mb-2"
+            for="selected"
+            >เลือกประเภทกีฬา</label
+          >
           <select v-model="sportType" required>
             <option disabled value>Please select one</option>
             <option>Futsal</option>
@@ -39,47 +50,92 @@
             <option>Basketball</option>
             <option>E-sport</option>
             <option>Tabletennis</option>
-            <option>Boardgames</option>
+            <option>Boardgame</option>
             <option>Volleyball</option>
             <option>Football</option>
             <option>Sepaktakraw</option>
             <option>Softball</option>
             <option>Tennis</option>
-            <option>Petaque</option>
-            <option>Rugby</option>
+            <option>Petanque</option>
+            <option>Rugbyfootball</option>
             <option>Entertainment</option>
           </select>
           <select v-model="category" required>
             <option disabled value>Please select one</option>
             <option
-              v-if="sportType == 'Badminton' || sportType == 'Tennis' || sportType == 'Tabletennis' "
-            >ประเภทเดี่ยวชาย</option>
+              v-if="
+                sportType == 'Badminton' ||
+                  sportType == 'Tennis' ||
+                  sportType == 'Tabletennis'
+              "
+              >ประเภทเดี่ยวชาย</option
+            >
             <option
-              v-if="sportType == 'Badminton' || sportType == 'Tennis' || sportType == 'Tabletennis' "
-            >ประเภทเดี่ยวหญิง</option>
+              v-if="
+                sportType == 'Badminton' ||
+                  sportType == 'Tennis' ||
+                  sportType == 'Tabletennis'
+              "
+              >ประเภทเดี่ยวหญิง</option
+            >
             <option
-              v-if="sportType == 'Badminton' || sportType == 'Tennis' || sportType == 'Petaque' "
-            >ประเภทคู่ชายล้วน</option>
+              v-if="
+                sportType == 'Badminton' ||
+                  sportType == 'Tennis' ||
+                  sportType == 'Petanque'
+              "
+              >ประเภทคู่ชายล้วน</option
+            >
             <option
-              v-if="sportType == 'Badminton' || sportType == 'Tennis' || sportType == 'Petaque' "
-            >ประเภทคู่หญิงล้วน</option>
+              v-if="
+                sportType == 'Badminton' ||
+                  sportType == 'Tennis' ||
+                  sportType == 'Petanque'
+              "
+              >ประเภทคู่หญิงล้วน</option
+            >
             <option
-              v-if="sportType == 'Badminton' || sportType == 'Tennis' || sportType == 'Petaque' "
-            >ประเภทคู่ผสม</option>
+              v-if="
+                sportType == 'Badminton' ||
+                  sportType == 'Tennis' ||
+                  sportType == 'Petanque'
+              "
+              >ประเภทคู่ผสม</option
+            >
             <option
-              v-if="sportType == 'Futsal' || sportType == 'Petaque' || sportType == 'Basketball' || sportType == 'E-sport'  || sportType == 'Volleyball' || sportType == 'Football' || sportType == 'Sepaktakraw' || sportType == 'Softball' || sportType == 'Rugby' || sportType == 'Entertainment' "
-            >ประเภททีมชาย</option>
-            <option v-if="sportType == 'Tabletennis'">ประเภททีมชาย(3 คน)</option>
-            <option v-if="sportType == 'Petaque' || sportType == 'Volleyball' ">ประเภททีมหญิง</option>
-            <option v-if="sportType == 'Boardgames'">หมากรุกไทย</option>
-            <option v-if="sportType == 'Boardgames'">A-math แบบเดี่ยว</option>
-            <option v-if="sportType == 'Boardgames'">A-math แบบคู่</option>
-            <option v-if="sportType == 'Boardgames'">Crossword แบบเดี่ยว</option>
-            <option v-if="sportType == 'Boardgames'">Crossword แบบคู่</option>
+              v-if="
+                sportType == 'Futsal' ||
+                  sportType == 'Petanque' ||
+                  sportType == 'Basketball' ||
+                  sportType == 'E-sport' ||
+                  sportType == 'Volleyball' ||
+                  sportType == 'Football' ||
+                  sportType == 'Sepaktakraw' ||
+                  sportType == 'Softball' ||
+                  sportType == 'Rugbyfootball' ||
+                  sportType == 'Entertainment'
+              "
+              >ประเภททีมชาย</option
+            >
+            <option v-if="sportType == 'Tabletennis'"
+              >ประเภททีมชาย(3 คน)</option
+            >
+            <option v-if="sportType == 'Petanque' || sportType == 'Volleyball'"
+              >ประเภททีมหญิง</option
+            >
+            <option v-if="sportType == 'Boardgame'">หมากรุกไทย</option>
+            <option v-if="sportType == 'Boardgame'">A-math แบบเดี่ยว</option>
+            <option v-if="sportType == 'Boardgame'">A-math แบบคู่</option>
+            <option v-if="sportType == 'Boardgame'">Crossword แบบเดี่ยว</option>
+            <option v-if="sportType == 'Boardgame'">Crossword แบบคู่</option>
           </select>
         </div>
         <div class="mb-6">
-          <label class="block text-gray-700 text-sm font-bold mb-2" for="selected">เลือกสนามแข่ง</label>
+          <label
+            class="block text-gray-700 text-sm font-bold mb-2"
+            for="selected"
+            >เลือกสนามแข่ง</label
+          >
           <select v-model="field" required>
             <option>โรงยิมกลาง</option>
             <option>สนามฟุตบอลกองบิน 41</option>
@@ -96,13 +152,17 @@
           </select>
         </div>
         <div class="mb-4">
-          <label class="text-gray-700 text-sm font-bold" for="selected">เวลาเริ่มแข่งขัน</label>
+          <label class="text-gray-700 text-sm font-bold" for="selected"
+            >เวลาเริ่มแข่งขัน</label
+          >
           <input
             v-model="startTime"
             class="hadow appearance-none border rounded w-25 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
             type="datetime-local"
           />
-          <label class="text-gray-700 text-sm font-bold" for="selected">เวลาจบแข่งขัน</label>
+          <label class="text-gray-700 text-sm font-bold" for="selected"
+            >เวลาจบแข่งขัน</label
+          >
           <input
             v-model="endTime"
             class="hadow appearance-none border rounded w-25 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
@@ -111,7 +171,24 @@
         </div>
 
         <div
-          v-if="sportType == 'Entertainment' || sportType == 'Sepaktakraw' || sportType == 'Pataque' || sportType == 'Tennis' || sportType == 'Boardgames' ||sportType == 'Softball' || sportType == 'Basketball' || sportType == 'Football' || sportType == 'Futsal' || sportType == 'Rugby' || sportType == 'Volleyball' || sportType == 'E-sport' || (sportType == 'Tabletennis' && (category == 'ประเภทเดี่ยวชาย' || category == 'ประเภทเดี่ยวหญิง') || sportType == 'Badminton')"
+          v-if="
+            sportType == 'Entertainment' ||
+              sportType == 'Sepaktakraw' ||
+              sportType == 'Pataque' ||
+              sportType == 'Tennis' ||
+              sportType == 'Boardgames' ||
+              sportType == 'Softball' ||
+              sportType == 'Basketball' ||
+              sportType == 'Football' ||
+              sportType == 'Futsal' ||
+              sportType == 'Rugby' ||
+              sportType == 'Volleyball' ||
+              sportType == 'E-sport' ||
+              (sportType == 'Tabletennis' &&
+                (category == 'ประเภทเดี่ยวชาย' ||
+                  category == 'ประเภทเดี่ยวหญิง')) ||
+              sportType == 'Badminton'
+          "
         >
           <!-- team1-section -->
           <h2 class="text-gray-700 font-bold mb-2">Team 1</h2>
@@ -168,7 +245,9 @@
         </div>
 
         <!-- player section -->
-        <div v-if="(sportType == 'Tabletennis' && (category == 'ประเภททีมชาย(3 คน)'))">
+        <div
+          v-if="sportType == 'Tabletennis' && category == 'ประเภททีมชาย(3 คน)'"
+        >
           <h2 class="text-gray-700 font-bold mb-2">Palyer 1</h2>
           <div class="mb-4">
             <input
@@ -226,7 +305,9 @@
             v-on:click="submitForm1"
             class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
             type="button"
-          >Submit</button>
+          >
+            Submit
+          </button>
         </div>
       </form>
     </div>
@@ -234,9 +315,13 @@
     <!-- Form 2  -->
     <form class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
       <div class="mb-4">
-        <label style="color:red">*หมายเหตุฟอร์มเฉพาะ กรีฑาและว่ายน้ำเท่านั้น!!!</label>
+        <label style="color:red"
+          >*หมายเหตุฟอร์มเฉพาะ กรีฑาและว่ายน้ำเท่านั้น!!!</label
+        >
       </div>
-      <label class="block text-gray-700 text-sm font-bold mb-2" for="selected">เลือกประเภทกีฬา</label>
+      <label class="block text-gray-700 text-sm font-bold mb-2" for="selected"
+        >เลือกประเภทกีฬา</label
+      >
       <div class="mb-6">
         <select v-model="sportType">
           <option disabled value>Please select one</option>
@@ -245,49 +330,91 @@
         </select>
         <select v-model="category">
           <option disabled value>Please select one</option>
-          <option v-if="sportType == 'Athletics' ">ประเภท 100 เมตรชาย</option>
-          <option v-if="sportType == 'Athletics' ">ประเภท 100 เมตรหญิง</option>
-          <option v-if="sportType == 'Athletics' ">ประเภท 200 เมตรชาย</option>
-          <option v-if="sportType == 'Athletics' ">ประเภท 200 เมตรหญิง</option>
-          <option v-if="sportType == 'Athletics' ">ประเภท 400 เมตรชาย</option>
-          <option v-if="sportType == 'Athletics' ">ประเภท 400 เมตรหญิง</option>
-          <option v-if="sportType == 'Athletics' ">ประเภททีมวิ่งพลัด 4*100 เมตรชาย</option>
-          <option v-if="sportType == 'Athletics' ">ประเภททีมวิ่งพลัด 4*100 เมตรหญิง</option>
-          <option v-if="sportType == 'Athletics' ">ประเภททีมวิ่งพลัด 4*400 เมตรชาย</option>
-          <option v-if="sportType == 'Athletics' ">ประเภททีมวิ่งพลัด 4*100 เมตรกญืง</option>
+          <option v-if="sportType == 'Athletics'">ประเภท 100 เมตรชาย</option>
+          <option v-if="sportType == 'Athletics'">ประเภท 100 เมตรหญิง</option>
+          <option v-if="sportType == 'Athletics'">ประเภท 200 เมตรชาย</option>
+          <option v-if="sportType == 'Athletics'">ประเภท 200 เมตรหญิง</option>
+          <option v-if="sportType == 'Athletics'">ประเภท 400 เมตรชาย</option>
+          <option v-if="sportType == 'Athletics'">ประเภท 400 เมตรหญิง</option>
+          <option v-if="sportType == 'Athletics'"
+            >ประเภททีมวิ่งพลัด 4*100 เมตรชาย</option
+          >
+          <option v-if="sportType == 'Athletics'"
+            >ประเภททีมวิ่งพลัด 4*100 เมตรหญิง</option
+          >
+          <option v-if="sportType == 'Athletics'"
+            >ประเภททีมวิ่งพลัด 4*400 เมตรชาย</option
+          >
+          <option v-if="sportType == 'Athletics'"
+            >ประเภททีมวิ่งพลัด 4*100 เมตรกญืง</option
+          >
 
-          <option v-if="sportType == 'Swimming' ">ประเภทเดี่ยวผสม 200 เมตรหญิง</option>
-          <option v-if="sportType == 'Swimming' ">ประเภทท่าฟรีสไตล์ 50 เมตร เมตรชาย</option>
-          <option v-if="sportType == 'Swimming' ">ประเภทท่าฟรีสไตล์ 50 เมตรหญิง</option>
-          <option v-if="sportType == 'Swimming' ">ประเภทท่าฟรีสไตล์ 100 เมตรชาย</option>
-          <option v-if="sportType == 'Swimming' ">ประเภทท่าฟรีสไตล์ 100 เมตรหญิง</option>
-          <option v-if="sportType == 'Swimming' ">ประเภทผีเสื้อ 50 เมตรชาย</option>
-          <option v-if="sportType == 'Swimming' ">ประเภทท่าผีเสื้อ 50 เมตรหญิง</option>
-          <option v-if="sportType == 'Swimming' ">ประเภทท่ากรรเชียง 50 เมตรชาย</option>
-          <option v-if="sportType == 'Swimming' ">ประเภทท่ากรรเชียง 50 เมตรหญิง</option>
-          <option v-if="sportType == 'Swimming' ">ประเภทท่ากบ 50 เมตรชาย</option>
-          <option v-if="sportType == 'Swimming' ">ประเภทท่ากบ 50 เมตรหญิง</option>
-          <option v-if="sportType == 'Swimming' ">ประเภทท่ากบ 100 เมตรชาย</option>
-          <option v-if="sportType == 'Swimming' ">ประเภทท่ากบ 100 เมตรหญิง</option>
-          <option v-if="sportType == 'Swimming' ">ประเภทผลัดผสม 4*50 เมตรชาย</option>
-          <option v-if="sportType == 'Swimming' ">ประเภทผลัดฟรีสไตล์ 4*50 เมตรชาย</option>
+          <option v-if="sportType == 'Swimming'"
+            >ประเภทเดี่ยวผสม 200 เมตรหญิง</option
+          >
+          <option v-if="sportType == 'Swimming'"
+            >ประเภทท่าฟรีสไตล์ 50 เมตร เมตรชาย</option
+          >
+          <option v-if="sportType == 'Swimming'"
+            >ประเภทท่าฟรีสไตล์ 50 เมตรหญิง</option
+          >
+          <option v-if="sportType == 'Swimming'"
+            >ประเภทท่าฟรีสไตล์ 100 เมตรชาย</option
+          >
+          <option v-if="sportType == 'Swimming'"
+            >ประเภทท่าฟรีสไตล์ 100 เมตรหญิง</option
+          >
+          <option v-if="sportType == 'Swimming'"
+            >ประเภทผีเสื้อ 50 เมตรชาย</option
+          >
+          <option v-if="sportType == 'Swimming'"
+            >ประเภทท่าผีเสื้อ 50 เมตรหญิง</option
+          >
+          <option v-if="sportType == 'Swimming'"
+            >ประเภทท่ากรรเชียง 50 เมตรชาย</option
+          >
+          <option v-if="sportType == 'Swimming'"
+            >ประเภทท่ากรรเชียง 50 เมตรหญิง</option
+          >
+          <option v-if="sportType == 'Swimming'">ประเภทท่ากบ 50 เมตรชาย</option>
+          <option v-if="sportType == 'Swimming'"
+            >ประเภทท่ากบ 50 เมตรหญิง</option
+          >
+          <option v-if="sportType == 'Swimming'"
+            >ประเภทท่ากบ 100 เมตรชาย</option
+          >
+          <option v-if="sportType == 'Swimming'"
+            >ประเภทท่ากบ 100 เมตรหญิง</option
+          >
+          <option v-if="sportType == 'Swimming'"
+            >ประเภทผลัดผสม 4*50 เมตรชาย</option
+          >
+          <option v-if="sportType == 'Swimming'"
+            >ประเภทผลัดฟรีสไตล์ 4*50 เมตรชาย</option
+          >
         </select>
       </div>
       <div class="mb-6">
-        <label class="block text-gray-700 text-sm font-bold mb-2" for="selected">เลือกสนามแข่ง</label>
+        <label class="block text-gray-700 text-sm font-bold mb-2" for="selected"
+          >เลือกสนามแข่ง</label
+        >
         <select v-model="field" required>
           <option>สระรุจิระวงศ์</option>
           <option>สนามกีฬากลาง</option>
         </select>
       </div>
       <div class="mb-4">
-        <label class="text-gray-700 text-sm font-bold" for="selected">เวลาเริ่มแข่งขัน</label>
+        <label class="text-gray-700 text-sm font-bold" for="selected"
+          >เวลาเริ่มแข่งขัน</label
+        >
         <input
           v-model="startTime"
           class="hadow appearance-none border rounded w-25 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
           type="datetime-local"
         />
-        <label class="text-gray-700 text-sm font-bold" for="selected">เวลาจบแข่งขัน</label>
+        <label class="text-gray-700 text-sm font-bold" for="selected"
+          >เวลาจบแข่งขัน</label
+        >
         <input
           v-model="endTime"
           class="hadow appearance-none border rounded w-25 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
@@ -295,7 +422,16 @@
         />
       </div>
       <div
-        v-if="(sportType == 'Swimming' && (category == 'ประเภทผลัดผสม 4*50 เมตรชาย' || category == 'ประเภทผลัดฟรีสไตล์ 4*50 เมตรชาย')) ||(sportType == 'Athletics' &&(category == 'ประเภททีมวิ่งพลัด 4*100 เมตรชาย' || category == 'ประเภททีมวิ่งพลัด 4*100 เมตรหญิง' || category == 'ประเภททีมวิ่งพลัด 4*400 เมตรชาย' || category == 'ประเภททีมวิ่งพลัด 4*100 เมตรกญืง'))"
+        v-if="
+          (sportType == 'Swimming' &&
+            (category == 'ประเภทผลัดผสม 4*50 เมตรชาย' ||
+              category == 'ประเภทผลัดฟรีสไตล์ 4*50 เมตรชาย')) ||
+            (sportType == 'Athletics' &&
+              (category == 'ประเภททีมวิ่งพลัด 4*100 เมตรชาย' ||
+                category == 'ประเภททีมวิ่งพลัด 4*100 เมตรหญิง' ||
+                category == 'ประเภททีมวิ่งพลัด 4*400 เมตรชาย' ||
+                category == 'ประเภททีมวิ่งพลัด 4*100 เมตรกญืง'))
+        "
       >
         <!-- team1-section -->
         <h2 class="text-gray-700 font-bold mb-2">Team 1</h2>
@@ -409,7 +545,9 @@
           v-on:click="submitForm1"
           class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
           type="button"
-        >Submit</button>
+        >
+          Submit
+        </button>
       </div>
     </form>
 
@@ -451,7 +589,7 @@ export default {
       scorePlayer3: "",
       startTime: null,
       endTime: null,
-      user : ''
+      user: ""
     };
   },
   methods: {
@@ -473,7 +611,7 @@ export default {
         }
       });
     },
-    async insert() {       
+    async insert() {
       const judgeID = await this.$store.dispatch("getJudgeID");
       if (judgeID == "") {
         await this.$swal({
@@ -485,13 +623,17 @@ export default {
         }).then(result => {
           setTimeout('location.href="/login"', 0);
         });
-      } else if(this.field == '' || this.startTime === null || this.endTime === null || this.sportType == '' || this.category == ' '){
+      } else if (
+        this.field == "" ||
+        this.startTime === null ||
+        this.endTime === null ||
+        this.sportType == "" ||
+        this.category == " "
+      ) {
         console.log(this.endTime);
-        
-        alert("โปรดกรอกกีฬา ประเภท สนาม เวลาเริ่ม จบ ให้ครบ")
-      }
-      else
-      {
+
+        alert("โปรดกรอกกีฬา ประเภท สนาม เวลาเริ่ม จบ ให้ครบ");
+      } else {
         const data = {
           nameTeam1: this.nameTeam1,
           scoreTeam1: this.scoreTeam1,
@@ -528,9 +670,8 @@ export default {
     Footer
   },
   async mounted() {
-    let get =  await this.getJudge()
-    this.user = get.username
-    
+    let get = await this.getJudge();
+    this.user = get.username;
   }
 };
 </script>
@@ -544,4 +685,3 @@ export default {
   transform: translate(-50%, -50%);
 }
 </style>
-
