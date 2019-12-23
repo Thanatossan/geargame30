@@ -15,6 +15,9 @@ module.exports = {
       logo: "200px"
     }
   },
-  variants: {},
-  plugins: []
+  variants: {
+    tableLayout: ['responsive', 'hover', 'focus']
+  },
+  plugins: [],
+  
 };

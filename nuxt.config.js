@@ -38,7 +38,25 @@ export default {
   /*
    ** Nuxt.js modules
    */
-  modules: ["nuxt-buefy", "portal-vue/nuxt"],
+  modules: [
+            "nuxt-buefy", 
+            [
+              'nuxt-fontawesome', {
+                imports: [
+                 {
+                   set: '@fortawesome/free-solid-svg-icons',
+                   icons: ['fas']
+                 },
+                 {
+                   set:'@fortawesome/free-brands-svg-icons',
+                   icons: ['fab']
+                 }
+               ]
+              }
+        ],
+        'vue-sweetalert2/nuxt'
+      ],
+  
   /*
    ** Build configuration
    */
