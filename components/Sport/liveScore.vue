@@ -113,52 +113,52 @@ export default {
       var imgTag  = '<img src="/_nuxt/img/53a1fad.png" class="lg:object-scale-down max-h-small"/>'
       switch(sportType){
         case 'Badminton' :
-          imgTag =  `<img src="/_nuxt/assets/sport_img/badminton.PNG" class="lg:object-scale-down max-h-small"/>`
+          imgTag =  `<img src="/_nuxt/img/241e671.PNG" class="lg:object-scale-down max-h-small"/>`
           break
         case 'Basketball' :
-          imgTag =  `<img src="/_nuxt/assets/sport_img/basketball.PNG" class="lg:object-scale-down max-h-small"/>`
+          imgTag =  `<img src="/_nuxt/img/11dd02b.PNG" class="lg:object-scale-down max-h-small"/>`
           break
         case 'E-sport' :
-          imgTag =  `<img src="/_nuxt/sport_img/e-sport.PNG" class="lg:object-scale-down max-h-small"/>`
+          imgTag =  `<img src="/_nuxt/img/fd2e01.PNG" class="lg:object-scale-down max-h-small"/>`
           break
         case 'Football' :
-          imgTag =  `<img src="/_nuxt/assets/sport_img/football.PNG" class="lg:object-scale-down max-h-small"/>`
+          imgTag =  `<img src="/_nuxt/img/33dc3c6.PNG" class="lg:object-scale-down max-h-small"/>`
           break
         case 'Futsal' :
-          imgTag =  `<img src="/_nuxt/assets/sport_img/fotsal.PNG" class="lg:object-scale-down max-h-small"/>`
+          imgTag =  `<img src="/_nuxt/img/8578cbc.PNG" class="lg:object-scale-down max-h-small"/>`
           break
         case 'Petanque' :
-          imgTag =  `<img src="/_nuxt/assets/sport_img/petong.PNG" class="lg:object-scale-down max-h-small"/>`
+          imgTag =  `<img src="/_nuxt/img/8ad1bed.PNG" class="lg:object-scale-down max-h-small"/>`
           break
         case 'Tabletennis' :
-          imgTag =  `<img src="/_nuxt/sport_img/pingpong.PNG" class="lg:object-scale-down max-h-small"/>`
+          imgTag =  `<img src="/_nuxt/img/18b415f.PNG" class="lg:object-scale-down max-h-small"/>`
           break
         case 'Rugbyfootball' :
-          imgTag =  `<img src="/_nuxt/assets/sport_img/fotsal.PNG" class="lg:object-scale-down max-h-small"/>`
+          imgTag =  `<img src="/_nuxt/img/bcb9655.PNG" class="lg:object-scale-down max-h-small"/>`
           break
         case 'Athletics' :
-          imgTag =  `<img src="/_nuxt/assets/sport_img/running.PNG" class="lg:object-scale-down max-h-small"/>`
+          imgTag =  `<img src="/_nuxt/img/c61456b.PNG" class="lg:object-scale-down max-h-small"/>`
           break
         case 'Entertainment' :
-          imgTag =  `<img src="/_nuxt/assets/sport_img/san.PNG" class="lg:object-scale-down max-h-small"/>`
+          imgTag =  `<img src="/_nuxt/img/add23ac.PNG" class="lg:object-scale-down max-h-small"/>`
           break
         case 'Sepaktakraw' :
-          imgTag =  `<img src="/_nuxt/assets/sport_img/sapak.PNG" class="lg:object-scale-down max-h-small"/>`
+          imgTag =  `<img src="/_nuxt/img/02b4701.PNG" class="lg:object-scale-down max-h-small"/>`
           break
         case 'Softball' :
-          imgTag =  `<img src="/_nuxt/assets/sport_img/softball.PNG" class="lg:object-scale-down max-h-small"/>`
+          imgTag =  `<img src="/_nuxt/img/0857216.PNG" class="lg:object-scale-down max-h-small"/>`
           break
         case 'Swimming' :
-          imgTag =  `<img src="/_nuxt/assets/sport_img/swim.PNG" class="lg:object-scale-down max-h-small"/>`
+          imgTag =  `<img src="/_nuxt/img/cdaf21d.PNG" class="lg:object-scale-down max-h-small"/>`
           break
         case 'Tennis' :
-          imgTag =  `<img src="/_nuxt/assets/sport_img/tennis.PNG" class="lg:object-scale-down max-h-small"/>`
+          imgTag =  `<img src="/_nuxt/img/3702de5.PNG" class="lg:object-scale-down max-h-small"/>`
           break
         case 'Volleyball' :
-          imgTag =  `<img src="/_nuxt/assets/sport_img/volleyball.PNG" class="lg:object-scale-down max-h-small"/>`
+          imgTag =  `<img src="/_nuxt/img/e6754dd.PNG" class="lg:object-scale-down max-h-small"/>`
           break
         case 'Boardgame' :
-          imgTag =  `<img src="/_nuxt/assets/sport_img/boardgame.PNG" class="lg:object-scale-down max-h-small"/>`
+          imgTag =  `<img src="/_nuxt/img/6261fa6.PNG" class="lg:object-scale-down max-h-small"/>`
           break
       }
       return imgTag
