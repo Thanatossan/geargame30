@@ -40,7 +40,7 @@
       </div>
       <div class="mb-6">
         <label class="block text-gray-700 text-sm font-bold mb-2" for="selected">Select Type Sport</label>
-        <select>
+        <select v-model="type">
           <option disabled value>Please select one</option>
           <option>Footsal</option>
           <option>Badminton</option>
@@ -57,6 +57,24 @@
           <option>Rugby</option>
           <option>Entertainment</option>
         </select>
+        <button
+          v-on:click="alertcilck"
+          class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+          type="button"
+        >Cilck Me!!</button>
+      </div>
+      <div class="mb-6">
+        <div v-if="type === 'Footsal'"> 
+            <select>
+              <option>ประเภททีม 5 คน</option>
+            </select>
+        </div>
+        <input
+          
+          type="text"
+          placeholder="กรอกประเภทของกีฬาที่รับผิดชอบ"
+          class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+        />
       </div>
       <div class="mb-6">
         <input
@@ -107,6 +125,14 @@
           <option>Athletics</option>
           <option>Swimming</option>
         </select>
+      </div>
+      <div class="mb-6">
+        <input
+          
+          type="text"
+          placeholder="กรอกประเภทของกีฬาที่รับผิดชอบ"
+          class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+        />
       </div>
       <div class="mb-6">
         <label class="block text-gray-700 text-sm font-bold mb-2" for="fst">input 1st</label>
@@ -164,7 +190,10 @@ import Footer from "~/components/Footer";
 import '../node_modules/sweetalert2/dist/sweetalert2.css'
 export default {
    data() {
-      return {}
+      return {
+            type : '',
+            catagory : '',
+            err : null}
     },
     methods: {
      async alertDisplay() {
@@ -173,7 +202,7 @@ export default {
           text: 'You can\'t revert your action',
           type: 'warning',
           showCancelButton: true,
-          confirmButtonText: 'Yes Delete it!',
+          confirmButtonText: 'Yes Accept it!',
           cancelButtonText: 'No, Keep it!',
           showCloseButton: true,
           showLoaderOnConfirm: true
@@ -182,6 +211,25 @@ export default {
               alert("Accepted")
           } else {
             this.$swal.close()
+          }
+        })
+      },
+      async alertcilck(){
+        await this.$swal({
+          title: 'Are you sure?',
+          text: 'You can\'t revert your action',
+          type: 'warning',
+          showCancelButton: true,
+          confirmButtonText: 'I love you my Baby!!',
+          cancelButtonText: 'Fuck you man!!',
+          showCloseButton: true,
+          showLoaderOnConfirm: true
+        }).then((result) => {
+          if(result.value) {
+            this.$swal('congratulation', 'You successfull !!', 'success')
+            alert(this.type)
+          } else {
+            this.$swal('Oh my god ', 'You so noob bro!!!', 'info')
           }
         })
       }
