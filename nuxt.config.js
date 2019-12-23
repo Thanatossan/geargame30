@@ -1,5 +1,5 @@
-const bodyParser = require('body-parser')
-const session = require('express-session')
+const bodyParser = require("body-parser");
+const session = require("express-session");
 export default {
   mode: "universal",
   /*
@@ -41,24 +41,25 @@ export default {
    ** Nuxt.js modules
    */
   modules: [
-            "nuxt-buefy", 
-            [
-              'nuxt-fontawesome', {
-                imports: [
-                 {
-                   set: '@fortawesome/free-solid-svg-icons',
-                   icons: ['fas']
-                 },
-                 {
-                   set:'@fortawesome/free-brands-svg-icons',
-                   icons: ['fab']
-                 }
-               ]
-              }
-        ],
-        'vue-sweetalert2/nuxt'
-      ],
-  
+    "nuxt-buefy",
+    [
+      "nuxt-fontawesome",
+      {
+        imports: [
+          {
+            set: "@fortawesome/free-solid-svg-icons",
+            icons: ["fas"]
+          },
+          {
+            set: "@fortawesome/free-brands-svg-icons",
+            icons: ["fab"]
+          }
+        ]
+      }
+    ],
+    "vue-sweetalert2/nuxt"
+  ],
+
   /*
    ** Build configuration
    */
@@ -70,20 +71,24 @@ export default {
   },
   axios: {
     // See https://github.com/nuxt-community/axios-module#options
-    baseURL: process.env.baseURL || 'http://localhost:3000'
+    baseURL: process.env.baseURL || "http://localhost:3000"
   },
   serverMiddleware: [
     // body-parser middleware
     bodyParser.json(),
     // session middleware
     session({
-      secret: 'secret',
+      secret: "secret",
       resave: false,
       saveUninitialized: false,
       cookie: { maxAge: 600000 }
     }),
     // Api middleware
     // We add /api/login & /api/logout routes
-    '~/service'
+    "~/service"
   ],
+  server: {
+    port: 2000, // default: 3000
+    host: "0.0.0.0" // default: localhost
+  }
 };
