@@ -40,7 +40,7 @@
       </div>
       <div class="mb-6">
         <label class="block text-gray-700 text-sm font-bold mb-2" for="selected">Select Type Sport</label>
-        <select v-model="type">
+        <select v-model="typeselect">
           <option disabled value>Please select one</option>
           <option>Footsal</option>
           <option>Badminton</option>
@@ -57,18 +57,24 @@
           <option>Rugby</option>
           <option>Entertainment</option>
         </select>
+
+          <select >
+          <option disabled value>Please select one</option>
+          <option>ประเภทเดี่ยวชาย</option>
+          <option>ประเภทเดี่ยวหญิง</option>
+          <option>ประเภทคู่ชายล้วน</option>
+          <option>ประเภทคู่หญิงล้วน</option>
+          <option>ประเภทคู่ผสม</option>
+          <option>ประเภททีม 3 คน</option>
+          <option>ประเภททีม 5 คน</option>
+        </select>
         <button
           v-on:click="alertcilck"
-          class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+          class="bg-blue-500 hidden hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
           type="button"
         >Cilck Me!!</button>
       </div>
       <div class="mb-6">
-        <div v-if="type === 'Footsal'"> 
-            <select>
-              <option>ประเภททีม 5 คน</option>
-            </select>
-        </div>
         <input
           
           type="text"
@@ -92,6 +98,7 @@
           class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
         />
       </div>
+      
       <div class="flex items-center justify-between">
         <button
           v-on:click="alertDisplay"
@@ -120,10 +127,21 @@
       </div>
       <label class="block text-gray-700 text-sm font-bold mb-2" for="selected">Select Type Sport</label>
       <div class="mb-6">
-        <select >
+        <select v-model="typeselect">
           <option disabled value>Please select one</option>
           <option>Athletics</option>
           <option>Swimming</option>
+        </select>
+
+         <select >
+          <option disabled value>Please select one</option>
+          <option>ประเภทเดี่ยวชาย</option>
+          <option>ประเภทเดี่ยวหญิง</option>
+          <option>ประเภทคู่ชายล้วน</option>
+          <option>ประเภทคู่หญิงล้วน</option>
+          <option>ประเภทคู่ผสม</option>
+          <option>ประเภททีม 3 คน</option>
+          <option>ประเภททีม 5 คน</option>
         </select>
       </div>
       <div class="mb-6">
@@ -191,7 +209,7 @@ import '../node_modules/sweetalert2/dist/sweetalert2.css'
 export default {
    data() {
       return {
-            type : '',
+            typeselect : '',
             catagory : '',
             err : null}
     },
@@ -227,7 +245,9 @@ export default {
         }).then((result) => {
           if(result.value) {
             this.$swal('congratulation', 'You successfull !!', 'success')
-            alert(this.type)
+            alert(this.typeselect)
+            this.catagory = this.typeselect
+            alert(this.catagory)
           } else {
             this.$swal('Oh my god ', 'You so noob bro!!!', 'info')
           }
