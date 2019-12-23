@@ -20,5 +20,9 @@ export default {
    authenCheck : async (req,res,next)=>{
      if(req.session.authUser !== undefined) res.json({login : true})
      else res.json({login : false})
+   },
+
+   getJudge : async (req,res,next)=>{
+     res.send(req.session.authUser);
    }
 }

@@ -31,7 +31,7 @@ export const actions = {
     commit("SET_USER", { username: callback.data });
     if (permission) {
       alert("login sucessful");
-      setTimeout('location.href="/judge"', 0);
+      setTimeout('location.href="/judgedetail"', 0);
     } else {
       alert("login failed");
       setTimeout('location.href="/login"', 0);
@@ -48,6 +48,10 @@ export const actions = {
     const res = await axios.get("/service/authCheck");
     console.log(res);
 
-    if (res.data.login) setTimeout('location.href="/judge"', 0);
+    if (res.data.login) setTimeout('location.href="/judgedetail"', 0);
+  },
+  async getJudgeID(){
+    const res = await axios.get('/service/getJudge');
+    return res.data;
   }
 };

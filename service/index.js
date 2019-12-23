@@ -17,6 +17,7 @@ router.use((req, res, next) => {
 router.post("/login", controller.judgeController.login);
 router.post("/logout", controller.judgeController.logout);
 router.get("/authCheck", controller.judgeController.authenCheck);
+router.get("/getJudge",controller.judgeController.getJudge)
 
 // Export the server middleware
 export default {
