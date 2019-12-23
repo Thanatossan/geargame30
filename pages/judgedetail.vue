@@ -32,7 +32,7 @@
           <label class="block text-gray-700 text-sm font-bold mb-2" for="selected">เลือกประเภทกีฬา</label>
           <select v-model="sportType">
             <option disabled value>Please select one</option>
-            <option>Footsal</option>
+            <option>Futsal</option>
             <option>Badminton</option>
             <option>Basketball</option>
             <option>E-sport</option>
@@ -49,15 +49,13 @@
           </select>
           <select v-model="category">
             <option disabled value>Please select one</option>
-            <option>ประเภทเดี่ยวชาย</option>
-            <option>ประเภทเดี่ยวหญิง</option>
-            <option>ประเภทคู่ชายล้วน</option>
+            <option v-if="sportType == 'Badminton' || sportType == 'Tennis' || sportType == 'Tabletennis' ">ประเภทเดี่ยวชาย</option>
+            <option v-if="sportType == 'Badminton' || sportType == 'Tennis' || sportType == 'Tabletennis' ">ประเภทเดี่ยวหญิง</option>
+            <option v-if="sportType == 'Badminton' || sportType == 'Tennis' || sportType == 'Tabletennis' ">ประเภทคู่ชายล้วน</option>
             <option>ประเภทคู่หญิงล้วน</option>
             <option>ประเภทคู่ผสม</option>
-            <option>ประเภททีม 3 คน</option>
-            <option>ประเภททีม 5 คน</option>
+            <option>ประเภททีม</option>
           </select>
-          
         </div>
         <div class="mb-6">
           <label class="block text-gray-700 text-sm font-bold mb-2" for="selected">เลือกสนามแข่ง</label>
@@ -203,7 +201,7 @@ import border from "~/components/border";
 import Footer from "~/components/Footer";
 import "../node_modules/sweetalert2/dist/sweetalert2.css";
 export default {
-  middleware: "authen",
+  // middleware: "authen",
   data() {
     return {
       sportType: '',
