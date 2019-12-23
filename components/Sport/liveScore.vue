@@ -110,7 +110,7 @@ export default {
       return threeLeastScore
     },
     mapImg(sportType){
-      var imgTag  = '<img src="/_nuxt/image/JhangLekGames-Logo_wb.png" class="lg:object-scale-down max-h-small"/>'
+      var imgTag  = '<img src="/_nuxt/assets/image/JhangLekGames-Logo_wb.png" class="lg:object-scale-down max-h-small"/>'
       switch(sportType){
         case 'Badminton' :
           imgTag =  `<img src="/_nuxt/assets/sport_img/badminton.PNG" class="lg:object-scale-down max-h-small"/>`

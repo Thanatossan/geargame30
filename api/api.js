@@ -1,7 +1,7 @@
 const axios = require('axios')
 
 const api = axios.create({
-    baseURL : 'http://34.82.236.4:3000',
+    baseURL : 'http://localhost:8000',
     withCredentials : true,
     headers: {
         Accept : 'application/json',

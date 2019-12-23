@@ -33,67 +33,26 @@
       
       <div class="w-full text-center">
         <div>
-          <table class="w-auto sm:bg-white rounded-lg overflow-hidden sm:shadow-lg my-5 mx-auto">
+          <table class="flex w-auto sm:bg-white rounded-lg overflow-hidden sm:shadow-lg my-5 mx-auto">
           <thead class="text-white">
-            <tr class="bg-red-700 sm:table-row rounded-l-lg sm:rounded-none mb-2 sm:mb-0">
-              <th class="p-3 text-left border" style="color:white">Match Number</th>
-              <th class="p-3 text-left border" style="color:white">Team vs Team</th>
-              <th class="p-3 text-left border" style="color:white">Score</th>
-              <th class="p-3 text-left border" style="color:white">Sport Type</th>
-              <th class="p-3 text-left border" style="color:white">Sport Catagory</th>
-              <th class="p-3 text-left border" style="color:white">field Number</th>
-              <th class="p-3 text-left border" style="color:white">Time</th>
+            <tr class="bg-red-700 sm:table-row rounded-l-lg sm:rounded mb-2 sm:mb-0">
+              <th class="p-3 text-left border" style="color:white">MatchNumber</th>
+              <th class="p-3 text-left border" style="color:white">team1</th>
+              <th class="p-3 text-left border" style="color:white">scoreteam1</th>
+              <th class="p-3 text-left border" style="color:white">team2</th>
+              <th class="p-3 text-left border" style="color:white">scoreteam2</th>
+              <th class="p-3 text-left border" style="color:white">team3</th>
+              <th class="p-3 text-left border" style="color:white">scoreteam3</th>
+              <th class="p-3 text-left border" style="color:white">player1</th>
+              <th class="p-3 text-left border" style="color:white">player2</th>
+              <th class="p-3 text-left border" style="color:white">player3</th>
+              <th class="p-3 text-left border" style="color:white">sportType</th>
+              <th class="p-3 text-left border" style="color:white">sportCategory</th>
             </tr>
           </thead>
-          <tbody>
-            <tr class="sm:table-row mb-2 sm:mb-0">
-              <td class="border-grey-light border hover:bg-gray-100 p-3">John Covv</td>
-              <td
-                class="border-grey-light border hover:bg-gray-100 p-3 truncate"
-              >contato@johncovv.tech</td>
-              <td
-                class="border-grey-light border hover:bg-gray-100 p-3 "
-              >Delete</td>
-              <td class="border-grey-light border hover:bg-gray-100 p-3">159.36</td>
-              <td class="border-grey-light border hover:bg-gray-100 p-3">Football</td>
-              <td class="border-grey-light border hover:bg-gray-100 p-3">25</td>
-              <td class="border-grey-light border hover:bg-gray-100 p-3">19.00 Am.</td>
-            </tr>
-            <tr class="sm:table-row mb-2 sm:mb-0">
-              <td class="border-grey-light border hover:bg-gray-100 p-3">Michael Jackson</td>
-              <td class="border-grey-light border hover:bg-gray-100 p-3 truncate">m_jackson@mail.com</td>
-              <td
-                class="border-grey-light border hover:bg-gray-100 p-3 "
-              >Delete</td>
-              <td class="border-grey-light border hover:bg-gray-100 p-3">159.36</td>
-              <td class="border-grey-light border hover:bg-gray-100 p-3">Football</td>
-              <td class="border-grey-light border hover:bg-gray-100 p-3">25</td>
-              <td class="border-grey-light border hover:bg-gray-100 p-3">19.00 Am.</td>
-            </tr>
-            <tr class="sm:table-row mb-2 sm:mb-0">
-              <td class="border-grey-light border hover:bg-gray-100 p-3">Julia</td>
-              <td class="border-grey-light border hover:bg-gray-100 p-3 truncate">julia@mail.com</td>
-              <td
-                class="border-grey-light border hover:bg-gray-100 p-3 "
-              >Delete</td>
-              <td class="border-grey-light border hover:bg-gray-100 p-3">159.36</td>
-              <td class="border-grey-light border hover:bg-gray-100 p-3">Football</td>
-              <td class="border-grey-light border hover:bg-gray-100 p-3">25</td>
-              <td class="border-grey-light border hover:bg-gray-100 p-3">19.00 Am.</td>
-            </tr>
-            <tr class="sm:table-row mb-2 sm:mb-0">
-              <td class="border-grey-light border hover:bg-gray-100 p-3">Martin Madrazo</td>
-              <td
-                class="border-grey-light border hover:bg-gray-100 p-3 truncate"
-              >martin.madrazo@mail.com</td>
-              <td
-                class="border-grey-light border hover:bg-gray-100 p-3 "
-              >Delete</td>
-              <td class="border-grey-light border hover:bg-gray-100 p-3">159.36</td>
-              <td class="border-grey-light border hover:bg-gray-100 p-3">Football</td>
-              <td class="border-grey-light border hover:bg-gray-100 p-3">25</td>
-              <td class="border-grey-light border hover:bg-gray-100 p-3">19.00 Am.</td>
-            </tr>
+          <tbody id="append">
+            
+            
           </tbody>
         </table>
         </div>
@@ -126,20 +85,66 @@
 
 import border from "~/components/border";
 import Footer from "~/components/Footer";
-import engineer from "~/components/about/eng_history";;
+import engineer from "~/components/about/eng_history";
+import $ from 'jquery'
+import {api} from '../api/api'
 
 export default {
+  
   components: {
     border,
     Footer,
     engineer
   },
-   
+  data(){
+    return{
+      user : ''
+    }
+    
+  },
   // middleware : 'authen',
   methods : {
     async logout(){
       await this.$store.dispatch('logout')
+    },
+    async getJudge() {
+      return await this.$store.dispatch("getJudgeID");
+    },
+    async appendTable(arr){
+      arr.forEach(each => {
+          $('#append').append(`
+            <tr class="sm:table-row mb-2 sm:mb-0">
+              <td class="border-grey-light border hover:bg-gray-100 p-3">${each.matchNumber}</td>
+              <td class="border-grey-light border hover:bg-gray-100 p-3">${each.nameTeam1}</td>
+              <td class="border-grey-light border hover:bg-gray-100 p-3">${each.scoreTeam1}</td>
+              <td class="border-grey-light border hover:bg-gray-100 p-3">${each.nameTeam2}</td>
+              <td class="border-grey-light border hover:bg-gray-100 p-3">${each.scoreTeam2}</td>
+              <td class="border-grey-light border hover:bg-gray-100 p-3">${each.nameTeam3}</td>
+              <td class="border-grey-light border hover:bg-gray-100 p-3">${each.scoreTeam3}</td>
+              <td class="border-grey-light border hover:bg-gray-100 p-3">${each.team1Player}</td>
+              <td class="border-grey-light border hover:bg-gray-100 p-3">${each.team2Player}</td>
+              <td class="border-grey-light border hover:bg-gray-100 p-3">${each.team3Player}</td>
+              <td class="border-grey-light border hover:bg-gray-100 p-3">${each.sportType}</td>
+              <td class="border-grey-light border hover:bg-gray-100 p-3">${each.sportCategory}</td>
+
+            </tr>
+          `)
+      });
+
     }
+  },
+  async mounted(){
+    var get =  await this.getJudge()
+    this.user = get.username
+    if(this.user != ''){
+      const res = await api.get(`/api/getMatchbyUser/${this.user}`)
+      console.log(this.user);
+      console.log(res.data);
+      await this.appendTable(res.data)
+      
+      
+    }  
+   
   }
 };
 </script>
