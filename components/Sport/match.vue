@@ -94,21 +94,21 @@ export default {
           returnArr.push(each)
         } 
       });
-      var sort = returnArr.sort(
-        function(a,b){
-          var keyA = a.temp
-          var keyB = b.temp
-          if(keyA < keyB) return - 1;
-          else if(keyA > keyB) return 1;
-          else return 0;
-      })
-      let len = sort.length
+      // var sort = returnArr.sort(
+      //   function(a,b){
+      //     var keyA = a.temp
+      //     var keyB = b.temp
+      //     if(keyA < keyB) return - 1;
+      //     else if(keyA > keyB) return 1;
+      //     else return 0;
+      // })
+      let len = arr.length
       let loop
       if(len >= 3) loop = 3
       else loop = len
       returnArr = []
       for(let i=0 ;i<loop;i++){
-        returnArr.push(sort[i]);
+        returnArr.push(arr[i]);
       }
       return returnArr
     },
@@ -170,9 +170,8 @@ export default {
 
   async mounted(){
     const res = await api.get('/api/incomingMatch')
-    const sorted = await this.getIncomingMatch(res.data)
-    console.log(sorted);
-    await this.appendincomingMatch(sorted)
+    const arr = await this.getIncomingMatch(res.data)
+    await this.appendincomingMatch(arr)
   }
 
 };

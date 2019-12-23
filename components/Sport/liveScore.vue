@@ -92,20 +92,20 @@ export default {
     },
     async threeLastUpdatedScore(arr){
       var threeLeastScore = []
-      var sort = arr.sort(
-        function(a,b){
-          var keyA = new Date(a.updated)
-          var keyB = new Date(b.updated)
-          if(keyA > keyB) return - 1;
-          else if(keyA < keyB) return 1;
-          else return 0;
-      })
-      let len = sort.length
+      // var sort = arr.sort(
+      //   function(a,b){
+      //     var keyA = new Date(a.updated)
+      //     var keyB = new Date(b.updated)
+      //     if(keyA > keyB) return - 1;
+      //     else if(keyA < keyB) return 1;
+      //     else return 0;
+      // })
+      let len = arr.length
       let loop
       if(len >= 3) loop = 3
       else loop = len
       for(let i=0 ;i<loop;i++){
-        threeLeastScore.push(sort[i]);
+        threeLeastScore.push(arr[i]);
       }
       return threeLeastScore
     },
@@ -168,7 +168,6 @@ export default {
   async mounted (){
      const match = await api.get('/api/getMatch')
      var update = await this.threeLastUpdatedScore(match.data)
-     console.log(update);
      await this.appendliveSocre(update)
   },
   computed : {
