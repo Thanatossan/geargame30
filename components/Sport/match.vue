@@ -46,6 +46,42 @@
             id="3rdincome"
           >Coming Soon</h2>
         </div>
+        <div class="flex bg-gray-100 rounded-lg p-1 m-3">
+          <div id="4rdIMG">
+            <img
+              src="~/assets/image/JhangLekGames-Logo_wb.png"
+              class="lg:object-scale-down max-h-small"
+            />
+          </div>
+          <h2
+            class="m-auto"
+            id="4rdincome"
+          >Coming Soon</h2>
+        </div>
+        <div class="flex bg-gray-100 rounded-lg p-1 m-3">
+          <div id="5rdIMG">
+            <img
+              src="~/assets/image/JhangLekGames-Logo_wb.png"
+              class="lg:object-scale-down max-h-small"
+            />
+          </div>
+          <h2
+            class="m-auto"
+            id="5rdincome"
+          >Coming Soon</h2>
+        </div>
+        <div class="flex bg-gray-100 rounded-lg p-1 m-3">
+          <div id="6rdIMG">
+            <img
+              src="~/assets/image/JhangLekGames-Logo_wb.png"
+              class="lg:object-scale-down max-h-small"
+            />
+          </div>
+          <h2
+            class="m-auto"
+            id="6rdincome"
+          >Coming Soon</h2>
+        </div>
       </div>
     </div>
   </div>
@@ -60,8 +96,22 @@ export default {
   },
   methods: {
     async appendincomingMatch(arr) {
-      var scoreOrder = ["#1stincome", "#2ndincome", "#3rdincome"];
-      var imgOrder = ["#1stIMG", "#2ndIMG", "#3rdIMG"];
+      var scoreOrder = [
+        "#1stincome",
+        "#2ndincome",
+        "#3rdincome",
+        "#4rdincome",
+        "#5rdincome",
+        "#6rdincome"
+      ];
+      var imgOrder = [
+        "#1stIMG",
+        "#2ndIMG",
+        "#3rdIMG",
+        "#4rdIMG",
+        "#5rdIMG",
+        "#6rdIMG"
+      ];
       let i = 0;
       var imgTag = "";
       var date = "";
@@ -119,7 +169,7 @@ export default {
       // })
       let len = arr.length;
       let loop;
-      if (len >= 3) loop = 3;
+      if (len >= 6) loop = 6;
       else loop = len;
       returnArr = [];
       for (let i = 0; i < loop; i++) {

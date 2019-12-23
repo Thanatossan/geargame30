@@ -46,6 +46,42 @@
             id="3rd"
           >Coming Soon</h2>
         </div>
+        <div class="flex bg-gray-100 rounded-lg p-1 m-3">
+          <div id="4rdimgField">
+            <img
+              src="~/assets/image/JhangLekGames-Logo_wb.png"
+              class="lg:object-scale-down max-h-small"
+            />
+          </div>
+          <h2
+            class="m-auto"
+            id="4rd"
+          >Coming Soon</h2>
+        </div>
+        <div class="flex bg-gray-100 rounded-lg p-1 m-3">
+          <div id="5rdimgField">
+            <img
+              src="~/assets/image/JhangLekGames-Logo_wb.png"
+              class="lg:object-scale-down max-h-small"
+            />
+          </div>
+          <h2
+            class="m-auto"
+            id="5rd"
+          >Coming Soon</h2>
+        </div>
+        <div class="flex bg-gray-100 rounded-lg p-1 m-3">
+          <div id="6rdimgField">
+            <img
+              src="~/assets/image/JhangLekGames-Logo_wb.png"
+              class="lg:object-scale-down max-h-small"
+            />
+          </div>
+          <h2
+            class="m-auto"
+            id="6rd"
+          >Coming Soon</h2>
+        </div>
         <!-- loop end-->
       </div>
     </div>
@@ -62,8 +98,15 @@ export default {
 
   methods: {
     async appendliveSocre(arr) {
-      var socreOrder = ["#1st", "#2nd", "#3rd"];
-      var imgOrder = ["#1stimgField", "#2ndimgField", "#3rdimgField"];
+      var socreOrder = ["#1st", "#2nd", "#3rd", "#4rd", "#5rd", "#6rd"];
+      var imgOrder = [
+        "#1stimgField",
+        "#2ndimgField",
+        "#3rdimgField",
+        "#4rdimgField",
+        "#5rdimgField",
+        "#6rdimgField"
+      ];
       let i = 0;
       var imgTag = "";
       arr.forEach(each => {
@@ -110,7 +153,7 @@ export default {
       // })
       let len = arr.length;
       let loop;
-      if (len >= 3) loop = 3;
+      if (len >= 6) loop = 6;
       else loop = len;
       for (let i = 0; i < loop; i++) {
         threeLeastScore.push(arr[i]);
