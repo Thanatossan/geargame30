@@ -110,7 +110,7 @@ export default {
       return threeLeastScore
     },
     mapImg(sportType){
-      var imgTag  = '<img src="/_nuxt/image/JhangLekGames-Logo_wb.png" class="lg:object-scale-down max-h-small"/>'
+      var imgTag  = '<img src="/_nuxt/img/53a1fad.png" class="lg:object-scale-down max-h-small"/>'
       switch(sportType){
         case 'Badminton' :
           imgTag =  `<img src="/_nuxt/assets/sport_img/badminton.PNG" class="lg:object-scale-down max-h-small"/>`
@@ -119,7 +119,7 @@ export default {
           imgTag =  `<img src="/_nuxt/assets/sport_img/basketball.PNG" class="lg:object-scale-down max-h-small"/>`
           break
         case 'E-sport' :
-          imgTag =  `<img src="/_nuxt/assets/sport_img/e-sport.PNG" class="lg:object-scale-down max-h-small"/>`
+          imgTag =  `<img src="/_nuxt/sport_img/e-sport.PNG" class="lg:object-scale-down max-h-small"/>`
           break
         case 'Football' :
           imgTag =  `<img src="/_nuxt/assets/sport_img/football.PNG" class="lg:object-scale-down max-h-small"/>`
@@ -131,7 +131,7 @@ export default {
           imgTag =  `<img src="/_nuxt/assets/sport_img/petong.PNG" class="lg:object-scale-down max-h-small"/>`
           break
         case 'Tabletennis' :
-          imgTag =  `<img src="/_nuxt/assets/sport_img/pingpong.PNG" class="lg:object-scale-down max-h-small"/>`
+          imgTag =  `<img src="/_nuxt/sport_img/pingpong.PNG" class="lg:object-scale-down max-h-small"/>`
           break
         case 'Rugbyfootball' :
           imgTag =  `<img src="/_nuxt/assets/sport_img/fotsal.PNG" class="lg:object-scale-down max-h-small"/>`
