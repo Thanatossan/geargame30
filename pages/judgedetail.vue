@@ -569,7 +569,7 @@ import Footer from "~/components/Footer";
 import "../node_modules/sweetalert2/dist/sweetalert2.css";
 import { api } from "../api/api";
 export default {
-  // middleware: "authen",
+  middleware: "authen",
   data() {
     return {
       sportType: "",
