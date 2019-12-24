@@ -132,9 +132,19 @@ export default {
         // else if(each.sportType == 'Athletics'){
 
         // }
-        else {
+        else if (each.sportCategory == null) {
           $(socreOrder[i]).html(
-            `<h2 class="m-auto">${each.nameTeam1} ${each.scoreTeam1} - ${each.scoreTeam2} ${each.nameTeam2}</h2>`
+            `<h2 class="m-auto text-center">${each.nameTeam1} ${each.scoreTeam1} - ${each.scoreTeam2} ${each.nameTeam2} </h2>
+
+            `
+          );
+          $(socreOrder[i]).show("fast");
+        } else {
+          $(socreOrder[i]).html(
+            `<h2 class="m-auto text-center">${each.nameTeam1} ${each.scoreTeam1} - ${each.scoreTeam2} ${each.nameTeam2} </h2>
+            <h2 class="m-auto text-center">${each.sportCategory} </h2>
+                
+            `
           );
           $(socreOrder[i]).show("fast");
         }
