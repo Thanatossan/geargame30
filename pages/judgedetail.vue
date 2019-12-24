@@ -174,7 +174,7 @@
           v-if="
             sportType == 'Entertainment' ||
               sportType == 'Sepaktakraw' ||
-              sportType == 'Pataque' ||
+              sportType == 'Petanque' ||
               sportType == 'Tennis' ||
               sportType == 'Boardgames' ||
               sportType == 'Softball' ||
