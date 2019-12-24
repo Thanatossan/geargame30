@@ -52,7 +52,9 @@
 
 <script>
 import { api } from "../api/api";
+
 export default {
+  middleware: "autoLogin",
   data() {
     return {
       username: "",
@@ -76,7 +78,7 @@ export default {
     }
   },
   async mounted() {
-    await this.$store.dispatch("authenCheck");
+    // await this.$store.dispatch("authenCheck");
   }
 };
 </script>

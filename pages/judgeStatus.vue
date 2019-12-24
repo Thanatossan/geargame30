@@ -91,6 +91,7 @@ import $ from 'jquery'
 
 import {api} from '../api/api'
 export default {
+    middleware: "authen",
     components: {
     border,
     Footer,
@@ -143,9 +144,6 @@ export default {
             }else{
                 $('#msg').text('No match found..')
             }
-        }else{
-            alert('Please login!!!')
-            setTimeout('location.href="/login"', 0);
         }
     }
 }
