@@ -136,6 +136,7 @@
             <option>สนามเทนนิส</option>
             <option>สนามวอลเลย์บอลกลางแจ้ง</option>
             <option>โรงยิมคณะศึกษาศาสตร์</option>
+            <option>อาคารเรียนรวม 4 ชั้น (ตึกดรอวอิ่ง)</option>
           </select>
         </div>
         <div class="mb-4">

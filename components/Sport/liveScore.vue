@@ -114,25 +114,49 @@ export default {
         $(imgOrder[i]).html(imgTag);
         if (each.sportType == "Swimming") {
           $(socreOrder[i]).hide("fast");
-          $(`<div class="m-auto"> <table class="table-fixed "> 
+          $(`<div class="m-auto"> 
+          <h2 class="m-auto text-center">${each.sportCategory} </h2>
+          <table class="table-auto "> 
               <thead >
+              </thead>
+              <tbody>
                 <tr> 
               <th class="px-4">${each.team1Player}</th>
+               <td class="px-4">${each.scoreTeam1}</td>
+               </tr> 
+               <tr> 
               <th class="px-4">${each.team2Player}</th>
-              <th class="px-4">${each.team3Player}</th>
-            </tr> 
-            </thead>
-            <tbody>
-              <td class="px-4">${each.scoreTeam1}</td>
               <td class="px-4">${each.scoreTeam2}</td>
+              </tr> 
+              <tr> 
+              <th class="px-4">${each.team3Player}</th>
               <td class="px-4">${each.scoreTeam3}</td>
+              </tr>
             </tbody>
             </table></div>`).insertAfter(imgOrder[i]);
-        }
-        // else if(each.sportType == 'Athletics'){
-
-        // }
-        else if (each.sportCategory == null) {
+        } else if (each.sportType == "Athletics") {
+          $(socreOrder[i]).hide("fast");
+          $(`<div class="m-auto"> 
+          <h2 class="m-auto text-center">${each.sportCategory} </h2>
+          <table class="table-auto "> 
+               <thead >
+              </thead>
+              <tbody>
+                <tr> 
+              <td class="px-4">${each.team1Player}</th>
+               <td class="px-4">${each.scoreTeam1}</td>
+               </tr> 
+               <tr> 
+              <td class="px-4">${each.team2Player}</th>
+              <td class="px-4">${each.scoreTeam2}</td>
+              </tr> 
+              <tr> 
+              <td class="px-4">${each.team3Player}</th>
+              <td class="px-4">${each.scoreTeam3}</td>
+              </tr>
+            </tbody>
+            </table></div>`).insertAfter(imgOrder[i]);
+        } else if (each.sportCategory == null) {
           $(socreOrder[i]).html(
             `<h2 class="m-auto text-center">${each.nameTeam1} ${each.scoreTeam1} - ${each.scoreTeam2} ${each.nameTeam2} </h2>
 
