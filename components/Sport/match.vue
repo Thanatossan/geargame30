@@ -154,12 +154,23 @@ export default {
     async getIncomingMatch(arr) {
       var returnArr = [];
       arr.forEach(each => {
-        let check = Date.parse(each.endTime) - (Date.now() + 7);
+        // let check = Date.parse(each.endTime) - Date.now();
+        let check =
+          Date.parse(each.startTime) - Date.parse("2019-12-24T14:00:00.000Z");
         if (check > 0) {
-          each.temp = Date.parse(each.endTime) - (Date.now() + 7);
+          each.temp =
+            Date.parse(each.startTime) - Date.parse("2019-12-24T14:00:00.000Z");
+          console.log(each.startTime);
+          console.log(Date.now());
           returnArr.push(each);
         }
       });
+      // returnArr.forEach(each=>{
+      //   let check =Date.parse(each.endTime)-(Date.now()+);
+      //   if(check < 0){
+      //     returnArr.pop();
+      //   }
+      // })
       // var sort = returnArr.sort(
       //   function(a,b){
       //     var keyA = a.temp
@@ -172,10 +183,10 @@ export default {
       let loop;
       if (len >= 6) loop = 6;
       else loop = len;
-      returnArr = [];
-      for (let i = 0; i < loop; i++) {
-        returnArr.push(arr[i]);
-      }
+      // returnArr = [];
+      // for (let i = 0; i < loop; i++) {
+      //   returnArr.push(arr[i]);
+      // }
       return returnArr;
     },
     mapImg(sportType) {
