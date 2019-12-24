@@ -1,7 +1,7 @@
 const axios = require("axios");
 
 const api = axios.create({
-  baseURL: "https://jhanglek.eng.cmu.ac.th",
+  baseURL: "http://localhost:3000",
   withCredentials: false,
   headers: {
     Accept: "application/json",
