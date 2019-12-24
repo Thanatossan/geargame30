@@ -81,7 +81,7 @@ export default {
       secret: "secret",
       resave: false,
       saveUninitialized: false,
-      cookie: { maxAge: 600000 }
+      cookie: { maxAge: 60000000 }
     }),
     // Api middleware
     // We add /api/login & /api/logout routes

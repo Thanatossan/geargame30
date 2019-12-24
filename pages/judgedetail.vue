@@ -173,9 +173,7 @@
               sportType == 'Rugbyfootball' ||
               sportType == 'Volleyball' ||
               sportType == 'E-sport' ||
-              (sportType == 'Tabletennis' &&
-                (category == 'ประเภทเดี่ยวชาย' ||
-                  category == 'ประเภทเดี่ยวหญิง')) ||
+              sportType == 'Tabletennis'||
               sportType == 'Badminton'
           ">
           <!-- team1-section -->

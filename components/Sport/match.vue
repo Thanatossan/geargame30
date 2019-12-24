@@ -90,6 +90,7 @@
 <script>
 import { api } from "../../api/api";
 import $ from "jquery";
+import { returnStatement } from "@babel/types";
 export default {
   data() {
     return {};
@@ -153,9 +154,9 @@ export default {
     async getIncomingMatch(arr) {
       var returnArr = [];
       arr.forEach(each => {
-        let check = Date.parse(each.startTime) - Date.now();
+        let check = Date.parse(each.endTime) - (Date.now() + 7);
         if (check > 0) {
-          each.temp = Date.parse(each.startTime) - Date.now();
+          each.temp = Date.parse(each.endTime) - (Date.now() + 7);
           returnArr.push(each);
         }
       });
