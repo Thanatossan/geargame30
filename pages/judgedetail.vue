@@ -40,7 +40,7 @@
         <form class="shadow-md rounded px-8 pt-6 rounded-l-lg pb-8 mb-4 w-auto my-5 mx-auto">
           <div class="mb-6">
             <label class="block text-gray-700 text-sm font-bold mb-2" for="selected">เลือกประเภทกีฬา</label>
-            <select v-model="sportType" required>
+            <select class="m-3" v-model="sportType" required>
               <option disabled value>Please select one</option>
               <option>Futsal</option>
               <option>Badminton</option>
@@ -57,7 +57,7 @@
               <option>Rugbyfootball</option>
               <option>Entertainment</option>
             </select>
-            <select v-model="category" required>
+            <select class="m-3" v-model="category" required>
               <option disabled value>Please select one</option>
               <option
                 v-if="
@@ -141,13 +141,18 @@
               class="hadow appearance-none border rounded w-25 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
               type="datetime-local"
             />
-            <label class="text-gray-700 text-sm font-bold" for="selected">เวลาจบแข่งขัน</label>
+            </div>
+            <div class="mb-4">
+              <label class="text-gray-700 text-sm font-bold" for="selected">เวลาจบแข่งขัน</label>
             <input
               v-model="endTime"
               class="hadow appearance-none border rounded w-25 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
               type="datetime-local"
             />
-          </div>
+            <div class="mt-3"></div>
+            </div>
+            
+          
 
           <div
             v-if="
@@ -292,12 +297,12 @@
         </div>
         <label class="block text-gray-700 text-sm font-bold mb-2" for="selected">เลือกประเภทกีฬา</label>
         <div class="mb-6">
-          <select v-model="sportType">
+          <select class="m-3" v-model="sportType">
             <option disabled value>Please select one</option>
             <option>Athletics</option>
             <option>Swimming</option>
           </select>
-          <select v-model="category">
+          <select class="m-3" v-model="category">
             <option disabled value>Please select one</option>
             <option v-if="sportType == 'Athletics'">ประเภท 100 เมตรชาย</option>
             <option v-if="sportType == 'Athletics'">ประเภท 100 เมตรหญิง</option>
@@ -341,13 +346,18 @@
             class="hadow appearance-none border rounded w-25 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
             type="datetime-local"
           />
-          <label class="text-gray-700 text-sm font-bold" for="selected">เวลาจบแข่งขัน</label>
+          </div>
+          <div class="mb-4">
+            <label class="text-gray-700 text-sm font-bold" for="selected">เวลาจบแข่งขัน</label>
           <input
             v-model="endTime"
             class="hadow appearance-none border rounded w-25 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
             type="datetime-local"
           />
-        </div>
+          </div>
+          <div class="mb-3"></div>
+          
+        
         <div
           v-if="
           (sportType == 'Swimming' &&
