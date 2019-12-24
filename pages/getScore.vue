@@ -17,39 +17,27 @@
 
         <!-- content section -->
         <div class="">
-        <h1 class="text-2xl font-bold text-center p-4 ">Result</h1>
+        <h1 class="text-2xl font-bold text-center p-4 ">{{resultStatus}}</h1>
         <div class="flex flex-col p-4">
           <div class="w-11/12 m-auto">
-            <div class="flex flex-row ">
+            <div class="flex flex-row" id="sp">
               <h1 class="text-lg font-bold pb-2">Sport : </h1>
-              <h1 class="text-lg font-bold pb-2 pl-4">Futsal</h1>
+              <h1 class="text-lg font-bold pb-2 pl-4">{{sport}}</h1>
             </div>
             <div class="overflow-auto">
-              <table class="table-auto w-full ">
+              <table class="table-auto w-full" id="table">
                 <thead>
                   <tr>
-                    <th class="border border-gray-400 px-2 py-2 text-gray-800 " align="center">Time</th>
-                    <th class="border border-gray-400 px-2 py-2 text-gray-800 " align="center">Team 1</th>
-                    <th class="border border-gray-400 px-2 py-2 text-gray-800 " align="center">Team 2</th>
-                    <th class="border border-gray-400 px-2 py-2 text-gray-800 " align="center">Result</th>
-                    <th class="border border-gray-400 px-2 py-2 text-gray-800 " align="center">Category</th>
+                    <th class="border border-gray-400 px-2 py-2 text-gray-800 " align="center">ทีมที่ 1</th>
+                    <th class="border border-gray-400 px-2 py-2 text-gray-800 " align="center">ทีมที่ 2</th>
+                    <th class="border border-gray-400 px-2 py-2 text-gray-800 " align="center">ผลการแข่งขัน</th>
+                    <th class="border border-gray-400 px-2 py-2 text-gray-800 " align="center">ประเภท</th>
+                    <th class="border border-gray-400 px-2 py-2 text-gray-800 " align="center">เริ่มการแข่งขัน</th>
+                    <th class="border border-gray-400 px-2 py-2 text-gray-800 " align="center">จบการแข่งขัน</th>
                   </tr>
                 </thead>
-                <tbody>
-                  <tr>
-                    <td class="border border-gray-400 px-2 py-2 text-gray-800 " align="center">9:30</td>
-                    <td class="border border-gray-400 px-2 py-2 text-gray-800 " align="center">SAXXXXXX</td>
-                    <td class="border border-gray-400 px-2 py-2 text-gray-800 " align="center">AX48ssss</td>
-                    <td class="border border-gray-400 px-2 py-2 text-gray-800 " align="center">1-2</td>
-                    <td class="border border-gray-400 px-2 py-2 text-gray-800 " align="center">ชายเดี่ยว</td>
-                  </tr>
-                  <tr>
-                    <td class="border border-gray-400 px-2 py-2 text-gray-800 " align="center">9:30</td>
-                    <td class="border border-gray-400 px-2 py-2 text-gray-800 " align="center">SAXXXXXX</td>
-                    <td class="border border-gray-400 px-2 py-2 text-gray-800 " align="center">AX48ssss</td>
-                    <td class="border border-gray-400 px-2 py-2 text-gray-800 " align="center">1-2</td>
-                    <td class="border border-gray-400 px-2 py-2 text-gray-800 " align="center">ชายเดี่ยว</td>
-                  </tr>
+                <tbody id="append">
+                  
                 </tbody>
               </table>
             </div>
@@ -80,11 +68,51 @@
 import navbar from "~/components/navbar";
 import border from "~/components/border";
 import Footer from "~/components/Footer";
+import $ from 'jquery'
 export default {
   components: {
     navbar,
     border,
     Footer,
+  },
+  data(){
+    return {
+      resultStatus : 'No result',
+      sport :'none'
+    }
+  },
+  methods : {
+    async appendTable(arr){
+      for(let i = 0; i<arr.length; i++){
+         $('#append').append(
+          `<tr>
+              <td class="border border-gray-400 px-2 py-2 text-gray-800 " align="center">${arr[i].nameTeam1}</td>
+              <td class="border border-gray-400 px-2 py-2 text-gray-800 " align="center">${arr[i].nameTeam2}</td>
+              <td class="border border-gray-400 px-2 py-2 text-gray-800 " align="center">${arr[i].scoreTeam1} - ${arr[i].scoreTeam2}</td>
+              <td class="border border-gray-400 px-2 py-2 text-gray-800 " align="center">${arr[i].sportCategory}</td>
+              <td class="border border-gray-400 px-2 py-2 text-gray-800 " align="center">${arr[i].matchStartTime.substr(0, 10)} ${arr[i].matchStartTime.substr(1, 15)
+              .substr(10, 16)} น. </td>
+              <td class="border border-gray-400 px-2 py-2 text-gray-800 " align="center">${arr[i].matchEndTime.substr(0, 10)} ${arr[i].matchEndTime.substr(1, 15)
+              .substr(10, 16)} น. </td>
+            </tr>`
+        )
+      }
+    }
+  },
+
+  async mounted(){
+     const res = await this.$store.dispatch("getFilteredMatch")
+     console.log(res.length);
+     if(res.length > 0) {
+       this.resultStatus = 'Result'
+       this.sport = res[0].sportType
+       await this.appendTable(res)
+       $('#table').show('fast')
+       $('#sp').show('fast')
+     }else{
+        $('#table').hide('fast')
+        $('#sp').hide('fast')
+     }   
   }
 };
 </script>

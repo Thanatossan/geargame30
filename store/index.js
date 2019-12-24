@@ -30,10 +30,10 @@ export const actions = {
     console.log(callback.data);
     commit("SET_USER", { username: callback.data });
     if (permission) {
-      alert("login sucessful");
+      alert("ล็อคอินสำเร็จ");
       setTimeout('location.href="/judgedetail"', 0);
     } else {
-      alert("login failed");
+      alert("ล็อคอินไม่สำเร็จ");
       setTimeout('location.href="/login"', 0);
     }
   },
@@ -53,5 +53,16 @@ export const actions = {
   async getJudgeID(){
     const res = await axios.get('/service/getJudge');
     return res.data;
+  },
+
+  async search({ commit },{Sport,Day}){
+    const res = await axios.get(`/service/getSocre/${Sport}/${Day}`)
+    if(res.data.length > 0) return true
+    else return false 
+  },
+
+  async getFilteredMatch(){
+    const res = await axios.get('/service/getFilterdMatch')
+    return res.data
   }
 };
