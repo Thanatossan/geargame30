@@ -154,14 +154,11 @@ export default {
     async getIncomingMatch(arr) {
       var returnArr = [];
       arr.forEach(each => {
-        // let check = Date.parse(each.endTime) - Date.now();
-        let check =
-          Date.parse(each.startTime) - Date.parse("2019-12-24T14:00:00.000Z");
+        let check = Date.parse(each.startTime) - (Date.now() + 25182211);
+        // let check =
+        //   Date.parse(each.startTime) - Date.parse("2019-12-24T14:00:00.000Z");
         if (check > 0) {
-          each.temp =
-            Date.parse(each.startTime) - Date.parse("2019-12-24T14:00:00.000Z");
-          console.log(each.startTime);
-          console.log(Date.now());
+          each.temp = Date.parse(each.startTime) - (Date.now() + 25182211);
           returnArr.push(each);
         }
       });
