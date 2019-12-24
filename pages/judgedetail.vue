@@ -21,10 +21,9 @@
               v-on:click="logout"
               class="md:object-right bg-blue-500 hover:bg-red-400 mt-2 py-1 px-3 border-b-2 border-blue-700 hover:border-red-500 rounded"
             >
-              <font-awesome-icon
-                :icon="['fas', 'sign-out-alt']"
-                style="size:7px"
-              />
+              <h2>
+                LOGOUT
+              </h2>
             </button>
           </span>
         </div>
@@ -242,7 +241,7 @@
               required
             />
             <input
-              v-model="scorePlayer1"
+              v-model="scoreTeam1"
               class="m-3 shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
               type="text"
               placeholder="กรอกคะแนนผู้เล่นคนที่ 1"
@@ -260,7 +259,7 @@
               required
             />
             <input
-              v-model="scorePlayer2"
+              v-model="scoreTeam2"
               class="m-3 shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
               type="text"
               placeholder="กรอกคะแนนผู้เล่นคนที่ 2"
@@ -277,7 +276,7 @@
               placeholder="กรอกชื่อผู้เล่นคนที่ 3"
             />
             <input
-              v-model="scorePlayer3"
+              v-model="scoreTeam3"
               class="m-3 shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
               type="text"
               placeholder="กรอกคะแนนผู้เล่นคนที่ 3"
@@ -455,7 +454,7 @@
             required
           />
           <input
-            v-model="scorePlayer1"
+            v-model="scoreTeam1"
             class="m-3 shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
             type="text"
             placeholder="กรอกคะแนนผู้เล่นคนที่ 1"
@@ -473,7 +472,7 @@
             required
           />
           <input
-            v-model="scorePlayer2"
+            v-model="scoreTeam2"
             class="m-3 shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
             type="text"
             placeholder="กรอกคะแนนผู้เล่นคนที่ 2"
@@ -490,7 +489,7 @@
             placeholder="กรอกชื่อผู้เล่นคนที่ 3"
           />
           <input
-            v-model="scorePlayer3"
+            v-model="scoreTeam3"
             class="m-3 shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
             type="text"
             placeholder="กรอกคะแนนผู้เล่นคนที่ 3"
@@ -499,7 +498,7 @@
       </div>
       <div class="flex items-center justify-between">
         <button
-          v-on:click="submitForm1"
+          v-on:click="insert"
           class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
           type="button"
         >
@@ -540,10 +539,6 @@ export default {
       scoreTeam3: "",
       player1: "",
       player2: "",
-      player3: "",
-      scorePlayer1: "",
-      scorePlayer2: "",
-      scorePlayer3: "",
       startTime: null,
       endTime: null,
       user: ""
@@ -609,7 +604,7 @@ export default {
           sportField: this.field,
           judgeID: judgeID
         };
-        alert("inserted");
+        alert("ทำการเพิ่มข้อมูลลงใน Database แล้ว ");
         await api.post("/api/addMatch", { data });
       }
     },

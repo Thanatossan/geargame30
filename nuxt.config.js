@@ -57,8 +57,16 @@ export default {
         ]
       }
     ],
+
     "vue-sweetalert2/nuxt"
   ],
+  fontawesome: {
+    imports: [
+      {
+        set: "@fortawesome/fontawesome-free-solid"
+      }
+    ]
+  },
 
   /*
    ** Build configuration
