@@ -123,8 +123,8 @@ export default {
                        <td class="border border-gray-400 px-2 py-2 text-gray-800 " align="center">${each.team2Player}</td>
                        <td class="border border-gray-400 px-2 py-2 text-gray-800 " align="center">${each.team3Player}</td>
                        <td class="border border-gray-400 px-2 py-2 text-gray-800 " align="center">${each.sportCategory}</td>
-                       <td class="border border-gray-400 px-2 py-2 text-gray-800 " align="center">${each.matchStartTime.substr(0, 10)} ${each.matchStartTime.substr(1, 15)} </td>
-                       <td class="border border-gray-400 px-2 py-2 text-gray-800 " align="center">${each.matchEndTime.substr(0, 10)} ${each.matchEndTime.substr(1, 15)} </td>
+                       <td class="border border-gray-400 px-2 py-2 text-gray-800 " align="center">${each.matchStartTime.substr(0, 10)} ${each.matchStartTime.substr(1, 15).substr(10, 16)} น. </td>
+                       <td class="border border-gray-400 px-2 py-2 text-gray-800 " align="center">${each.matchEndTime.substr(0, 10)} ${each.matchEndTime.substr(1, 15).substr(10, 16)} น.</td>
                     </tr>
                 `)
             })
