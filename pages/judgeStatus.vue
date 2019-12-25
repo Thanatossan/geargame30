@@ -5,7 +5,7 @@
       rel="stylesheet"
     />
     <div class="text-right m-3">
-         <label class="m-3 text-2xl">{{user}}</label>
+         <label class="m-3 text-2xl">[ Login as : {{user}} ]</label>
          <nuxt-link to="/judgedetail">
              <button class="bg-blue-500 hover:bg-green-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded">
             Add match
@@ -33,7 +33,7 @@
         <div class="flex flex-col p-4">
           <div class="w-11/12 m-auto">
             <div class="flex flex-row"  >
-              <h1 id="text" class="text-lg font-bold pb-2" hidden>Match</h1>
+              <h1 id="text" class="text-lg font-bold pb-2" hidden></h1>
             </div>
             <div class="overflow-auto">
               <table class="table-auto w-full" id="table" hidden>
@@ -138,6 +138,7 @@ export default {
         if (this.user !== undefined) {
             const res = await api.get(`/api/getMatchbyUser/${this.user}`);
             if(res.data.length > 0) {
+                $('#text').text(`Your ${res.data[0].sportType} match`)
                 await this.appendtoTable(res.data);
                 $('#table').show('fast')
                 $('#text').show('fast')
