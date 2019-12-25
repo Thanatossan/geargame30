@@ -32,6 +32,7 @@
                     <th class="border border-gray-400 px-2 py-2 text-gray-800 " align="center">ทีมที่ 2</th>
                     <th class="border border-gray-400 px-2 py-2 text-gray-800 " align="center">ผลการแข่งขัน</th>
                     <th class="border border-gray-400 px-2 py-2 text-gray-800 " align="center">ประเภท</th>
+                    <th class="border border-gray-400 px-2 py-2 text-gray-800 " align="center">สถานที่แข่ง</th>
                     <th class="border border-gray-400 px-2 py-2 text-gray-800 " align="center">เริ่มการแข่งขัน</th>
                     <th class="border border-gray-400 px-2 py-2 text-gray-800 " align="center">จบการแข่งขัน</th>
                   </tr>
