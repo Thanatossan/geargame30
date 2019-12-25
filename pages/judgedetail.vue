@@ -540,6 +540,7 @@ export default {
       scoreTeam3: "",
       player1: "",
       player2: "",
+      player3: "",
       startTime: null,
       endTime: null,
       user: ""
