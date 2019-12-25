@@ -91,6 +91,7 @@ export default {
               <td class="border border-gray-400 px-2 py-2 text-gray-800 " align="center">${arr[i].nameTeam2}</td>
               <td class="border border-gray-400 px-2 py-2 text-gray-800 " align="center">${arr[i].scoreTeam1} - ${arr[i].scoreTeam2}</td>
               <td class="border border-gray-400 px-2 py-2 text-gray-800 " align="center">${arr[i].sportCategory}</td>
+              <td class="border border-gray-400 px-2 py-2 text-gray-800 " align="center">${arr[i].field}</td>
               <td class="border border-gray-400 px-2 py-2 text-gray-800 " align="center">${arr[i].matchStartTime.substr(0, 10)} ${arr[i].matchStartTime.substr(1, 15)
               .substr(10, 16)} น. </td>
               <td class="border border-gray-400 px-2 py-2 text-gray-800 " align="center">${arr[i].matchEndTime.substr(0, 10)} ${arr[i].matchEndTime.substr(1, 15)
