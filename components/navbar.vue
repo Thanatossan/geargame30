@@ -47,8 +47,8 @@
                 <span class="block mt-4 lg:inline-block lg:mt-0 hover-underline-animation">Ambassadors</span>
 
               </nuxt-link>
-              <nuxt-link to="#">
-                <!--<a
+              <!--<nuxt-link to="#">
+                <a
               href="#"
               class="block mt-4 lg:inline-block lg:mt-0 hover-underline-animation"
             >News</a> 
