@@ -35,7 +35,8 @@ export default {
    */
   buildModules: [
     // Doc: https://github.com/nuxt-community/nuxt-tailwindcss
-    "@nuxtjs/tailwindcss"
+    "@nuxtjs/tailwindcss",
+    "@nuxtjs/google-analytics"
   ],
   /*
    ** Nuxt.js modules
@@ -98,5 +99,8 @@ export default {
   server: {
     port: 2000, // default: 3000
     host: "0.0.0.0" // default: localhost
+  },
+  googleAnalytics: {
+    id: "UA-155025579-1"
   }
 };

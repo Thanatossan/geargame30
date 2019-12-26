@@ -212,7 +212,7 @@
               sportType == 'Sepaktakraw' ||
               sportType == 'Petanque' ||
               sportType == 'Tennis' ||
-              sportType == 'Boardgames' ||
+              sportType == 'Boardgame' ||
               sportType == 'Softball' ||
               sportType == 'Basketball' ||
               sportType == 'Football' ||
