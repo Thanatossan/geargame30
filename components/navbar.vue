@@ -51,9 +51,9 @@
                 <!--<a
               href="#"
               class="block mt-4 lg:inline-block lg:mt-0 hover-underline-animation"
-            >News</a> -->
+            >News</a> 
                 <h1 class="block my-2 lg:inline-block lg:my-0 text-gray-400">News</h1>
-              </nuxt-link>
+              </nuxt-link>-->
               <nuxt-link to="#">
                 <!--
             <a
