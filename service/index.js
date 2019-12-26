@@ -18,6 +18,8 @@ router.post("/login", controller.judgeController.login);
 router.post("/logout", controller.judgeController.logout);
 router.get("/authCheck", controller.judgeController.authenCheck);
 router.get("/getJudge",controller.judgeController.getJudge)
+router.get('/getSocre/:Sport/:Day',controller.matchController.postScore)
+router.get('/getFilterdMatch',controller.matchController.getFillterdScore)
 
 // Export the server middleware
 export default {

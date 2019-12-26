@@ -68,12 +68,12 @@
               <nuxt-link to="/Map">
                 <span class="block my-2 lg:inline-block lg:my-0 hover-underline-animation">Map</span>
               </nuxt-link>
-              <nuxt-link to="#">
+              <nuxt-link to="/score">
                 <!--  <a
               href="#"
               class="block mt-4 lg:inline-block lg:mt-0 hover-underline-animation"
             >Score</a> -->
-                <h1 class="block my-2 lg:inline-block lg:my-0 text-gray-400">Score</h1>
+                <span class="block my-2 lg:inline-block lg:my-0 hover-underline-animation">Score</span>
               </nuxt-link>
               <nuxt-link to="/about">
                 <span class="block my-2 lg:inline-block lg:my-0 hover-underline-animation">About</span>
