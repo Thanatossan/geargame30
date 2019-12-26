@@ -134,7 +134,7 @@ export default {
         // else if(each.sportType == 'Athletics'){
 
         // }
-        else {
+        else if (each.sportCategory == null) {
           $(scoreOrder[i]).html(`
             <h2 class="m-auto text-center">${each.team1} VS ${each.team2}</h2>
             <h2 class="m-auto text-center"> ${each.startTime.substr(0, 10)}</h2>
@@ -143,8 +143,19 @@ export default {
               .substr(10, 16)} - ${each.endTime
             .substr(1, 15)
             .substr(10, 16)}</h2>
-            
-            
+         
+          `);
+          $(scoreOrder[i]).show("fast");
+        } else {
+          $(scoreOrder[i]).html(`
+            <h2 class="m-auto text-center">${each.team1} VS ${each.team2}</h2>
+            <h2 class="m-auto text-center"> ${each.startTime.substr(0, 10)}</h2>
+            <h2 class="m-auto text-center"> ${each.startTime
+              .substr(1, 15)
+              .substr(10, 16)} - ${each.endTime
+            .substr(1, 15)
+            .substr(10, 16)}</h2>
+            <h2 class="m-auto text-center">${each.sportCategory} </h2>
           `);
           $(scoreOrder[i]).show("fast");
         }
@@ -221,7 +232,7 @@ export default {
           imgTag = `<img src="/_nuxt/img/add23ac.PNG" class="lg:object-scale-down max-h-small"/>`;
           break;
         case "Sepaktakraw":
-          imgTag = `<img src="/_nuxt/assets/02b4701.PNG" class="lg:object-scale-down max-h-small"/>`;
+          imgTag = `<img src="/_nuxt/img/02b4701.PNG" class="lg:object-scale-down max-h-small"/>`;
           break;
         case "Softball":
           imgTag = `<img src="/_nuxt/img/0857216.PNG" class="lg:object-scale-down max-h-small"/>`;

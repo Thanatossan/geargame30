@@ -14,6 +14,7 @@
       >Logout</button>
     </div>
 
+
     <div class="container max-w-screen-xl lg:mx-auto px-6">
       <!-- Head -->
       <div
@@ -25,6 +26,7 @@
           <div class="w-1/5 h-12">
             <span class="default-text" style="font-size:36px; color:white;">Match</span>
           </div>
+
         </div>
       </div>
 
@@ -182,6 +184,7 @@
                 <option>สนามเทนนิส</option>
                 <option>สนามวอลเลย์บอลกลางแจ้ง</option>
                 <option>โรงยิมคณะศึกษาศาสตร์</option>
+                <option>อาคารเรียนรวม 4 ชั้น (ตึกดรอวอิ่ง)</option>
               </select>
             </div>
           </div>
@@ -346,6 +349,7 @@
         </div>
         <label class="block text-gray-700 text-sm font-bold mb-2" for="selected">เลือกประเภทกีฬา</label>
         <div class="mb-6">
+
           <div class="inline-block relative w-full">
             <div
               class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700"
@@ -442,6 +446,7 @@
               <option>สนามกีฬากลาง</option>
             </select>
           </div>
+
         </div>
         <div class="mb-4">
           <label class="text-gray-700 text-sm font-bold" for="selected">เวลาเริ่มแข่งขัน</label>
@@ -460,6 +465,7 @@
           />
         </div>
         <div class="mb-3"></div>
+
 
         <div
           v-if="
@@ -538,7 +544,7 @@
               required
             />
             <input
-              v-model="scorePlayer1"
+              v-model="scoreTeam1"
               class="m-3 shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
               type="text"
               placeholder="กรอกคะแนนผู้เล่นคนที่ 1"
@@ -556,7 +562,7 @@
               required
             />
             <input
-              v-model="scorePlayer2"
+              v-model="scoreTeam2"
               class="m-3 shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
               type="text"
               placeholder="กรอกคะแนนผู้เล่นคนที่ 2"
@@ -573,7 +579,7 @@
               placeholder="กรอกชื่อผู้เล่นคนที่ 3"
             />
             <input
-              v-model="scorePlayer3"
+              v-model="scoreTeam3"
               class="m-3 shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
               type="text"
               placeholder="กรอกคะแนนผู้เล่นคนที่ 3"
@@ -596,6 +602,7 @@
           <div class="my-5 mx-auto text-right">
             <Footer />
           </div>
+
         </div>
       </div>
     </div>
@@ -623,9 +630,6 @@ export default {
       player1: "",
       player2: "",
       player3: "",
-      scorePlayer1: "",
-      scorePlayer2: "",
-      scorePlayer3: "",
       startTime: null,
       endTime: null,
       user: ""
@@ -693,10 +697,12 @@ export default {
           sportField: this.field,
           judgeID: judgeID
         };
+
         await this.$store.dispatch("addMatch", { data });
         // api.post("/api/addMatch", { data })
         alert("เพิ่มข้อมูลเรียบร้อยแล้ว");
         setTimeout('location.href="/judgedetail"');
+
       }
     },
 
