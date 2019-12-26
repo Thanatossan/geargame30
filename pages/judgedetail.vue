@@ -401,7 +401,7 @@
               <option v-if="sportType == 'Athletics'">ประเภททีมวิ่งพลัด 4*100 เมตรชาย</option>
               <option v-if="sportType == 'Athletics'">ประเภททีมวิ่งพลัด 4*100 เมตรหญิง</option>
               <option v-if="sportType == 'Athletics'">ประเภททีมวิ่งพลัด 4*400 เมตรชาย</option>
-              <option v-if="sportType == 'Athletics'">ประเภททีมวิ่งพลัด 4*100 เมตรกญืง</option>
+              <option v-if="sportType == 'Athletics'">ประเภททีมวิ่งพลัด 4*400 เมตรกญืง</option>
 
               <option v-if="sportType == 'Swimming'">ประเภทเดี่ยวผสม 200 เมตรหญิง</option>
               <option v-if="sportType == 'Swimming'">ประเภทท่าฟรีสไตล์ 50 เมตร เมตรชาย</option>
