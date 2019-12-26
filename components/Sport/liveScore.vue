@@ -2,7 +2,9 @@
   <div class="container">
     <div class="w-1/6">
       <div id="Live_Score">
-        <span>Live</span><br /><span style="color:rgba(223,80,62,1);">Score</span>
+        <span>Live</span><br /><span style="color:rgba(223,80,62,1);"
+          >Score</span
+        >
       </div>
     </div>
     <div class="container">
@@ -17,10 +19,7 @@
               class="lg:object-scale-down max-h-small"
             />
           </div>
-          <h2
-            class="m-auto"
-            id="1st"
-          >Coming Soon</h2>
+          <h2 class="m-auto" id="1st">Coming Soon</h2>
         </div>
         <div class="flex bg-gray-100 rounded-lg p-1 m-3">
           <div id="2ndimgField">
@@ -29,10 +28,7 @@
               class="lg:object-scale-down max-h-small"
             />
           </div>
-          <h2
-            class="m-auto"
-            id="2nd"
-          >Coming Soon</h2>
+          <h2 class="m-auto" id="2nd">Coming Soon</h2>
         </div>
         <div class="flex bg-gray-100 rounded-lg p-1 m-3">
           <div id="3rdimgField">
@@ -41,10 +37,7 @@
               class="lg:object-scale-down max-h-small"
             />
           </div>
-          <h2
-            class="m-auto"
-            id="3rd"
-          >Coming Soon</h2>
+          <h2 class="m-auto" id="3rd">Coming Soon</h2>
         </div>
         <div class="flex bg-gray-100 rounded-lg p-1 m-3">
           <div id="4rdimgField">
@@ -53,10 +46,7 @@
               class="lg:object-scale-down max-h-small"
             />
           </div>
-          <h2
-            class="m-auto"
-            id="4rd"
-          >Coming Soon</h2>
+          <h2 class="m-auto" id="4rd">Coming Soon</h2>
         </div>
         <div class="flex bg-gray-100 rounded-lg p-1 m-3">
           <div id="5rdimgField">
@@ -65,10 +55,7 @@
               class="lg:object-scale-down max-h-small"
             />
           </div>
-          <h2
-            class="m-auto"
-            id="5rd"
-          >Coming Soon</h2>
+          <h2 class="m-auto" id="5rd">Coming Soon</h2>
         </div>
         <div class="flex bg-gray-100 rounded-lg p-1 m-3">
           <div id="6rdimgField">
@@ -77,10 +64,7 @@
               class="lg:object-scale-down max-h-small"
             />
           </div>
-          <h2
-            class="m-auto"
-            id="6rd"
-          >Coming Soon</h2>
+          <h2 class="m-auto" id="6rd">Coming Soon</h2>
         </div>
         <!-- loop end-->
       </div>
@@ -156,6 +140,13 @@ export default {
               </tr>
             </tbody>
             </table></div>`).insertAfter(imgOrder[i]);
+        } else if (each.sportType === "Entertainment") {
+          $(socreOrder[i]).html(
+            `<h2 class="m-auto text-center">${each.nameTeam1}</h2>
+              <h2 class="m-auto text-center">${each.scoreTeam1} </h2>
+            `
+          );
+          $(socreOrder[i]).show("fast");
         } else if (each.sportCategory == null) {
           $(socreOrder[i]).html(
             `<h2 class="m-auto text-center">${each.nameTeam1} ${each.scoreTeam1} - ${each.scoreTeam2} ${each.nameTeam2} </h2>
