@@ -42,7 +42,6 @@ export default {
    ** Nuxt.js modules
    */
   modules: [
-    "nuxt-buefy",
     [
       "nuxt-fontawesome",
       {

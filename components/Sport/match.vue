@@ -2,9 +2,7 @@
   <div class="container">
     <div class="w-1/6">
       <div id="Incomming_Games">
-        <span>Incomming</span><br /><span style="color:rgba(223,80,62,1);"
-          >Games</span
-        >
+        <span>Incomming</span><br /><span style="color:rgba(223,80,62,1);">Games</span>
       </div>
     </div>
     <div class="container">
@@ -18,17 +16,23 @@
               class="lg:object-scale-down max-h-small"
             />
           </div>
-          <h2 class="m-auto" id="1stincome">Coming Soon</h2>
+          <h2
+            class="m-auto"
+            id="1stincome"
+          >Closed</h2>
         </div>
 
-        <div class="flex bg-gray-100 rounded-lg p-1 m-3">
+        <!-- <div class="flex bg-gray-100 rounded-lg p-1 m-3">
           <div id="2ndIMG">
             <img
               src="~/assets/image/JhangLekGames-Logo_wb.png"
               class="lg:object-scale-down max-h-small"
             />
           </div>
-          <h2 class="m-auto" id="2ndincome">Coming Soon</h2>
+          <h2
+            class="m-auto"
+            id="2ndincome"
+          >Coming Soon</h2>
         </div>
         <div class="flex bg-gray-100 rounded-lg p-1 m-3">
           <div id="3rdIMG">
@@ -37,7 +41,10 @@
               class="lg:object-scale-down max-h-small"
             />
           </div>
-          <h2 class="m-auto" id="3rdincome">Coming Soon</h2>
+          <h2
+            class="m-auto"
+            id="3rdincome"
+          >Coming Soon</h2>
         </div>
         <div class="flex bg-gray-100 rounded-lg p-1 m-3">
           <div id="4rdIMG">
@@ -46,7 +53,10 @@
               class="lg:object-scale-down max-h-small"
             />
           </div>
-          <h2 class="m-auto" id="4rdincome">Coming Soon</h2>
+          <h2
+            class="m-auto"
+            id="4rdincome"
+          >Coming Soon</h2>
         </div>
         <div class="flex bg-gray-100 rounded-lg p-1 m-3">
           <div id="5rdIMG">
@@ -55,7 +65,10 @@
               class="lg:object-scale-down max-h-small"
             />
           </div>
-          <h2 class="m-auto" id="5rdincome">Coming Soon</h2>
+          <h2
+            class="m-auto"
+            id="5rdincome"
+          >Coming Soon</h2>
         </div>
         <div class="flex bg-gray-100 rounded-lg p-1 m-3">
           <div id="6rdIMG">
@@ -64,8 +77,12 @@
               class="lg:object-scale-down max-h-small"
             />
           </div>
-          <h2 class="m-auto" id="6rdincome">Coming Soon</h2>
-        </div>
+          <h2
+            class="m-auto"
+            id="6rdincome"
+          >Coming Soon</h2>
+        </div> -->
+
       </div>
     </div>
   </div>

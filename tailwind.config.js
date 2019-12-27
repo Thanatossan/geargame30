@@ -12,12 +12,16 @@ module.exports = {
     maxHeight: {
       superSmall: "50px",
       small: "100px",
-      logo: "200px"
+      logo: "200px",
+      Ultra: "800px"
+    },
+    height: {
+      live: "800px",
+      live_sma: "450px"
     }
   },
   variants: {
-    tableLayout: ['responsive', 'hover', 'focus']
+    tableLayout: ["responsive", "hover", "focus"]
   },
-  plugins: [],
-  
+  plugins: []
 };

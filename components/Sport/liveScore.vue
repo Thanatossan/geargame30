@@ -2,9 +2,7 @@
   <div class="container">
     <div class="w-1/6">
       <div id="Live_Score">
-        <span>Live</span><br /><span style="color:rgba(223,80,62,1);"
-          >Score</span
-        >
+        <span>Live</span><br /><span style="color:rgba(223,80,62,1);">Score</span>
       </div>
     </div>
     <div class="container">
@@ -13,22 +11,29 @@
         <div class="border-b-2 mt-3 mb-8 "></div>
         <!-- V for -->
         <div class="flex bg-gray-100 rounded-lg p-1 m-3">
-          <div id="1stimgField">
+          <!--<div id="1stimgField"> -->
+          <div>
             <img
               src="~/assets/image/JhangLekGames-Logo_wb.png"
               class="lg:object-scale-down max-h-small"
             />
           </div>
-          <h2 class="m-auto" id="1st">Coming Soon</h2>
+          <h2
+            class="m-auto"
+            id="1st"
+          >Closed</h2>
         </div>
-        <div class="flex bg-gray-100 rounded-lg p-1 m-3">
+        <!-- <div class="flex bg-gray-100 rounded-lg p-1 m-3">
           <div id="2ndimgField">
             <img
               src="~/assets/image/JhangLekGames-Logo_wb.png"
               class="lg:object-scale-down max-h-small"
             />
           </div>
-          <h2 class="m-auto" id="2nd">Coming Soon</h2>
+          <h2
+            class="m-auto"
+            id="2nd"
+          >Coming Soon</h2>
         </div>
         <div class="flex bg-gray-100 rounded-lg p-1 m-3">
           <div id="3rdimgField">
@@ -37,7 +42,10 @@
               class="lg:object-scale-down max-h-small"
             />
           </div>
-          <h2 class="m-auto" id="3rd">Coming Soon</h2>
+          <h2
+            class="m-auto"
+            id="3rd"
+          >Coming Soon</h2>
         </div>
         <div class="flex bg-gray-100 rounded-lg p-1 m-3">
           <div id="4rdimgField">
@@ -46,7 +54,10 @@
               class="lg:object-scale-down max-h-small"
             />
           </div>
-          <h2 class="m-auto" id="4rd">Coming Soon</h2>
+          <h2
+            class="m-auto"
+            id="4rd"
+          >Coming Soon</h2>
         </div>
         <div class="flex bg-gray-100 rounded-lg p-1 m-3">
           <div id="5rdimgField">
@@ -55,7 +66,10 @@
               class="lg:object-scale-down max-h-small"
             />
           </div>
-          <h2 class="m-auto" id="5rd">Coming Soon</h2>
+          <h2
+            class="m-auto"
+            id="5rd"
+          >Coming Soon</h2>
         </div>
         <div class="flex bg-gray-100 rounded-lg p-1 m-3">
           <div id="6rdimgField">
@@ -64,8 +78,11 @@
               class="lg:object-scale-down max-h-small"
             />
           </div>
-          <h2 class="m-auto" id="6rd">Coming Soon</h2>
-        </div>
+          <h2
+            class="m-auto"
+            id="6rd"
+          >Coming Soon</h2>
+        </div> -->
         <!-- loop end-->
       </div>
     </div>

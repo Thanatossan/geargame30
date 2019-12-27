@@ -1,24 +1,16 @@
 <template>
   <div class="flex flex-col lg:flex-row container">
-    <div class="w-auto lg:w-1/2 ">
-      <div class="container max-w-screen-xl lg:mx-auto px-6">
-        <img
-          src="~/assets/image/information.jpg"
-          class="lg:object-scale-down"
-        />
-      </div>
-    </div>
-    <div class="w-auto lg:w-1/2 pl-6 ">
-      <p class="text-left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ยินดีต้อนรับ นักกีฬา คณาจารย์และบุคคลากรทุกท่าน สู่ระบบลงทะเบียน
-        จ๊างเหล็กเกมส์ กีฬาเกียร์ครั้งที่ 30 ทุกท่านสามารถลงทะเบียน เพื่อ
-        กรอกข้อมูลส่วนตัว สำหรับผู้เข้าร่วมกิจกรรม
-        ได้ที่เว็บลงทะเบียน โดยผ่านลิ้งค์ด้านล่าง </p>
-      <br>
-      <button
-        class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded-full "
-        onclick="window.location = 'https://geargames30.eng.cmu.ac.th/login'"
-      >เข้าสู่ระบบกรอกข้อมูลส่วนตัว </button>
-    </div>
+
+    <iframe
+      src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FJhanglekgames%2Fvideos%2F813742065703001%2F&show_text=1&width=560"
+      class="w-full lg:h-live md:h-live_sma h-live_sma"
+      style="overflow:auto"
+      scrolling="true"
+      allowTransparency="true"
+      allow="encrypted-media"
+      allowFullScreen="true"
+    ></iframe>
+
   </div>
 </template>
 
