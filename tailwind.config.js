@@ -17,7 +17,8 @@ module.exports = {
     },
     height: {
       live: "800px",
-      live_sma: "450px"
+      live_sma: "450px",
+      live_sup_sma: "200px"
     }
   },
   variants: {
