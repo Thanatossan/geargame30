@@ -54,14 +54,9 @@
             >News</a> 
                 <h1 class="block my-2 lg:inline-block lg:my-0 text-gray-400">News</h1>
               </nuxt-link>-->
-              <nuxt-link to="#">
-                <!--
-            <a
-              href="#"
-              class="block mt-4 lg:inline-block lg:mt-0 hover-underline-animation"
-            >Sponcer</a> -->
-                <h1 class="block my-2 lg:inline-block lg:my-0 text-gray-400">Sponsor</h1>
-              </nuxt-link>
+              <!--<nuxt-link to="/sponsor">
+                <span class="block my-2 lg:inline-block lg:my-0 hover-underline-animation">Sponsor</span>
+              </nuxt-link> -->
               <nuxt-link to="/schedule">
                 <span class="block my-2 lg:inline-block lg:my-0 hover-underline-animation">Schedule</span>
               </nuxt-link>
@@ -69,12 +64,11 @@
                 <span class="block my-2 lg:inline-block lg:my-0 hover-underline-animation">Map</span>
               </nuxt-link>
               <nuxt-link to="/score">
-                <!--  <a
-              href="#"
-              class="block mt-4 lg:inline-block lg:mt-0 hover-underline-animation"
-            >Score</a> -->
                 <span class="block my-2 lg:inline-block lg:my-0 hover-underline-animation">Score</span>
               </nuxt-link>
+              <!--<nuxt-link to="/gallery">
+                <span class="block my-2 lg:inline-block lg:my-0 hover-underline-animation">Gallery</span>
+              </nuxt-link> -->
               <nuxt-link to="/about">
                 <span class="block my-2 lg:inline-block lg:my-0 hover-underline-animation">About</span>
               </nuxt-link>

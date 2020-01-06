@@ -18,10 +18,7 @@
               class="lg:object-scale-down max-h-small"
             />
           </div>
-          <h2
-            class="m-auto"
-            id="1st"
-          >Closed</h2>
+          <h2 class="m-auto">Closed</h2>
         </div>
         <!-- <div class="flex bg-gray-100 rounded-lg p-1 m-3">
           <div id="2ndimgField">
