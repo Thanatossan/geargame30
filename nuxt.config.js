@@ -100,6 +100,9 @@ export default {
     port: 2000, // default: 3000
     host: "0.0.0.0" // default: localhost
   },
+  generate: {
+    fallback: true
+  }
   // googleAnalytics: {
   //   id: "UA-155025579-1"
   // }
