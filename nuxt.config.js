@@ -1,6 +1,7 @@
 const bodyParser = require("body-parser");
 const session = require("express-session");
 export default {
+  target: 'static',
   mode: "universal",
   /*
    ** Headers of the page
@@ -83,23 +84,23 @@ export default {
   },
   serverMiddleware: [
     // body-parser middleware
-    bodyParser.json(),
-    // session middleware
-    session({
-      secret: "secret",
-      resave: false,
-      saveUninitialized: false,
-      cookie: { maxAge: 60000000 }
-    }),
-    // Api middleware
-    // We add /api/login & /api/logout routes
-    "~/service"
+    // bodyParser.json(),
+    // // session middleware
+    // session({
+    //   secret: "secret",
+    //   resave: false,
+    //   saveUninitialized: false,
+    //   cookie: { maxAge: 60000000 }
+    // }),
+    // // Api middleware
+    // // We add /api/login & /api/logout routes
+    // "~/service"
   ],
   server: {
     port: 2000, // default: 3000
     host: "0.0.0.0" // default: localhost
   },
-  googleAnalytics: {
-    id: "UA-155025579-1"
-  }
+  // googleAnalytics: {
+  //   id: "UA-155025579-1"
+  // }
 };

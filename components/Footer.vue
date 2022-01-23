@@ -8,7 +8,7 @@
       ></div>
     <div class="mx-2 w-1/3">
       <br><br><br><br>
-      <p> Powered by : ชมรมคอมพิวเตอร์</p>
+      <p> Powered by : Sivakorn Wongponkanan </p>
       <p>คณะวิศวกรรมศาสตร์ มหาวิทยาลัยเชียงใหม่</p>
     </div>
     <div class="w-2/3 mx-2 text-left">
